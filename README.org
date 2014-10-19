@@ -1,0 +1,27 @@
+#+TITLE: Lexicode README
+#+DATE: <2014-10-19 Sun>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@crowdcompass.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: README for Lexicode: A Programmer's Thesaurus
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+* Introduction
+
+#+BEGIN_QUOTE
+There are only two hard things in Computer Science: cache invalidation
+and naming things.
+
+-- Phil Karlton
+#+END_QUOTE
+
+_Lexicode: A Programmer's Thesaurus_ is my attempt to make naming
+things a little easier. For now it's an ever shifting set of Emacs
+Org-mode files, which I generate a webpage from.
