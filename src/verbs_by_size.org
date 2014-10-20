@@ -1,0 +1,403 @@
+#+TITLE: Lexicode: Verbs by Size
+#+DATE: <2014-10-19 Sun>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: Synonyms of verbs by size
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: verbs, synonyms
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+Synonyms of verbs by size
+
+* from 2
+
+| 2  | 3       | 4    | 5     | concept                             |
+|----+---------+------+-------+-------------------------------------|
+| do | act     | exec | apply | evaluation, execution(synchronous?) |
+| go | run     | work |       | execution(asynchronous?),           |
+| be | let,def | defn | allow | definition                          |
+| lo | see     | look | watch | examination, observation            |
+
+* from 3
+
+| 3   | 4         | 5           | 6             | concept              | syns    |
+|-----+-----------+-------------+---------------+----------------------+---------|
+| act | exec      | apply       |               | evaluation,execution | run     |
+| add | grow      | amend       | append,extend | addition,extension   | eke,wax |
+| ask |           |             |               | request,require      |         |
+| bid | give      | offer       | tender        | attempt,propose      | try     |
+| cut | take      | split       | remove        | reduction            | div     |
+| def | defn      |             | define        | definition           | let     |
+| div | divd      | split       | divide        | division,reduction   | cut     |
+| don | wear      |             |               | decoration,amendment | fit     |
+| dub | name      |             |               | association          |         |
+| err | fail      | flunk       |               | rejection            |         |
+| eke | grow      |             |               | append               | add,wax |
+| fit | mold,form | adapt,shape | sculpt        | configuration        |         |
+| fix | mend,keep |             | fasten,repair | constantization      |         |
+| get | take      | fetch       |               | retrieve,            |         |
+| hap |           | occur       | happen        | events               |         |
+| ken | know      | learn       | reckon        | association          |         |
+| let |           | allow       |               | definition           | def     |
+| new | make      |             | create        |                      |         |
+| nim | take      | steal       | thieve        | reduction,removal    |         |
+| nix | deny      |             | refuse        | rejection            |         |
+| pop | take      |             |               |                      |         |
+| put |           | alter       | change,insert | mutation,amendment   | set     |
+| rid | drop      | spurn       | reject        | rejection,removal    |         |
+| run | exec,work |             |               | execution            | act     |
+| say | tell,show | speak,print |               | presentation,display |         |
+| see | look,seek | watch       | notice,search | observation          |         |
+| set |           |             | define        | definition,amendment | put     |
+| tie | bind      |             |               | association          |         |
+| try | test      | prove       |               | attempt              | bid     |
+| use | work      | apply       |               | evaluation,execution | act     |
+| vow |           |             |               | promise              |         |
+| wax | grow      |             |               | increase             | add,eke |
+
+* from 4
+
+| 4    | 5           | 6      |       7 | concept            | syns      | ants |
+|------+-------------+--------+---------+--------------------+-----------+------|
+| make |             | create |         |                    | cast      |      |
+| read |             |        |         |                    |           |      |
+| edit | alter       | change |         | alteration         |           |      |
+| help |             | assist |         |                    |           |      |
+| wipe | clear       |        |         |                    |           |      |
+| mark |             |        |         |                    |           |      |
+| hold |             |        |         |                    | keep,stow |      |
+| stow |             |        |         |                    |           |      |
+| bear |             |        |         |                    |           |      |
+| fold |             |        |         |                    |           |      |
+| seek |             | search |         |                    | find      |      |
+| find |             |        |         |                    |           |      |
+| move |             |        |         |                    |           |      |
+| send |             |        |         |                    |           |      |
+| bind |             |        |         |                    |           |      |
+| gain |             |        |         |                    |           |      |
+| lose |             |        |         |                    |           |      |
+| give |             |        |         |                    |           |      |
+| take |             |        |         |                    |           |      |
+| turn |             |        |         |                    |           |      |
+| deem | think,judge |        |         | acceptance         | doom      |      |
+| doom | judge       |        |         | acceptance         | deem      |      |
+| plan |             |        |         |                    |           |      |
+| swap | trade       |        |         | exchange           |           |      |
+| rate | score       |        | measure |                    | rank      |      |
+| jump |             |        |         |                    |           |      |
+| copy |             |        |         |                    |           |      |
+| fork | split       | divide |         | division           |           |      |
+| cast | throw       |        |         |                    | make      |      |
+| push |             |        |         |                    |           | pull |
+| pull |             |        |         |                    | yank,grab | push |
+| open |             |        |         |                    |           | shut |
+| shut |             |        |         |                    |           | open |
+| mend |             | repair |         |                    | heal      |      |
+| heal |             | repair |         |                    | mend      |      |
+| lead |             |        |         |                    |           |      |
+| bend |             |        |         |                    |           |      |
+| meet |             |        |         |                    | join      |      |
+| join |             |        |         |                    | meet      |      |
+| pass |             |        |         |                    |           |      |
+| wean |             |        |         |                    |           |      |
+| fail |             |        |         |                    |           |      |
+| wane |             | wither |         | reduction,diminish |           |      |
+| kill |             |        |         |                    |           |      |
+| yank |             |        |         |                    |           |      |
+| grab |             |        |         |                    |           |      |
+| save |             |        |         |                    |           |      |
+| trim |             |        |         |                    |           |      |
+| toss | throw       |        |         |                    |           |      |
+| tear |             |        |         | destruction        | fork      | mend |
+| draw |             |        |         |                    |           |      |
+| vary | alter       | differ |         |                    |           |      |
+| look |             |        |         |                    |           |      |
+| loop |             |        |         |                    |           |      |
+| shun |             |        |         | rejection          | deny      | take |
+| deny |             |        |         | rejection          | shun      | take |
+| pack |             |        |         |                    |           |      |
+| ship |             |        |         |                    | send      |      |
+| lure | tempt       |        |         |                    |           |      |
+* from 5
+- build
+- alter
+- fetch
+- erase
+- write
+- bring
+- throw
+- catch
+- track
+- watch
+- guide
+- trace
+- reach
+- adapt
+- merge
+- spurn
+- purge
+- cross
+* from 6
+- create
+- update
+- render
+- delete
+- change
+- gather
+- happen
+- follow
+- remove
+- insert
+- reckon
+- listen
+- search
+- return
+- repeat
+- accept
+- reject
+- refuse
+- select
+- desert
+- slough
+- filter
+- shrive
+- switch
+- browse
+* from 7
+- enqueue
+- dequeue
+- collect
+- propose
+- suppose
+- destroy
+- scatter
+- stretch
+- dismiss
+- request
+- respond
+- decline
+- discard
+- forsake
+- exclude
+- include
+- consist
+- cleanse
+- bannish
+- contain
+- utilize
+- compose :: include part in whole (parts compose whole)
+- dispose :: exclude part in whole
+* from 8
+- comprise :: consist whole of part (whole comprises parts)
+- depurate :: cleanse whole of part (disprise?)
+- transfer
+- delegate
+
+
+* lists
+** 2
+- do
+- go
+- be :: (is, am)
+*** abbrevs
+- lo :: to look
+** 3
+- let :: to allow, define
+- get :: to take
+- set :: to define
+- put :: to leave, set down
+- add :: to append, grow
+- try :: to attempt
+- use :: to apply
+- say :: to speak
+- cut :: to split, reduce (ant. add?)
+- act :: to do
+- tie :: to bind
+- see :: to notice, observe
+- ask :: to require, inquire
+- fix :: to mend, repair
+- fit :: to form to
+- pop :: to take off (ant. push, don?, put?)
+- err :: to make a mistake
+- rid :: to remove
+- run :: to expend, do, flee
+- vow :: to promise
+- dub :: to name
+- eke :: to add
+- don :: to put on (ant. doff)
+- wax :: to grow (ant. wane)
+- nim :: to take, steal
+- hap :: to occur, happen
+- ken :: to know
+*** abbrevs
+- enq :: enqueue
+- deq :: dequeue
+- ply :: apply
+- del :: delete
+         
+** 4
+- make :: to create
+- read :: to read
+- edit :: to change
+- help :: to assist
+- wipe :: to clear
+- mark ::
+- hold ::
+- stow :: to store
+- bear :: to carry
+- fold :: 
+- seek :: to search
+- find ::
+- move ::
+- send ::
+- bind ::
+- gain ::
+- lose ::
+- give ::
+- take ::
+- turn ::
+- deem :: to think, judge, (doom)
+- plan
+- swap
+- rate
+- jump
+- copy
+- fork
+- cast
+- push
+- pull
+- open
+- shut
+- lead
+- bend
+- meet
+- join
+- pass
+- wean
+- wane :: to wither
+- kill
+- yank
+- save
+- trim
+- toss
+- tear
+- mend
+- draw
+- vary
+- look
+- loop
+- shun
+- deny
+- pack
+- ship
+** 5
+- build
+- alter
+- fetch
+- erase
+- write
+- bring
+- throw
+- catch
+- track
+- watch
+- guide
+- trace
+- reach
+- adapt
+- merge
+- spurn
+- purge
+- cross
+** 6
+- create
+- update
+- render
+- delete
+- change
+- gather
+- happen
+- follow
+- remove
+- insert
+- reckon
+- listen
+- search
+- return
+- repeat
+- accept
+- reject
+- refuse
+- select
+- desert
+- slough
+- filter
+- shrive
+- switch
+- browse
+** 7
+- enqueue
+- dequeue
+- collect
+- propose
+- suppose
+- destroy
+- scatter
+- stretch
+- dismiss
+- request
+- respond
+- decline
+- discard
+- forsake
+- exclude
+- include
+- consist
+- cleanse
+- bannish
+- contain
+- utilize
+- compose :: include part in whole (parts compose whole)
+- dispose :: exclude part in whole
+** 8
+- comprise :: consist whole of part (whole comprises parts)
+- depurate :: cleanse whole of part (disprise?)
+- transfer
+- delegate
+
+* Verbs with the same written form of past and present tense
+
+Because when TODO changes to DONE it's nice to not have to go change the verb form.
+
+In their base case, these seem more useful for todo lists:
+
+- set (setup, setdown, setout, reset, offset, typeset, upset)
+- let (letup, letdown, letout, sublet)
+- cut (cutdown, cutup, cutout, undercut)
+- shut (shutdown, shutup, shutout)
+- put (putdown, putup, putout)
+- fit (retrofit)
+- cast (forecast, recast, broadcast, miscast)
+- quit
+- cost
+- read
+- bet
+- bid
+
+Less useful for todo lists:
+
+- hit
+- wet
+- spit
+- slit
+- beat
+- shed
+- hurt
+- burst
+- wed

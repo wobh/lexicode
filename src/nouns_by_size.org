@@ -1,0 +1,132 @@
+#+TITLE: Lexicode: Nouns by size
+#+DATE: <2014-10-20 Mon>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: Synonyms of nouns by size
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: nouns, synonyms
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+* from
+* lists
+** 3
+- key
+- arm
+- way
+- end
+- bit
+- ray
+** 4
+- root
+- tree
+- limb
+- stem
+- leaf
+
+- knot
+- node
+
+- wall
+- path
+- gate
+- door
+- lock
+
+- mark
+- note
+- text
+- line
+
+- fork
+- twin
+- copy
+
+- part
+- head
+- neck
+- hand
+- wing
+- foot
+
+- mode
+- span
+- goal
+
+- mean :: means, way
+- case :: example, instance
+** 5
+- stake
+- shift
+- state
+- store
+- stack
+- style
+- stuff
+- stash
+
+- space
+- stage
+- scape
+- scope
+
+- sense
+- shape
+- color
+
+- being
+- thing
+- place
+- event
+- world
+
+- track
+- trail
+- queue
+
+- piece
+- whole
+
+- class
+- order
+- model
+- cache
+** 6
+- series
+- branch
+- fellow
+- street
+- stream
+- entity
+** 7
+- channel
+- element
+** 8
+- exchange
+- consumer
+- producer
+
+* positioning
+- far/near
+- now/then
+- this/that
+- here/there
+- hither/thither
+- aft/fore
+- ere
+- eve
+- yon
+- oft
+- yore
+* statefulness
+- exclusive (fermions)
+- inclusive (bosons)
+- together
+- separate
+- nor
+- not

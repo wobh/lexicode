@@ -1,0 +1,477 @@
+#+TITLE: Lexicode: Common Code Abbreviations
+#+DATE: <2014-10-19 Sun>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: 
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+* Filesystem Hierarchy Standard
+
+http://www.pathname.com/fhs/
+
+A large number of concepts lurk about the FHS familiar to programmers
+on *nix-based systems.
+
+** rough FHS outline
+
+- /
+  - bin : command binaries necessary for single-user-mode
+  - boot : boot loader, core system startup
+  - dev : devices
+  - etc : system configurations
+    - opt : configs for software in /opt
+  - home : user home directories
+  - lib : libraries for programs in /bin and /sbin
+  - media : mount points for removable media
+  - mnt : temporarily mounted fs's
+  - opt : optional, self-contained software
+  - proc : virtual fs for running processes
+  - root : root user home dir
+  - sbin : essential system binaries
+  - srv : service installations
+  - tmp : temporary files
+  - usr : shared user data (generally read-only)
+    - bin : binaries for all users
+    - include : standard include files
+    - lib : binaries for /usr/bin
+    - local : host specific, installations
+      - bin
+      - lib
+      - etc
+      - var
+    - sbin : binaries for system services (daemons, network services)
+    - share : shared data
+    - src : source code
+  - var : variable data, expected to change
+    - cache : application cache
+    - lib : state information--modified by programs as they run
+    - lock : lock files
+    - log : log files
+    - mail : users mailboxes
+    - opt : variable data for software in /opt
+    - run : running system data from startup
+    - spool : data in waiting (printer spools)
+    - tmp : save/restore data to be preserved between reboots
+
+** table of alternates by word size
+
+Abbreviations, alternates, plural forms, and expansions.
+
+| FHS       | 3       | 4              | 5           | 6      | 7       |
+|-----------+---------+----------------+-------------+--------+---------|
+| /bin/     | exe,cmd | bins,exes,cmds | execs,cmnds |        |         |
+| /boot/    |         |                | start       |        | startup |
+| /dev/     |         |                |             | device |         |
+| /usr/     |         | user           | users       |        |         |
+| /etc/     | cnf     | misc,conf      | confs       | config | configs |
+| /home/    |         |                |             |        |         |
+| /media/   |         |                |             |        |         |
+| /mnt/     |         |                | mount       | mounts |         |
+| /lib/     |         | libs           |             |        | library |
+| /opt/     |         | opts           |             |        | options |
+| /root/    | sys     |                | admin       | system |         |
+| /run/     |         |                |             |        |         |
+| /srv/     |         | serv,srvc,srvr |             | server | service |
+| /sbin/    |         |                | super       |        |         |
+| /tmp/     |         | temp           |             |        |         |
+| /var/     |         | vars,data      |             |        |         |
+| /spool/   |         |                | queue       |        |         |
+| /src/     |         | code           |             |        |         |
+| /local/   |         | here           |             |        |         |
+| /share/   |         |                |             |        |         |
+| /cache/   |         |                | store       |        |         |
+| /mail/    |         |                |             |        |         |
+| /lock/    |         |                |             |        |         |
+| /include/ |         |                |             |        |         |
+| /proc/    |         |                |             |        | process |
+  
+As arcane as the FHS seems to outsiders, it's a tribute to its
+emergent design that few, if any of the alternates seems worth
+considering, let alone seriously by anyone who depends on the FHS's
+long standing stability.
+
+Still, when we make new systems that we must consider the old
+skeptically and look for opportunities.
+
+** opportunities
+
+The system nests privileges and resources. 
+
+Privileges based on roles:
+
+- System ("root") user mode
+- Resource users (daemons, services)
+- Administrative ("superuser") user roles
+- Ordinary, restricted users
+
+Resources
+
+- software
+- settings and configurations
+- devices
+- storage
+- services (speaking of processes, generally)
+
+* File extensions and identification
+
+** MIME
+
+http://www.iana.org/assignments/media-types/media-types.xhtml
+
+Some filesystems lack much in the way of providing metadata about the
+data they store. Over time, a system of filename extensions has
+evolved and ultimately formalized and encoded in to MIME.
+
+The top-level structure of mime, identifies these kinds of files:
+
+- application
+- audio
+- example
+- image
+- message
+- model
+- multi-part
+- text
+- video
+
+** general purpose file extensions
+
+http://www.fileinfo.com/filetypes/common
+
+Here's some extensions I've seen which seem like they are, or could be
+entirely generic, specifying a purpose more than data format. One
+thing that still matters would be whether humans might reasonably
+expect to read the file, so I've marked whether I usually expect it to
+be binary or text, or if it could be either. However, even then, the
+only file extension that seems like it must be binary on account of
+it's extension is 'bin'. Similiarly, the only extensions which seem
+like they must be executable (they wouldn't have to be binary) are
+'app' and 'exe'.
+
+| 3   | 4    | use         | format |
+|-----+------+-------------+--------|
+| app |      | application | binary |
+| bak |      | backup file | either |
+| bin |      | binary file | binary |
+| exe |      | executable  | binary |
+| dat | data | data file   | either |
+| dbf | (db) | database    | either |
+| log |      | log file    | text   |
+| prt | part | partial     | either |
+| tmp | temp | temporary   | either |
+| txt | text | plain text  | text   |
+| sav | save | saved game  | either |
+| gam | game | game        | either |
+
+Some other ones which probably have specific formats, but don't seem
+like they *have* to are:
+
+| 3   | 4    | use              | format |
+|-----+------+------------------+--------|
+| img |      | image file       | binary |
+| ico | icon | icon image       | binary |
+| pic | pict | picture/photo    | binary |
+| drw | draw | illustration     | binary |
+| snd |      | sound file       | binary |
+| msc |      | music file       | binary |
+| vid |      | video file       | binary |
+| fnt | font | font file        | binary |
+| doc |      | document         | text   |
+| msg | mesg | message          | text   |
+| cnf | conf | configuration    | text   |
+| ini | init | initialization   | text   |
+| sys |      | system           | either |
+| pkg | pckg | package          | binary |
+| pck | pack | package          | binary |
+| hlp | help | documentation    | text   |
+| nfo | info | documentation    | text   |
+| job |      | periodic process | either |
+
+*** opportunities
+
+Data has to be labeled in a useful and readily apparent way. File name
+extensions bind the name to the label, creating expectations, but it
+isn't until the file is executed or read that anyone will know what
+really to expect from it. Data might have a number of uses, which may
+not all be served by a single label
+
+* Organizing code
+** basic needs and catagories
+
+- configurations
+- documentation
+- stable assets (mainly runtime assets: graphics, sound, message texts)
+- interface code (layouts, styles, UX, etc: arguably, this is a stable asset)
+- external libraries and resources
+- internal modules and libraries
+- implementation source code
+- distribution and deployment code
+- specifications
+- tests
+
+A folder of source code is likely to have somewhat different needs
+from a folder of runtime code.
+
+- logging
+- public assets
+- database
+- user docs
+** pjb
+
+There was an discussion about how to organize source code in
+comp.lang.lisp and one of the poster's suggested a layout like this:
+
+- application
+  - module1
+    - documentation
+    - implementation
+      - sources
+      - resource
+    - interface
+    - specifications
+    - tests
+  - module2
+    - configuration
+    - documentation
+    - implementation
+      - sources
+      - resource
+    - interface
+    - specifications
+    - tests
+  - main
+    - configuration
+    - documentation
+    - implementation
+      - sources
+      - resource
+    - specifications
+    - tests
+** FHS-like
+
+Because FHS has worked so well it's worth considering a varient of it.
+
+| FHS | source use          | runtime use         |
+|-----+---------------------+---------------------|
+| bin | support executables | executables         |
+| src | source code         |                     |
+| etc | configurations      | configuration       |
+| lib | libraries           |                     |
+| usr | interface assets    | assets              |
+| var | test data, logs     | data, logs, plugins |
+| doc | documentation       |                     |
+| tmp | testing ground      |                     |
+
+It might look a bit like this:
+
+- approot
+  - bin
+  - doc
+  - etc
+  - lib
+  - src
+  - usr
+    - docs
+    - text
+    - images
+    - sounds
+    - styles
+    - layouts
+  - var
+    - data
+    - tests
+    - logs
+    - plugins
+
+** basic abbreviations
+
+| 3   | 4    | use           |
+|-----+------+---------------|
+| app |      | application   |
+| bin |      | executables   |
+| cnf | conf | configuration |
+| dat | data | data          |
+|     | dist | distribution  |
+| doc | docs | documentation |
+| lib | libs | libraries     |
+| log | logs | logs          |
+| mod | mods | modules       |
+| pub |      | public        |
+
+** rails
+
+A basic rails app:
+
+- approot
+  - app
+    - assets
+    - controllers
+    - helpers
+    - lib
+    - models
+    - views
+  - bin
+  - config
+    - initializers
+    - environments
+  - db
+    - migrations
+  - doc
+  - lib
+  - log
+  - public
+  - spec
+  - temp
+  - vendor
+
+** Clojure Leiningen
+*** commands
+- new :: name [, template]
+- test :: [test]
+- repl :: []
+- run :: []
+- uberjar :: (packages system)
+- deploy :: [destination] (usually clojars)
+- help :: [task]
+- do :: task [, tasks]
+- clean :: 
+- search :: 
+*** project
+- project_name
+  - checkouts/
+    - [links to other project folders]
+  - doc/
+    - intro.md
+  - resouces/
+  - src/
+    - project_name/
+      - core.clj
+  - test/
+    - project_name/
+      - core_test.clj
+  - .gitignore
+  - LICENSE
+  - project.clj
+  - README
+** Elixir Mix
+*** commands
+- compile
+- test
+- run
+- clean
+- archive
+  - build
+  - install
+  - uninstall
+- deps
+  - clean
+  - check
+  - compile
+  - get
+- do
+- help
+- iex (runs Elixir repl)
+*** project
+- README.md
+- .gitignore
+- mix.exs
+- config/
+  - config.exs
+- lib/
+  - hello_elixir.ex
+- test/
+  - test_helper.exs
+  - hello_elixir_test.exs
+*** environments
+- dev
+- test
+- prod
+
+* Code abbreviations
+
+Most programming language abstract way storage and retrieval of data
+in memory, which is a great benefit to the programmer. However the
+problem of labeling the data remains.
+
+abbreviation, prefixes, suffixes, and infixes abound.
+
+** types and values
+
+| 1 | 2  | 3   | 4    | 5     | use                  | alts |
+|---+----+-----+------+-------+----------------------+------|
+| x |    |     |      |       | generic variable     |      |
+| i |    | idx |      | index | counter              |      |
+| j |    |     |      |       | other counter        |      |
+| b |    |     | bool |       | boolean value        |      |
+| i |    | int |      |       | integer              |      |
+| f |    |     |      | float | floating point       |      |
+| c | ch | chr | char |       | character            |      |
+| s |    | str |      |       | string               |      |
+| n | nm | num |      |       | number               |      |
+| a | ar | arr |      | array | array                | ray  |
+| h |    |     | hash |       | associative array    |      |
+| o |    | obj |      |       | object               |      |
+|   |    | cls |      | class | class                |      |
+|   | id | uid |      |       | unique ID            |      |
+| d |    | dim |      |       | dimension,coordinate |      |
+|   |    |     | file |       | filesystem file      |      |
+|   |    |     | path |       | filesystem path      |      |
+|   |    | dir |      |       | fs directory,folder  |      |
+| p |    |     |      |       | predicate (also ?)   |      |
+| f |    | fun | func |       | function             |      |
+|   |    |     | proc |       | proceedure,process   |      |
+|   |    | seq |      |       | sequence             |      |
+|   |    | vec | vect |       | vector, tuple        |      |
+|   |    | tup | tupl | tuple | tuple, vector        |      |
+|   |    | lst | list |       | list                 |      |
+|   | db |     |      |       | database             |      |
+|   |    | dev |      |       | device               |      |
+|   | nm |     | name |       | name                 |      |
+|   | fn |     |      |       | file name            |      |
+|   | dn |     |      |       | directory name       |      |
+
+*** opportunities
+
+I can't say how frustrating it is that there's not a convenient 3
+letter abbreviation for 'file' on a filesystem, likewise a 4 letter
+abbreviation for 'directory'. For one thing, it's a totally trivial
+matter. On the other hand, it Sapir-Whorfs my thinking about a problem
+if I chose an abbreviation that turns out to misalign my programming
+expressions.
+
+** accessors, places
+
+| 1 | 3   | use              |
+|---+-----+------------------|
+| k | key | hash key         |
+| v | val | hash value       |
+|   | row | table row        |
+|   | col | table column     |
+|   | elt | list element     |
+| n | nth | nth element      |
+| i | idx | array index      |
+|   | dim | field dimension  |
+| c | chr | string character |
+
+
+
+* Systemic Organization
+
+** basic needs
+
+- settings and configurations
+- documentation
+- personal data
+- business data
+- system data
+- shared data
+- projects
+- variable and temporary data

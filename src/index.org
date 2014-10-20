@@ -1,0 +1,22 @@
+#+TITLE: Lexicode: A Programmer's Thesaurus
+#+DATE: <2014-10-19 Sun>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+
+* [[file:concepts.org][Concepts]]
+
+* [[file:common_code_abbrs][Common Coding Abbreviations]]
+
+* [[file:./verbs_by_size][Verb synonyms by size]]
+
+* [[file:nouns_by_size.org][Noun synonyms by size]]

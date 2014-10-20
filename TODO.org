@@ -1,0 +1,6 @@
+* TODO setup ghpages
+* TODO write makefile
+** TODO figure out elisp script to export/publish org files
+
+* TODO figure out multi-file org wiki
+- what about export/publish tranformation of file links?

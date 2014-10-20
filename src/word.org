@@ -1,0 +1,274 @@
+
+
+* Alphabet proximity
+** Mouthform
+- K C G
+- J L D T 
+- N S
+- B V F M
+- 
+
+** Sound
+- K C
+- S C
+- B
+- M N
+- J G
+- X H Z K J
+- 
+
+** Letterform
+- C c u U G
+- j g y
+- o O 0 Q D
+- d b 
+- q p 
+- p P
+- V v w W
+- H X x k K
+- d a e p 
+- B 8 E 3 H
+- A 4 H I
+- i j
+- J I T Y l
+- N n m M
+- 2 5 N Z S s z
+- P F f t
+- R P 9
+- n r
+- g q p y j
+- L J 9
+- 1 l 
+- 9 g q p e 
+- F E L T
+- 8 & B % 0
+- H N K F Y
+- B R P F
+- T 7 Z
+* experiment words
+
+** concepts
+- hypothesis
+- experiment
+- 
+
+** 6
+expect
+aspect
+
+** 7
+subject, feature
+control
+outcome, measure, finding
+project, outlook, surmise
+compare
+propose
+inspect
+
+** 8
+function
+argument
+constant
+variable, 
+prospect, forecast
+material
+response
+examinee
+examiner
+
+
+* task 
+
+** states
+
+- TODO
+- DOING
+- DONE
+- WAIT
+- NEXT
+- HOLD
+- NULL
+- VOID
+
+** keys
+
+- WORK
+- HOME
+- PLAY
+- LIFE
+
+* Programming abbreviations and short words
+
+** Common elements of 
+
+** nouns
+
+
+
+| concept            | 3-letter    | 4-letter        | 5-letter    |
+|--------------------+-------------+-----------------+-------------|
+| concept            |             | word,idea       | thing       |
+| element            | elt         | item,part,elmt  |             |
+| container          | bag,box,bin | slot,           |             |
+| directory/folder   | dir         | path            | track,trail |
+| file/archive       |             | file            |             |
+| option/choice      | opt         |                 |             |
+| argument/parameter | arg         |                 | param       |
+| fault/error        | err         |                 |             |
+| data               | dat         | data            |             |
+| message            | mst, txt    | mesg, text      |             |
+| string             | str         |                 |             |
+| symbol             | sym         |                 |             |
+| number             | num         |                 |             |
+| integer            | int         |                 |             |
+|                    |             | home            |             |
+|                    | usr         | user            |             |
+| row                | row         |                 |             |
+| column             | col         |                 |             |
+| key                | key         |                 |             |
+| value              | val         |                 |             |
+| channel, queue     | que         |                 |             |
+| list, sequence     | lst,seq     | list            |             |
+| signal             | cue         | sign            |             |
+| array              | arr/ray     |                 | array,table |
+| associative array  |             | hash            |             |
+| field/record       |             |                 |             |
+| dimension          | dim         |                 |             |
+| coordinate         |             | coord           |             |
+|                    |             |                 | frame,scope |
+|                    |             |                 | stack       |
+| selection          |             |                 | slice       |
+|                    |             | heap,pile       |             |
+| device             | dev         |                 |             |
+| process/proceedure | job         | proc, task      |             |
+| function           | fun         | func            |             |
+| vector/tuple       | vec,tup     |                 |             |
+| two-values         | duo         | pair,cons       |             |
+| nothing/absent     | nul/nil     | null/void/none/ |             |
+|                    | cel         | cell            |             |
+| origin/source      |             | root,base       |             |
+|                    |             | vine            |             |
+|                    |             | tree            |             |
+| branch             | arm/leg     | limb            |             |
+|                    |             | leaf            |             |
+|                    |             | node,stem       |             |
+|                    |             | head            |             |
+|                    |             | tail            |             |
+|                    |             | foot            |             |
+|                    |             | hand            |             |
+| action             | act         | actn            |             |
+| storage/vault      |             | hold            |             |
+| system             | sys         |                 |             |
+| configuration      | cnf         | conf            |             |
+| character          | chr         | char            | glyph,sigil |
+|                    | etc         | misc            |             |
+|                    |             | line            |             |
+| direction          |             |                 |             |
+| position           | pos         |                 | point       |
+| location/locale    | loc         |                 | place       |
+| region             |             | area            | space       |
+| duration           |             | time            |             |
+| object             | obj         |                 | thing       |
+| catagory           | cls         | type,clss,clas, | class       |
+| collection         |             |                 | group       |
+| binary executable  | bin,exe     |                 |             |
+|                    |             | test            |             |
+| specification      | law,lex     | rule/spec       |             |
+|                    |             |                 | actor,agent |
+|                    |             | role            |             |
+| command            | cmd         |                 |             |
+|                    |             | rank            | score       |
+| arrange            |             | sort            | order       |
+| extent             |             | span            | range       |
+|                    |             | view            | scape       |
+|                    |             |                 | scope       |
+
+
+
+
+  
+*** adjectives
+
+| word/concept     | 5-letter | 4-letter | 3-letter |
+|------------------+----------+----------+----------|
+| variable/mutable |          |          | var      |
+| temporary        |          | temp     | tmp      |
+| constant/stable  | const    |          |          |
+| minimum          |          |          | min      |
+| maximum          |          |          | max      |
+| single/singular  |          |          |          |
+| multiple/plural  |          | many     |          |
+| negative         |          |          | neg      |
+| positive         |          |          | pos      |
+| shape            | shape    | form     |          |
+| alternate        | other    |          | alt      |
+|                  |          |          |          |
+*** prepositions
+
+| word/concept | 3-letter | 4-letter | 5-letter |
+|--------------+----------+----------+----------|
+| initial      |          |          | first    |
+| subsequent   |          | next     |          |
+|              |          | last     | final    |
+| before       | pre      | fore     |          |
+|              | aft      | post     | after    |
+|              |          |          |          |
+|              |          |          |          |
+
+** verbs
+| word/concept         | 3-letter    | 4-letter   |             |
+|----------------------+-------------+------------+-------------|
+| apply                | ply         | call       |             |
+| do/execute           | run         | exec       |             |
+| evaluate             |             | eval       |             |
+| define               | def/dfn     | defn       |             |
+| search               |             | seek       |             |
+| create               | new         | make       |             |
+| examine/interpret    |             | read       | learn       |
+| retrieve             | get         | pull       |             |
+| mutate/change/update | put         | send       | patch       |
+| delete               | del         | kill       |             |
+| assign/insert        | set         |            |             |
+| allow                | let         |            |             |
+| repair,constantize   | fix         |            |             |
+| query                | qry,get,ask |            |             |
+| request/query        | req         |            |             |
+| duplicate            | dup         | copy       |             |
+| name                 | dub         | name       |             |
+| acknowledge          | ack         |            |             |
+| ignore               | nak         |            |             |
+| collect/gather/group | zip         |            |             |
+| increase             | wax         | grow       |             |
+| decrease/wither      |             | wane       |             |
+| append               | log         | push       |             |
+| add                  | add         | plus       |             |
+| subtract/minus       |             | subt       |             |
+| divide               | div         | divd       |             |
+| multiply             | mlt,ply     | mult       |             |
+| modulo               | mod         |            |             |
+| substitute/replace   |             |            |             |
+| update               |             |            |             |
+| remove               | pop         | take       |             |
+|                      |             | fold       |             |
+| compose              |             |            |             |
+| associate            |             | assc,join  |             |
+| throw                |             |            |             |
+| catch                |             |            |             |
+| delay                |             | wait,idle  |             |
+| install              |             |            |             |
+| record               | sav,rec,log | save, keep |             |
+| store, archive       |             | stow       |             |
+| observe/detect       | see         | look       | watch,sense |
+| repeat/iterate       |             | loop       |             |
+|                      |             |            | start,begin |
+| finish               |             | stop       |             |
+| arrest               |             | halt       |             |
+|                      |             | lack       |             |
+|                      | try         | test       |             |
+| present/display      |             | show       |             |
+
+
+
+*** adverbs
+| 
+
