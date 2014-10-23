@@ -1,0 +1,419 @@
+#+TITLE:     objectroot filesystem hierarchy
+#+AUTHOR:    William Clifford
+#+EMAIL:     wclifford@crowdcompass.com
+#+DATE:      2014-10-22 Wed
+#+DESCRIPTION: 
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+* Introduction
+
+In my research for lexicode I came across http://objectroot.org/ which
+proposes a different filesystem organization scheme. It's intriguing.
+
+I've copies and pasted a most all of the text from that website. 
+
+* Objectroot
+
+- /hosts :: Operating system instances.
+- /org   :: Application and system software.
+- /users :: Users' home directories.
+
+Optional
+
+- /boot :: Second-stage bootloader.
+- /mnt  :: Temporarily mounted filesystems.
+
+Backwards compatibility links
+
+- /bin -> /hosts/self/bin
+- /dev -> /hosts/self/dev
+- /tmp -> /hosts/self/tmp
+
+* /
+
+** hosts
+
+- /hosts/self      :: A special name designating the active host
+     running on the local computer.
+- /hosts/hostname  :: The host `hostname'.
+- /hosts/self_time :: A snapshot of /hosts/self taken at time, where
+     time is of the format “YYYYMMDDhhmmss” (UTC) truncated to desired
+     accuracy.
+
+*** self
+
+- /hosts/self/cmd  :: Essential user commands, e.g. cp, df, ls.
+- /hosts/self/dev  :: Device special files.
+- /hosts/self/info :: Host information.
+- /hosts/self/kern :: Kernel image and related files.
+- /hosts/self/lib  :: Libraries essential to the binaries in cmd and scmd.
+- /hosts/self/proc :: Process information pseudo-filesystem (procfs). Optional.
+- /hosts/self/rc   :: Third-stage bootloader and shutdown scripts.
+- /hosts/self/root :: Home directory of the superuser.
+- /hosts/self/scmd :: Essential system commands, e.g. init, mkfs, fsck.
+- /hosts/self/svc  :: Services provided by the system.  [ More ... ]
+- /hosts/self/sys  :: System information pseudo-filesystem (sysfs). Optional.
+- /hosts/self/tmp  :: Temporary files that are not preserved between reboots.
+
+**** info
+
+Short text filed describing the basics of the system:
+
+- /hosts/self/info/name     :: Short name of the system, in all
+     lowercase. For example “deckard”.
+- /hosts/self/info/config   :: GNU style configuration name of the
+     system. For example “i686-pc-linux-gnu”. This can also be
+     obtained by running the script /org/gnu/cmd/config.guess, but
+     having it readily available here is faster.
+- /hosts/self/info/timezone :: Timezone of the system. For example “Europe/Helsinki”.
+
+**** kern
+
+- /hosts/self/kern/super -> /org/linux/shared/i386-pc/kern/ :: Symbolic
+     link giving access to configuration and maintenance tools.
+- /hosts/self/kern/config-2.6.30-2-686     :: Kernel config file.
+- /hosts/self/kern/initrd-2.6.30-2-686     :: Initial ramdisk.
+- /hosts/self/kern/System.map-2.6.30-2-686 :: Kernel system map.
+- /hosts/self/kern/vmlinuz-2.6.30-2-686    :: Kernel image.
+- /hosts/self/kern/modules                 :: Kernel modules.
+- /hosts/self/kern/log                     :: Kernal log files
+
+**** svc
+
+Any host feature not directly provided by the kernel is a service (svc
+for short) and is configured and managed through its instance
+directory. Instance directories for services are contained in
+/hosts/self/svc/.
+
+Services can be either network services or local services. Local
+services can be active (daemon-based) or passive (file-based), or a
+combination thereof.
+
+Some examples of services:
+
+- /hosts/self/svc/auth :: A service that implements user
+     authentication (passwd, group, sudoers, ...).
+- /hosts/self/svc/cron :: A service that runs the cron daemon.
+- /hosts/self/svc/getty :: A service that initializes tty lines.
+- /hosts/self/svc/httpd :: A service that runs an HTTP daemon.
+- /hosts/self/svc/inet :: A service that allows the computer to become
+     a node on an IP network.
+- /hosts/self/svc/sshd :: A service that runs an SSH daemon.
+- /hosts/self/svc/X11 :: The X Window System service.
+- /hosts/self/svc/service :: Instance directory for service.
+
+A service instance directory contains the variable files related to
+the service, including configuration information, service data, daemon
+PID and log output. In addition to this, an instance directory
+contains a symbolic link, super, that points to the implementation of
+the service:
+
+super -> /org/publisher/shared/i386-pc-linux-gnu/service
+
+The implementation directory provides the executable commands
+(binaries or scripts) to start, restart, stop, report the service
+status, and otherwise manage the service. The implementation commands
+always operate on the principle that the current working directory is
+an instance of the service. It is the responsibility of the caller to
+arrange for this before invocation. Therefore, the implementation is
+not only allowed but expected to write on the current working
+directory.
+
+****** Installing and uninstalling a service
+
+Install a new service:
+
+#+BEGIN_SRC sh
+cd /host/self/svc
+cp -an /org/publisher/proto/i386-pc-linux-gnu/service .
+#+END_SRC
+
+Start the service:
+
+#+BEGIN_SRC 
+( cd service ; ./super/start )
+#+END_SRC
+
+Stop and remove the service:
+
+#+BEGIN_SRC 
+( cd service ; ./super/stop )
+rm -r service
+#+END_SRC
+
+****** Self-contained instances
+
+Some special services need to be self-contained, i.e. contain a copy
+of the implementation within the instance proper. This arrangement may
+be necessary, for example, when the service needs to be available in
+single user mode, or when the service is critical to the integrity of
+the host. In these instances, super is a subdirectory, rather than a
+symbolic link, and the implementation files are copied into it.
+
+***** cron
+
+- /hosts/self/svc/cron/super -> /org/publisher/shared/i386-pc-linux-gnu/cron :: Symbolic
+     link pointing to the implementation of the service.
+- /hosts/self/svc/cron/crontab :: The crontab file.
+- /hosts/self/svc/cron/pid :: Process id of running crond.
+- /hosts/self/svc/cron/log :: Log files related to the cron service.
+
+***** httpd
+- /hosts/self/svc/httpd/super -> /org/publisher/shared/i386-pc-linux-gnu/httpd :: Symbolic
+     link pointing to the implementation of the service.
+- /hosts/self/svc/httpd/httpd.conf :: Configuration options for httpd.
+- /hosts/self/svc/httpd/pid :: Process id of running httpd.
+- /hosts/self/svc/httpd/log :: Log files related to the service.
+- /hosts/self/svc/httpd/root :: Document root.
+
+***** X11
+A service instance directory for the X Window System server.
+
+- /hosts/self/svc/X11/super -> /org/x/shared/i386-pc-linux-gnu/X11 :: Symbolic
+     link pointing to the implementation of the service.
+
+- /hosts/self/svc/X11/log :: Log files related to the X Window System
+server.
+
+In addition to the items listed above, this directory stores all
+host-specific[1] configuration files related to the X server process
+and the X Window System in general.
+
+The commands to start, restart and stop the service are:
+
+./super/start
+./super/restart
+./super/stop
+
+Note that there is no startx command anymore. If you want it, just add
+
+alias startx='(cd /hosts/self/svc/X11; ./super/start)'
+alias stopx='(cd /hosts/self/svc/X11; ./super/stop)'
+in your shell aliases definitions.
+
+In this example, the X11 user commands would be found in
+/org/x/bin/i386-pc-linux-gnu/.
+
+This does not mean files such as rgb.txt and XErrorDB or any files
+that are shareable between hosts.
+
+
+** org
+
+- /org/apache :: Software produced by the Apache Software Foundation.
+- /org/apple :: Software published by Apple Inc.
+- /org/djb :: Software developed and published by Daniel J. Bernstein.
+- /org/freebsd :: Software produced by the FreeBSD Project.
+- /org/gnu :: Software developed by the GNU Project.
+- /org/google :: Software published by Google Inc.
+- /org/ijg :: Software developed and published by the Independent JPEG Group.
+- /org/kde :: Software created by the KDE Community.
+- /org/linux :: Software developed by the Linux Project.
+- /org/netbsd :: Software produced by the NetBSD Foundation, Inc.
+- /org/openbsd :: Software produced by the OpenBSD Project.
+- /org/perl :: Software published by the Perl Project and the Comprehensive Perl Archive Network (CPAN).
+- /org/php :: Software published by the PHP Group.
+- /org/plan9 :: Software ported from the Plan 9 from Bell Labs research system.
+- /org/python :: Software published by the Python Software Foundation.
+- /org/x :: Software governed by the X.Org Foundation.
+- /org/xen :: Software developed by the Xen Project.
+- /org/publisher :: Software published by publisher.
+
+*** publisher
+
+The suggested top-level structure for the tree is as follows.
+
+- /org/publisher/bin :: architecture-dependent commands, i.e. binaries
+- /org/publisher/doc :: documentation
+- /org/publisher/lib :: program libraries
+- /org/publisher/man :: man pages (in *roff format)
+- /org/publisher/src :: program source code
+- /org/publisher/cmd :: architecture-independent commands (scripts, jackets, symlinks)
+- /org/publisher/proto :: prototypes of svc instance directories
+- /org/publisher/shared :: svc implementation directories (files shared between instances)
+- /org/publisher/private :: stuff that shouldn't be referred to from outside the tree
+- /org/publisher/etc :: administrative metadata and dangerous maintenance utilities for the tree
+- /org/publisher/pkg :: package management information for the tree
+- /org/publisher/tmp :: used when running in a chroot jail
+
+Not every org tree necessarily needs all the above directories, but
+unless there is a good reason to deviate from this general structure,
+it is probably best to follow this naming scheme for the directories
+that are present.
+
+In the above list, the first group of directories (bin, doc, lib, man
+and src) implement the classic type-oriented organization model. These
+directories are used like their traditional Unix counterparts (but see
+“Host independence” below). The second group of directories (cmd,
+proto, shared and private) implement a new object-oriented
+organization model. The third group of directories (etc and pkg) are
+used for meta information and maintenance utilities for the tree.
+
+**** Host independence
+
+An org tree is meant to be host independent. This does not just mean
+host instance independence, but also operating system independence and
+CPU independence. The tree does not have to include compiled
+executables for every imaginable machine architecture, but it needs to
+be organized in such a way that it theoretically could. This means no
+reuse of pathnames.
+
+The suggested way to achieve this is to use a GNU style configuration
+name as a pathname component wherever the pathname would otherwise
+have to be reused.
+
+/org/publisher/bin/i386-pc-linux-gnu/xyzzy
+/org/publisher/bin/rs6000-ibm-aix3.2/xyzzy
+/org/publisher/bin/sparc-sun-solaris2.7/xyzzy
+
+**** Support for chrooted execution
+
+If the org tree includes unsecure software, i.e. software for which
+the source code has not been published, or software whose security
+status has been questioned, it needs to be able to function in a
+chroot jail.
+
+To be chroot ready, the tree needs to be 100% self-contained, and all
+absolute pathname references must assume the root of the filesystem is
+/org/publisher/.
+
+Communication with the outside world happens through pipes (set up by
+the forking process) or through the directory /org/publisher/tmp/ (or
+/tmp/ when viewed from inside the chroot jail).
+
+**** Software package management
+
+The /org/publisher/pkg/ directory can be used to store meta data about
+the tree. The format of files in the directory is discussed in a
+separate article.
+
+** users
+
+The /users directory is a container for users' home directories. In addition to this, it contains a directory called “common” for files shared between all users.
+
+- /users/user :: Home directory of user.
+- /users/common :: Files shared between all users.
+- /users/common/cmd :: Executable commands for all users. This
+     directory corresponds to /usr/bin and /usr/local/bin in
+     traditional Unix systems.
+- /users/common/lib :: Object libraries for all users. This directory
+     corresponds to /usr/lib and /usr/local/lib in traditional Unix
+     systems.
+- /users/common/man/ :: An index of man pages (as found in
+     /org/*/man/... ). This directory corresponds to /usr/man in
+     classic Unix and to /usr/share/man in more modern Unix systems.
+- /users/common/tmp/ :: Temporary files that are preserved between
+     reboots. This directory corresponds to /usr/tmp in classic Unix
+     and to /var/tmp in more modern Unix systems.
+
+**** Finding commands
+
+In an objectroot-based system, a user's PATH environment variable assignment might look something like this:
+
+#+BEGIN_SRC 
+PATH=$HOME/cmd:/users/common/cmd:/hosts/self/cmd
+#+END_SRC
+
+So, to locate a command in the filesystem hierarchy, the shell would search the following three directories:
+
+1. $HOME/cmd
+2. /users/common/cmd
+3. /hosts/self/cmd
+
+Now; of these directories, the contents of #1 are controlled by the
+user. The contents of #3 are dependent on the host instance, but
+normally include basic versions of the most important user
+commands. The contents of #2 require a little more explanation ...
+
+***** The /users/common/cmd directory
+
+The shared-by-all command directory—/users/common/cmd—contains
+symbolic links of the following form:
+
+xyzzy → /org/org1/bin/i386-pc-linux-gnu/xyzzy
+plugh → /org/org2/bin/i386-pc-linux-gnu/plugh
+...
+plover → /org/orgn/bin/i386-pc-linux-gnu/plover
+
+The idea is to populate the directory with links pointing to the
+executable binaries comprising the default set of commands available
+to all users.
+
+Note: If desired, the commands can come from different Unix
+distributions. Say, the base set from GNU with additions from BSD and
+Plan 9. Also, an individual user can override any command with a
+version from another operating system distribution.  This arrangement,
+when compared to the classic Unix approach, has a number of benefits:
+
+It provides a natural selecting and naming mechanism for alternative
+implementations of the same command. For example, the awk command
+might be made available to the user in three different implementations
+as follows:
+
+awk -> /org/gnu/bin/i386-pc-linux-gnu/gawk       (The GNU Awk)
+nawk -> /org/att/bin/i386-pc-linux-gnu/awk       (AT&T's “new awk”)
+otawk -> /org/bwk/bin/i386-pc-linux-gnu/awk      (Brian Kernighan's “one true awk”)
+
+It provides a natural mechanism for switching to a specific version of
+a command, for example to continue using an older version where the
+current version has introduced a show-stopping bug.
+
+plugh -> /org/id/bin/i386-pc-linux-gnu/plugh-120
+
+If needed, the current version continues to be available through its
+full canonical pathname.
+
+It allows the removal of individual commands from the default set
+without removing them from the system altogether or disabling them
+from programs that might be using the canonical name directly.
+
+It allows the creation of command 'vocabularies' independent of the
+implementations. This makes it easy to switch between vocabularies for
+testing, security or other purposes, and to copy and distribute
+vocabularies as compact tarballs (Wikipedia).
+
+When the publisher is untrusted, the symbolic link can be substituted
+by a “jacket script” that executes the command chroot'ed to
+/org/publisher/.
+
+There are additional benefits including secondary benefits that stem
+from those listed above. Discovering them is left as an exercise to
+the reader.
+
+**** Finding libraries
+
+The common library directory /users/common/lib/ is for symbolic links
+of the form:
+
+libjpeg.so -> /org/ijg/lib/elf32-i386/libjpeg.so
+
+There should rarely be a reason to copy any actual library files into
+this directory.
+
+Ideally, references to libraries (at link and runtime) should specify
+the files' canonical pathname under /org/. So, for example, an
+elf32-i386 binary that wants to dynamically load the above mentioned
+jpeg library simply compiles in the pathname
+
+/org/ijg/lib/elf32-i386/libjpeg.so
+
+And as the above pathname typically is a symlink pointing to the
+current version of the library
+
+/org/ijg/lib/elf32-i386/libjpeg.so → libjpeg.so.7.0.0
+
+the programmer never has to modify their reference to it.
+
+The /users/common/lib directory therefore exists mainly for backward
+compatibility, to support build environments and commands that want to
+see all installed libraries in a single directory. Over time this
+directory is expected to become redundant.
