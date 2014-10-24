@@ -71,13 +71,13 @@ Abbreviations, alternates, plural forms, and expansions.
 | /boot/    |         |                | start       |        | startup |
 | /dev/     |         |                |             | device |         |
 | /usr/     |         | user           | users       |        |         |
-| /etc/     | cnf     | misc,conf      | confs       | config | configs |
+| /etc/     | cnf,cfg | misc,conf      | confs       | config | configs |
 | /home/    |         |                |             |        |         |
 | /media/   |         |                |             |        |         |
 | /mnt/     |         |                | mount       | mounts |         |
 | /lib/     |         | libs           |             |        | library |
 | /opt/     |         | opts           |             |        | options |
-| /root/    | sys     |                | admin       | system |         |
+| /root/    | adm,sys | admn,syst      | admin       | system |         |
 | /run/     |         |                |             |        |         |
 | /srv/     |         | serv,srvc,srvr |             | server | service |
 | /sbin/    |         |                | super       |        |         |
@@ -91,7 +91,7 @@ Abbreviations, alternates, plural forms, and expansions.
 | /mail/    |         |                |             |        |         |
 | /lock/    |         |                |             |        |         |
 | /include/ |         |                |             |        |         |
-| /proc/    |         |                |             |        | process |
+| /proc/    | prc     |                |             |        | process |
   
 As arcane as the FHS seems to outsiders, it's a tribute to its
 emergent design that few, if any of the alternates seems worth
@@ -460,7 +460,6 @@ expressions.
 | i | idx | array index      |
 |   | dim | field dimension  |
 | c | chr | string character |
-
 
 
 * Systemic Organization

@@ -206,7 +206,6 @@ In this example, the X11 user commands would be found in
 This does not mean files such as rgb.txt and XErrorDB or any files
 that are shareable between hosts.
 
-
 ** org
 
 - /org/apache :: Software produced by the Apache Software Foundation.

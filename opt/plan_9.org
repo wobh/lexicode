@@ -1,0 +1,80 @@
+#+TITLE:     Plan 9 namespace
+#+AUTHOR:    William Clifford
+#+EMAIL:     wobh@yahoo.com
+#+DATE:      2014-10-23 Thu
+#+DESCRIPTION:
+#+KEYWORDS:
+
+* Introduction
+
+I started looking at the plan 9 "namespace", which extends the unix
+tradition and improved the abbreviated names for things.
+
+http://plan9.bell-labs.com/magic/man2html/4/namespace
+
+- /
+  - adm
+    - users
+    - keys
+    - netkeys
+    - timezone
+      - EST.EDT
+  - bin
+  - dev
+  - env
+  - fd
+  - net
+  - proc
+  - srv
+  - tmp
+  - mnt (mount points for applications)
+  - n   (mount points for file trees imported from remote systems)
+  - cpu ("Each CPU architecture supported has a directory in
+    the root containing architecture–specific files...")
+    - init
+    - bin
+      - aux
+      - ip
+    - lib
+    - include
+    - 9*
+    - mkfile
+  - rc
+    - bin
+    - lib
+      - rcmain
+  - lib (data collections)
+    - mammals
+    - sky
+    - ndb (network db)
+    - namespace
+    - font
+      - bit
+      - hershey (vector fonts)
+    - rfc
+      - graprfc
+  - sys
+    - include
+    - lib
+      - acid
+      - dist
+      - troff
+      - yaccpar
+    - man
+    - doc
+    - log
+    - src
+      - cmd
+      - 9
+      - fs
+      - lib*
+  - usr (user home directories)
+  - mail
+    - box
+    - lib
+  - acme
+  - cron
+  - cfg
+
+
+
