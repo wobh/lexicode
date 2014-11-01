@@ -217,13 +217,31 @@ not all be served by a single label
 - specifications
 - tests
 
-A folder of source code is likely to have somewhat different needs
-from a folder of runtime code.
+A folder of source code organized for developers is likely to have
+somewhat different needs from a folder of runtime code organized for
+devops. Additional needs for devops:
 
-- logging
+- logs and metrics
 - public assets
-- database
+- database (internal resource? external resource?)
 - user docs
+- admin docs and interfaces
+
+** basic abbreviations
+
+| 3   | 4    | use           |
+|-----+------+---------------|
+| app |      | application   |
+| bin |      | executables   |
+| cnf | conf | configuration |
+| dat | data | data          |
+|     | dist | distribution  |
+| doc | docs | documentation |
+| lib | libs | libraries     |
+| log | logs | logs          |
+| mod | mods | modules       |
+| pub |      | public        |
+
 ** pjb
 
 There was an discussion about how to organize source code in
@@ -257,7 +275,7 @@ comp.lang.lisp and one of the poster's suggested a layout like this:
     - tests
 ** FHS-like
 
-Because FHS has worked so well it's worth considering a varient of it.
+Because FHS has worked so well it's worth considering a variant of it.
 
 | FHS | source use          | runtime use         |
 |-----+---------------------+---------------------|
@@ -290,21 +308,6 @@ It might look a bit like this:
     - tests
     - logs
     - plugins
-
-** basic abbreviations
-
-| 3   | 4    | use           |
-|-----+------+---------------|
-| app |      | application   |
-| bin |      | executables   |
-| cnf | conf | configuration |
-| dat | data | data          |
-|     | dist | distribution  |
-| doc | docs | documentation |
-| lib | libs | libraries     |
-| log | logs | logs          |
-| mod | mods | modules       |
-| pub |      | public        |
 
 ** rails
 
@@ -460,7 +463,6 @@ expressions.
 | i | idx | array index      |
 |   | dim | field dimension  |
 | c | chr | string character |
-
 
 * Systemic Organization
 

@@ -48,9 +48,18 @@
 * experiment words
 
 ** concepts
-- hypothesis
-- experiment
-- 
+- phenomenon :: happenings, events
+- observation :: a record of phenomena
+- hypothesis :: proposal, supposition about relations between
+                phenomena
+- prediction :: expectation, 
+- experiment :: test, proof
+- procedure :: process, steps in verifying or falsifying hypothesis
+- subject :: what is expected to change as a result of the process
+- control :: a comparable
+- result :: outcome
+- reproducible :: recurring, replicable, non-coincedental
+- theory :: reproducible results
 
 ** 6
 expect
@@ -63,9 +72,10 @@ outcome, measure, finding
 project, outlook, surmise
 compare
 propose
-inspect
+observe, inspect
 
 ** 8
+
 function
 argument
 constant
@@ -75,7 +85,6 @@ material
 response
 examinee
 examiner
-
 
 * task 
 
@@ -102,8 +111,6 @@ examiner
 ** Common elements of 
 
 ** nouns
-
-
 
 | concept            | 3-letter    | 4-letter        | 5-letter    |
 |--------------------+-------------+-----------------+-------------|
@@ -182,10 +189,6 @@ examiner
 | extent             |             | span            | range       |
 |                    |             | view            | scape       |
 |                    |             |                 | scope       |
-
-
-
-
   
 *** adjectives
 
@@ -216,6 +219,7 @@ examiner
 |              |          |          |          |
 
 ** verbs
+
 | word/concept         | 3-letter    | 4-letter   |             |
 |----------------------+-------------+------------+-------------|
 | apply                | ply         | call       |             |
@@ -263,7 +267,7 @@ examiner
 |                      |             |            | start,begin |
 | finish               |             | stop       |             |
 | arrest               |             | halt       |             |
-|                      |             | lack       |             |
+| missing,absent       |             | lack,want  |             |
 |                      | try         | test       |             |
 | present/display      |             | show       |             |
 
