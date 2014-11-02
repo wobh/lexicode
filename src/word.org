@@ -50,35 +50,46 @@
 ** concepts
 - phenomenon :: happenings, events
 - observation :: a record of phenomena
-- hypothesis :: proposal, supposition about relations between
-                phenomena
-- prediction :: expectation, 
-- experiment :: test, proof
+- hypothesis :: proposal, supposition, conjecture about relations
+                between phenomena
+- prediction :: expectation, outlook, forecast
+- experiment :: test, prove, probe, poke, prod
 - procedure :: process, steps in verifying or falsifying hypothesis
 - subject :: what is expected to change as a result of the process
-- control :: a comparable
+- control :: a non-tested comparable, or constant, invariant
 - result :: outcome
 - reproducible :: recurring, replicable, non-coincedental
 - theory :: reproducible results
 
+** 5
+shown
+given
+event
+prove
+false
+
 ** 6
 expect
 aspect
+result
+theory
+factor
+passed
+failed
 
 ** 7
 subject, feature
 control
 outcome, measure, finding
-project, outlook, surmise
+project, outlook, surmise, 
 compare
 propose
 observe, inspect
 
 ** 8
-
 function
 argument
-constant
+constant, given, invariant
 variable, 
 prospect, forecast
 material
