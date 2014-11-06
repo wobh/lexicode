@@ -61,6 +61,92 @@
 - reproducible :: recurring, replicable, non-coincedental
 - theory :: reproducible results
 
+*** variables
+- http://en.wikipedia.org/wiki/Dependent_and_independent_variables
+
+**** dependent
+
+#+BEGIN_QUOTE
+A dependent variable is also known as a "response variable",
+"regressand", "measured variable", "responding variable", "explained
+variable", "outcome variable", "experimental variable", and "output
+variable".
+
+If the independent variable is referred to as an "explanatory
+variable" (see above) then the term "response variable" is preferred
+by some authors for the dependent variable.
+#+END_QUOTE
+**** independent
+#+BEGIN_QUOTE
+An independent variable is also known as a "predictor variable",
+"regressor", "controlled variable", "manipulated variable",
+"explanatory variable", "exposure variable" (see reliability theory),
+"risk factor" (see medical statistics), "feature" (in machine
+learning and pattern recognition) or an "input variable."
+
+"Explanatory variable" is preferred by some authors over "independent
+variable" when the quantities treated as "independent variables" may
+not be statistically independent.
+
+Independent variable(s) may be of these kinds: continuous
+variable(s), binary/dichotomous variable(s), nominal categorical
+variable(s), ordinal categorical variable(s), among others.
+#+END_QUOTE
+
+**** other
+
+#+BEGIN_QUOTE
+A variable may be thought to alter the dependent or independent
+variables, but may not actually be the focus of the experiment. So
+that variable will be kept constant or monitored to try to minimise
+its effect on the experiment. Such variables may be called a
+"controlled variable" or "control variable" or "extraneous variable".
+
+Extraneous variables, if included in a regression as independent
+variables, may aid a researcher with accurate response parameter
+estimation, prediction, and goodness of fit, but are not of
+substantive interest to the hypothesis under examination. For example,
+in a study examining the effect of post-secondary education on
+lifetime earnings, some extraneous variables might be gender,
+ethnicity, social class, genetics, intelligence, age, and so forth. A
+variable is extraneous only when it can be assumed (or shown) to
+influence the dependent variable. If included in a regression, it can
+improve the fit of the model. If it is excluded from the regression
+and if it has a non-zero covariance with one or more of the
+independent variables of interest, its omission will bias the
+regression's result for the effect of that independent variable of
+interest. This effect is called confounding or omitted variable bias;
+in these situations, design changes and/or statistical control is
+necessary.
+
+Extraneous variables are often classified into three types:
+
+1. Subject variables, which are the characteristics of the individuals
+   being studied that might affect their actions. These variables
+   include age, gender, health status, mood, background, etc.
+2. Experimental variables are characteristics of the persons
+   conducting the experiment which might influence how a person
+   behaves. Gender, the presence of racial discrimination, language,
+   or other factors may qualify as such variables.
+3. Situational variables are features of the environment in which the
+   study or research was conducted, which have a bearing on the
+   outcome of the experiment in a negative way. Included are the air
+   temperature, level of activity, lighting, and the time of day.
+
+In quasi-experiments, differentiating between dependent and other
+variables may be downplayed in favour of differentiating between those
+variables that can be altered by the researcher and those that
+cannot. Variables in quasi-experiments may be referred to as
+"extraneous variables", "subject variables", "experimental variables",
+"situational variables", "pseudo-independent variables", "ex post
+facto variables", "natural group variables" or "non-manipulated
+variables".
+
+In modelling, variability that is not covered by the explanatory
+variable is designated by ei and is known as the "residual", "side
+effect", "error", "unexplained share", "residual variable", or
+"tolerance".
+#+END_QUOTE
 ** 5
 shown
 given
