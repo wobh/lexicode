@@ -1,0 +1,129 @@
+#+TITLE:     Latin roots and stems
+#+AUTHOR:    William Clifford
+#+EMAIL:     wobh@yahoo.com
+#+DATE:      2014-11-03 Mon
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:6 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+* Introduction
+
+We've adopted many latin words, among other things for their
+combinatorial properties. There are many root words, prefixes, and
+suffixes to append to them to create branching trees of
+meanings. Here I try to work out their possibilities and discover
+patterns I've been taking for granted.
+
+This will not be exhaustive.
+
+* TODO Prefixes
+
+| prefix  | meaning                   | alternates                   | examples                                                                             |
+|---------+---------------------------+------------------------------+--------------------------------------------------------------------------------------|
+| ab-     | away from                 | a-, ad-, au-, av-            | abnormal, absurd, absent, abstract, auference[fn:1], aversion                        |
+| ac-     | sharp, pointed            | acu-                         | acute                                                                                |
+| ad-     | toward                    | a-, ab-, af-, ag-            | accept, (accurate?), adapt, affect, aggregate, approximate, ascend                   |
+| ag-     | do, go, move              | ig-, act=                    | act, agenda, agent, agile, agitate, amb/ig/uous, mit/ig/ate, nav/ig/ate, (cogitate?) |
+| al-     | other                     | alter-                       | alias, alibi, alien, alter, alternate, altruism                                      |
+| am-     | both, both sides          | amb(io)-, an-,               | ambiguous, ambient, abivalent, ambit[fn:2], ancipital[fn:3], andante[fn:4]           |
+| ante-   | before, prior, in front   | anti-                        | anticipate, antiquity                                                                |
+| aut-    | self, from within         | auto-                        | autarch, autonomy, authentic, automatic                                              |
+| bi-     | two                       | bin-, bis-                   | binary, bicycle, bisect                                                              |
+| co-     | with, together            | col-, com-, con-, cor-       |                                                                                      |
+| contra- | against                   |                              |                                                                                      |
+| de-     | down, away from, removing |                              |                                                                                      |
+| e-      | from, out                 | ex-, ef-                     | exclude, exit, extend, extrude                                                       |
+| in-     |                           | il-, im-                     | illuminate, import, incur, intend, invite                                            |
+| inter-  | among, between            |                              | intersection                                                                         |
+| o-      | against                   | ob-, oc-, of-, og-, op-, os- | obdurate, occur, omit                                                                |
+| per-    | through, thorough         |                              | persist                                                                              |
+| peri    | around                    |                              | perimeter                                                                            |
+| post-   | after                     |                              |                                                                                      |
+| pre-    | before                    |                              |                                                                                      |
+| pro-    | fore, forward             |                              |                                                                                      |
+| re-     | again, back               | rec-                         | recur, recede, retract                                                               |
+| su-     | below                     | sub-, suf-, sug-, sup-, sus- | submerge, substance,                                                                 |
+| super-  | above                     |                              |                                                                                      |
+| trans-  |                           |                              |                                                                                      |
+
+[fn:1] aufer: to take away
+[fn:2] ambit: bounds, circuit, compass, extent, range, reach, scope, sweep
+[fn:3] anciptal: double-edged
+[fn:4] andante: moderately slow (music direction)
+
+* TODO Roots
+| prefix | meaning               | alternates         | examples                                                                                |
+|--------+-----------------------+--------------------+-----------------------------------------------------------------------------------------|
+| -cap   | to hold, take         | -cip, -capt, -cept | capture, capable, caption, concept, except, forcept, intercept, incipient, recipient    |
+| -fer   | to bear, to carry     |                    |                                                                                         |
+| -dict  |                       |                    |                                                                                         |
+| -duce  |                       |                    |                                                                                         |
+| -mit   | to send               | -miss              | missile, transmit,                                                                      |
+| -ordin |                       |                    |                                                                                         |
+| -bine  |                       |                    |                                                                                         |
+| -spec  |                       |                    |                                                                                         |
+| -surd  |                       |                    |                                                                                         |
+| -ject  |                       |                    |                                                                                         |
+| -crea  | to make               |                    | create, creature, recreate, procreate                                                   |
+| -cur   | to care for           |                    | cure, curate, curious, accurate, secure, sinecure[fn:10]                                |
+| -curr  | run, course           | -curs              | concur, corridor, courier, current, cursor, cursive, discourse, incur, recur, succor(?) |
+| -curv  | bent                  |                    | curve, curvature,                                                                       |
+| -lino  | daub, besmear, anoint |                    | delete                                                                                  |
+
+[fn:10] a cushy job with little work but great pay: "sine cura"
+"without care"
+
+** hmm
+
+from the wikipedia page
+
+| prefix | meaning                    | alternates        | examples                                                               |
+|--------+----------------------------+-------------------+------------------------------------------------------------------------|
+| ambul- | walk                       |                   | ambulance, abulatory, amble, preamble                                  |
+| ampl-  | abundant, bountiful, large |                   | ample, amplify, amplitude                                              |
+| anim-  | breath, life, spirit       |                   | animus/anima, animal, animation                                        |
+| aper-  | open                       |                   | apeture, overt(?), pert(?)                                             |
+| alt-   | high, deep                 |                   | altitude, altimeter                                                    |
+| ann-   | year, yearly               | enn-              | annual, anniversary, per/enn/ial, cent/enn/ial, mil/enn/ium            |
+| aqu-   | water                      | aqu(aei)-         | aquatic, aquarium, aquaduct, aquifer                                   |
+| ara-   | plow,till                  |                   | arable                                                                 |
+| arbit- | judge                      |                   | arbitrary, abiter                                                      |
+| arcan- | box                        |                   | arcane, arcanum                                                        |
+| ard-   | heat, glow, passion        |                   | ardent, ardor, arson                                                   |
+| ardu-  | difficult                  |                   | arduous                                                                |
+| art-   | make, maker, making, made  |                   | artist, artisan, artillary(?), artific(e/al), inert(?)/inertia(?)      |
+| asper- | rough                      |                   | asperity, exasperate                                                   |
+| audac- | daring                     |                   | audacity, audacious                                                    |
+| audi-  | hearing, listening, sound  |                   | audible, audio, audition,                                              |
+| aug-   | grow, increase             | auct-             | augment, auction, augur, author, august, auxiliary, inauguration       |
+| av-    | crave, desire              |                   | avarice, avid                                                          |
+| axi-   | balance, pivotal, hub      |                   | axis, axel                                                             |
+| ben-   | good                       | bon-              | bonus, boon, benefit                                                   |
+| bib-   | drink                      |                   | bib, imbibe, beer, beverage                                            |
+| brev-  | short (time)               |                   | brief, bevity, abbreviate,                                             |
+| cad-   | fall                       | cid-, cas-        | accident, cadence, cascade, cadaver, case(?)                           |
+| caed-  | cut, kill                  | cid-, cis-, caes- | caesura, exorcise, incise, scissors, (homo-, geno-, demo-, germi-)cide |
+| cal-   | call                       |                   | calandar, claim, class, conciliate, council, intercalate, nomenclature |
+| calc-  | stone                      |                   | calculate, calcitrant,                                                 |
+| calo-  | heat                       | calor-, calori-   | calorie, caldtron, caloric                                             |
+| calum- | trick, slander             |                   | calumn(y/ious), cavil, challenge                                       |
+| camer- | vault                      |                   | camera, bicameral                                                      |
+| camp-  | field                      |                   | camp, campaign, champion                                               |
+| can-   | dog                        |                   | canine                                                                 |
+* TODO Suffixes
+
+- -ate :: 
+- -ion ::
+
+* TODO References
+
+-
+  http://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
