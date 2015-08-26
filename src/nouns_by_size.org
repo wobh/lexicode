@@ -15,12 +15,51 @@
 
 * lists
 ** 3
-- key
 - arm
-- way
+- leg
+-----
+- key
 - end
 - bit
+- dot
+- way
 - ray
+- arc
+- net
+- map
+- orb
+- lux
+-----
+- box
+- bag
+-----
+- ice
+- sky
+- air
+-----
+- bot
+- pod
+- elf
+- imp
+-----
+- ken
+- hap
+- vis
+- vim
+-----
+- nix
+- not
+- nor
+- xor
+- non
+- neg
+-----
+- nil
+- one
+- two
+-----
+- mid
+- aft
 ** 4
 - root
 - tree
@@ -29,8 +68,11 @@
 - leaf
 -----
 - knot
-- node
 - rope
+-----
+- node
+- edge
+- 
 -----
 - wall
 - path
@@ -58,6 +100,10 @@
 - span
 - goal
 -----
+- fire
+- wind
+- dirt
+- 
 - mean :: means, way
 - case :: example, instance
 ** 5
