@@ -2,16 +2,6 @@
 #+DATE: <2014-10-20 Mon>
 #+AUTHOR: William Clifford
 #+EMAIL: wobh@yahoo.com
-#+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
-#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil stat:t
-#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
-#+DESCRIPTION: Synonyms of nouns by size
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS: nouns, synonyms
-#+LANGUAGE: en
-#+SELECT_TAGS: export
 
 * lists
 ** 3
@@ -80,10 +70,14 @@
 - door
 - lock
 -----
-- mark
-- note
+- book
+- page
 - text
+- note
 - line
+- word
+- icon
+- mark
 -----
 - fork
 - twin
@@ -95,15 +89,20 @@
 - hand
 - wing
 - foot
+- face
 -----
 - mode
 - span
 - goal
+- base
 -----
 - fire
 - wind
 - dirt
 - 
+-----
+- 
+-----
 - mean :: means, way
 - case :: example, instance
 ** 5
@@ -124,12 +123,14 @@
 - sense
 - shape
 - color
+- curve
 -----
 - being
 - thing
 - place
 - event
 - world
+- cache
 -----
 - track
 - trail
@@ -141,7 +142,19 @@
 - class
 - order
 - model
-- cache
+-----
+- codex
+- glyph
+- image
+-----
+- agent
+- actor
+-----
+- water
+- flame
+- earth
+- 
+------ 
 ** 6
 - series
 - branch
@@ -149,14 +162,22 @@
 - street
 - stream
 - entity
+- signal
+- number
+- length
+-----
+- corner
+- vertex
+- volume
 ** 7
 - channel
 - element
+
 ** 8
 - exchange
 - consumer
 - producer
-
+- distance
 * positioning
 - far/near
 - now/then
@@ -176,3 +197,15 @@
 - separate
 - nor
 - not
+
+* COMMENT org settings
+#+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: Synonyms of nouns by size
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: nouns, synonyms
+#+LANGUAGE: en
+#+SELECT_TAGS: export

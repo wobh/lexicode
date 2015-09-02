@@ -2,16 +2,6 @@
 #+DATE: <2014-10-19 Sun>
 #+AUTHOR: William Clifford
 #+EMAIL: wobh@yahoo.com
-#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment date:t
-#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
-#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
-#+DESCRIPTION: Synonyms of verbs by size
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS: verbs, synonyms
-#+LANGUAGE: en
-#+SELECT_TAGS: export
 
 Synonyms of verbs by size
 
@@ -63,67 +53,70 @@ Synonyms of verbs by size
 
 * from 4
 
-| 4    | 5           | 6      |       7 | concept            | syns      | ants |
-|------+-------------+--------+---------+--------------------+-----------+------|
-| make |             | create |         |                    | cast      |      |
-| read |             |        |         |                    |           |      |
-| edit | alter       | change |         | alteration         |           |      |
-| help |             | assist |         |                    |           |      |
-| wipe | clear       |        |         |                    |           |      |
-| mark |             |        |         |                    |           |      |
-| hold |             |        |         |                    | keep,stow |      |
-| stow |             |        |         |                    |           |      |
-| bear |             |        |         |                    |           |      |
-| fold |             |        |         |                    |           |      |
-| seek |             | search |         |                    | find      |      |
-| find |             |        |         |                    |           |      |
-| move |             |        |         |                    |           |      |
-| send |             |        |         |                    |           |      |
-| bind |             |        |         |                    |           |      |
-| gain |             |        |         |                    |           |      |
-| lose |             |        |         |                    |           |      |
-| give |             |        |         |                    |           |      |
-| take |             |        |         |                    |           |      |
-| turn |             |        |         |                    |           |      |
-| deem | think,judge |        |         | acceptance         | doom      |      |
-| doom | judge       |        |         | acceptance         | deem      |      |
-| plan |             |        |         |                    |           |      |
-| swap | trade       |        |         | exchange           |           |      |
-| rate | score       |        | measure |                    | rank      |      |
-| jump |             |        |         |                    |           |      |
-| copy |             |        |         |                    |           |      |
-| fork | split       | divide |         | division           |           |      |
-| cast | throw       |        |         |                    | make      |      |
-| push |             |        |         |                    |           | pull |
-| pull |             |        |         |                    | yank,grab | push |
-| open |             |        |         |                    |           | shut |
-| shut |             |        |         |                    |           | open |
-| mend |             | repair |         |                    | heal      |      |
-| heal |             | repair |         |                    | mend      |      |
-| lead |             |        |         |                    |           |      |
-| bend |             |        |         |                    |           |      |
-| meet |             |        |         |                    | join      |      |
-| join |             |        |         |                    | meet      |      |
-| pass |             |        |         |                    |           |      |
-| wean |             |        |         |                    |           |      |
-| fail |             |        |         |                    |           |      |
-| wane |             | wither |         | reduction,diminish |           |      |
-| kill |             |        |         |                    |           |      |
-| yank |             |        |         |                    |           |      |
-| grab |             |        |         |                    |           |      |
-| save |             |        |         |                    |           |      |
-| trim |             |        |         |                    |           |      |
-| toss | throw       |        |         |                    |           |      |
-| tear |             |        |         | destruction        | fork      | mend |
-| draw |             |        |         |                    |           |      |
-| vary | alter       | differ |         |                    |           |      |
-| look |             |        |         |                    |           |      |
-| loop |             |        |         |                    |           |      |
-| shun |             |        |         | rejection          | deny      | take |
-| deny |             |        |         | rejection          | shun      | take |
-| pack |             |        |         |                    |           |      |
-| ship |             |        |         |                    | send      |      |
-| lure | tempt       |        |         |                    |           |      |
+| 4    | 5           | 6      |       7 | concept            | syns      | ants       |
+|------+-------------+--------+---------+--------------------+-----------+------------|
+| make |             | create |         |                    | cast      |            |
+| read |             |        |         |                    |           |            |
+| edit | alter       | change |         | alteration         |           |            |
+| help |             | assist |         |                    |           |            |
+| wipe | clear       |        |         |                    |           |            |
+| mark |             |        |         |                    |           |            |
+| hold |             |        |         |                    | keep,stow |            |
+| stow |             |        |         |                    |           |            |
+| bear |             |        |         |                    |           |            |
+| fold |             |        |         |                    |           |            |
+| seek |             | search |         |                    | find      |            |
+| find |             |        |         |                    |           |            |
+| move |             |        |         |                    |           |            |
+| send |             |        |         |                    |           |            |
+| bind |             |        |         |                    |           |            |
+| gain |             |        |         |                    |           |            |
+| lose |             |        |         |                    |           |            |
+| give |             |        |         |                    |           |            |
+| take |             |        |         |                    |           |            |
+| turn |             |        |         |                    | spin      | still,stay |
+| deem | think,judge |        |         | acceptance         | doom      |            |
+| doom | judge       |        |         | acceptance         | deem      |            |
+| plan |             |        |         |                    |           |            |
+| swap | trade       |        |         | exchange           |           |            |
+| rate | score       |        | measure |                    | rank      |            |
+| jump |             |        |         |                    |           |            |
+| copy |             |        |         |                    |           |            |
+| fork | split       | divide |         | division           |           |            |
+| cast | throw       |        |         |                    | make      |            |
+| push |             |        |         |                    |           | pull       |
+| pull |             |        |         |                    | yank,grab | push       |
+| open |             |        |         |                    |           | shut       |
+| shut |             |        |         |                    |           | open       |
+| mend |             | repair |         |                    | heal      |            |
+| heal |             | repair |         |                    | mend      |            |
+| lead |             |        |         |                    |           |            |
+| bend |             |        |         |                    |           |            |
+| meet |             |        |         |                    | join      |            |
+| join |             |        |         |                    | meet      |            |
+| pass |             |        |         |                    |           |            |
+| wean |             |        |         |                    |           |            |
+| fail |             |        |         |                    |           |            |
+| wane |             | wither |         | reduction,diminish |           |            |
+| kill |             |        |         |                    |           |            |
+| yank |             |        |         |                    |           |            |
+| grab |             |        |         |                    |           |            |
+| save |             |        |         |                    |           |            |
+| trim |             |        |         |                    |           |            |
+| toss | throw       |        |         |                    |           |            |
+| tear |             |        |         | destruction        | fork      | mend       |
+| draw |             |        |         |                    |           |            |
+| vary | alter       | differ |         |                    |           |            |
+| look |             |        |         |                    |           |            |
+| loop |             |        |         |                    |           |            |
+| shun |             |        |         | rejection          | deny      | take       |
+| deny |             |        |         | rejection          | shun      | take       |
+| pack |             |        |         |                    |           |            |
+| ship |             |        |         |                    | send      |            |
+| lure | tempt       |        |         |                    |           |            |
+| wait |             | remain |         |                    | bide,stay |            |
+| tend |             |        |         |                    |           |            |
+
 * from 5
 - build
 - alter
@@ -169,6 +162,7 @@ Synonyms of verbs by size
 - shrive
 - switch
 - browse
+- cleave
 * from 7
 - enqueue
 - dequeue
@@ -296,6 +290,8 @@ Synonyms of verbs by size
 - deny
 - pack
 - ship
+- call
+- drag
 ** 5
 - build
 - alter
@@ -315,6 +311,14 @@ Synonyms of verbs by size
 - spurn
 - purge
 - cross
+- trade
+- apply
+- print
+- sniff
+- think
+- twist
+- quell
+- cover
 ** 6
 - create
 - update
@@ -341,6 +345,7 @@ Synonyms of verbs by size
 - shrive
 - switch
 - browse
+- tinker
 ** 7
 - enqueue
 - dequeue
@@ -401,3 +406,15 @@ Less useful for todo lists:
 - hurt
 - burst
 - wed
+
+* COMMENT org settings
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: Synonyms of verbs by size
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: verbs, synonyms
+#+LANGUAGE: en
+#+SELECT_TAGS: export

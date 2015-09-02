@@ -2,17 +2,7 @@
 #+AUTHOR:    William Clifford
 #+EMAIL:     wobh@yahoo.com
 #+DATE:      2014-11-03 Mon
-#+DESCRIPTION:
-#+KEYWORDS:
-#+LANGUAGE:  en
-#+OPTIONS:   H:6 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+EXPORT_SELECT_TAGS: export
-#+EXPORT_EXCLUDE_TAGS: noexport
-#+LINK_UP:   
-#+LINK_HOME: 
-#+XSLT:
+#+DESCRIPTION: Collection of common latin roots and stems used in English
 
 * Introduction
 
@@ -26,33 +16,33 @@ This will not be exhaustive.
 
 * TODO Prefixes
 
-| prefix  | meaning                   | alternates                   | examples                                                                             |
-|---------+---------------------------+------------------------------+--------------------------------------------------------------------------------------|
-| ab-     | away from                 | a-, ad-, au-, av-            | abnormal, absurd, absent, abstract, auference[fn:1], aversion                        |
-| ac-     | sharp, pointed            | acu-                         | acute                                                                                |
-| ad-     | toward                    | a-, ab-, af-, ag-            | accept, (accurate?), adapt, affect, aggregate, approximate, ascend                   |
-| ag-     | do, go, move              | ig-, act=                    | act, agenda, agent, agile, agitate, amb/ig/uous, mit/ig/ate, nav/ig/ate, (cogitate?) |
-| al-     | other                     | alter-                       | alias, alibi, alien, alter, alternate, altruism                                      |
-| am-     | both, both sides          | amb(io)-, an-,               | ambiguous, ambient, abivalent, ambit[fn:2], ancipital[fn:3], andante[fn:4]           |
-| ante-   | before, prior, in front   | anti-                        | anticipate, antiquity                                                                |
-| aut-    | self, from within         | auto-                        | autarch, autonomy, authentic, automatic                                              |
-| bi-     | two                       | bin-, bis-                   | binary, bicycle, bisect                                                              |
-| co-     | with, together            | col-, com-, con-, cor-       |                                                                                      |
-| contra- | against                   |                              |                                                                                      |
-| de-     | down, away from, removing |                              |                                                                                      |
-| e-      | from, out                 | ex-, ef-                     | exclude, exit, extend, extrude                                                       |
-| in-     |                           | il-, im-                     | illuminate, import, incur, intend, invite                                            |
-| inter-  | among, between            |                              | intersection                                                                         |
-| o-      | against                   | ob-, oc-, of-, og-, op-, os- | obdurate, occur, omit                                                                |
-| per-    | through, thorough         |                              | persist                                                                              |
-| peri    | around                    |                              | perimeter                                                                            |
-| post-   | after                     |                              |                                                                                      |
-| pre-    | before                    |                              |                                                                                      |
-| pro-    | fore, forward             |                              |                                                                                      |
-| re-     | again, back               | rec-                         | recur, recede, retract                                                               |
-| su-     | below                     | sub-, suf-, sug-, sup-, sus- | submerge, substance,                                                                 |
-| super-  | above                     |                              |                                                                                      |
-| trans-  |                           |                              |                                                                                      |
+| prefix  | meaning                   | alternates                           | examples                                                                             |
+|---------+---------------------------+--------------------------------------+--------------------------------------------------------------------------------------|
+| ab-     | away from                 | a-, ad-, au-, av-                    | abnormal, absurd, absent, abstract, auference[fn:1], aversion                        |
+| ac-     | sharp, pointed            | acu-                                 | acute                                                                                |
+| ad-     | toward                    | a-, ab-, af-, ag-                    | accept, (accurate?), adapt, affect, aggregate, approximate, ascend                   |
+| ag-     | do, go, move              | ig-, act=                            | act, agenda, agent, agile, agitate, amb/ig/uous, mit/ig/ate, nav/ig/ate, (cogitate?) |
+| al-     | other                     | alter-                               | alias, alibi, alien, alter, alternate, altruism                                      |
+| am-     | both, both sides          | amb(io)-, an-,                       | ambiguous, ambient, abivalent, ambit[fn:2], ancipital[fn:3], andante[fn:4]           |
+| ante-   | before, prior, in front   | anti-                                | anticipate, antiquity                                                                |
+| aut-    | self, from within         | auto-                                | autarch, autonomy, authentic, automatic                                              |
+| bi-     | two                       | bin-, bis-                           | binary, bicycle, bisect                                                              |
+| co-     | with, together            | col-, com-, con-, cor-               |                                                                                      |
+| contra- | against                   |                                      |                                                                                      |
+| de-     | down, away from, removing |                                      |                                                                                      |
+| e-      | from, out                 | ex-, ef-                             | exclude, exit, extend, extrude                                                       |
+| in-     |                           | il-, im-                             | illuminate, import, incur, intend, invite                                            |
+| inter-  | among, between            |                                      | intersection                                                                         |
+| o-      | against                   | ob-, oc-, of-, og-, op-, os-         | obdurate, occur, omit                                                                |
+| per-    | through, thorough         |                                      | persist                                                                              |
+| peri-   | around                    |                                      | perimeter                                                                            |
+| post-   | after                     |                                      |                                                                                      |
+| pre-    | before                    |                                      |                                                                                      |
+| pro-    | fore, forward             |                                      |                                                                                      |
+| re-     | again, back               | rec-                                 | recur, recede, retract                                                               |
+| su-     | below, under, beneath     | sub-, suf-, sug-, sup-, sus-, subter | submerge, substance, subterfuge                                                      |
+| super-  | above, over               | sur-,                                | surfeit, surreal                                                                     |
+| trans-  | across                    |                                      |                                                                                      |
 
 [fn:1] aufer: to take away
 [fn:2] ambit: bounds, circuit, compass, extent, range, reach, scope, sweep
@@ -127,3 +117,14 @@ from the wikipedia page
 
 -
   http://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
+* COMMENT org settings
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:6 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
