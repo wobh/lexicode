@@ -62,14 +62,16 @@
 -----
 - node
 - edge
-- 
+- grid
 -----
 - wall
 - path
 - gate
 - door
 - lock
+- home
 -----
+- code
 - book
 - page
 - text
@@ -99,9 +101,7 @@
 - fire
 - wind
 - dirt
-- 
------
-- 
+-
 -----
 - mean :: means, way
 - case :: example, instance
@@ -114,6 +114,7 @@
 - style
 - stuff
 - stash
+- stone
 -----
 - space
 - stage
@@ -124,6 +125,8 @@
 - shape
 - color
 - curve
+- point
+- cycle
 -----
 - being
 - thing
@@ -146,6 +149,7 @@
 - codex
 - glyph
 - image
+- graph
 -----
 - agent
 - actor
@@ -155,9 +159,11 @@
 - earth
 - 
 ------ 
+- shard
+- shore
+- trunk 
 ** 6
 - series
-- branch
 - fellow
 - street
 - stream
@@ -169,6 +175,14 @@
 - corner
 - vertex
 - volume
+- sector
+- circle
+- metric
+-----
+- scalar
+- vector
+- matrix
+- tensor
 ** 7
 - channel
 - element
