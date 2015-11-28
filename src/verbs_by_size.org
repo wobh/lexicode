@@ -16,46 +16,48 @@ Synonyms of verbs by size
 
 * from 3
 
-| 3   | 4         | 5           | 6             | concept              | syns    |
-|-----+-----------+-------------+---------------+----------------------+---------|
-| act | exec      | apply       |               | evaluation,execution | run     |
-| add | grow      | amend       | append,extend | addition,extension   | eke,wax |
-| ask |           |             |               | request,require      |         |
-| bid | give      | offer       | tender        | attempt,propose      | try     |
-| cut | take      | split       | remove        | reduction            | div     |
-| def | defn      |             | define        | definition           | let     |
-| div | divd      | split       | divide        | division,reduction   | cut     |
-| don | wear      |             |               | decoration,amendment | fit     |
-| dub | name      |             |               | association          |         |
-| err | fail      | flunk       |               | rejection            |         |
-| eke | grow      |             |               | append               | add,wax |
-| fit | mold,form | adapt,shape | sculpt        | configuration        |         |
-| fix | mend,keep |             | fasten,repair | constantization      |         |
-| get | take      | fetch       |               | retrieve,            |         |
-| hap |           | occur       | happen        | events               |         |
-| ken | know      | learn       | reckon        | association          |         |
-| let |           | allow       |               | definition           | def     |
-| new | make      |             | create        |                      |         |
-| nim | take      | steal       | thieve        | reduction,removal    |         |
-| nix | deny      |             | refuse        | rejection            |         |
-| pop | take      |             |               |                      |         |
-| put |           | alter       | change,insert | mutation,amendment   | set     |
-| rid | drop      | spurn       | reject        | rejection,removal    |         |
-| run | exec,work |             |               | execution            | act     |
-| say | tell,show | speak,print |               | presentation,display |         |
-| see | look,seek | watch       | notice,search | observation          |         |
-| set |           |             | define        | definition,amendment | put     |
-| tie | bind      |             |               | association          |         |
-| try | test      | prove       |               | attempt              | bid     |
-| use | work      | apply       |               | evaluation,execution | act     |
-| vow |           |             |               | promise              |         |
-| wax | grow      |             |               | increase             | add,eke |
+| 3   | 4         | 5           | 6             | concept               | syns    |
+|-----+-----------+-------------+---------------+-----------------------+---------|
+| act | exec      | apply       |               | evaluation,execution  | run     |
+| add | grow      | amend       | append,extend | addition,extension    | eke,wax |
+| ask |           |             |               | request,require       |         |
+| bid | give      | offer       | tender        | attempt,propose       | try     |
+| cut | take      | split       | remove        | reduction             | div     |
+| def | defn      |             | define        | definition            | let     |
+| div | divd      | split       | divide        | division,reduction    | cut     |
+| don | wear      |             |               | decoration,amendment  | fit     |
+| dub | name      |             |               | association           |         |
+| err | fail      | flunk       |               | rejection             |         |
+| eke | grow      |             |               | append                | add,wax |
+| fit | mold,form | adapt,shape | sculpt        | configuration         |         |
+| fix | mend,keep |             | fasten,repair | constantization       |         |
+| get | take      | fetch       |               | retrieve,             |         |
+| hap |           | occur       | happen        | events                |         |
+| ken | know      | learn       | reckon        | association           |         |
+| let |           | allow       |               | definition            | def     |
+| new | make      | build       | create        | creation,composition  |         |
+| nim | take      | steal       | thieve        | reduction,removal     |         |
+| nix | deny      |             | refuse        | rejection             |         |
+| ply | fold      |             | reduce        | reduction,abstraction |         |
+| pop | take      |             |               |                       |         |
+| put | stow,hold | alter,amend | change,insert | mutation,amendment    | set     |
+| rid | drop      | spurn       | reject        | rejection,removal     |         |
+| run | exec,work |             |               | execution             | act     |
+| say | tell,show | speak,print |               | presentation,display  |         |
+| see | look,seek | watch       | notice,search | observation           |         |
+| set |           |             | define        | definition,amendment  | put     |
+| tap |           | touch       |               |                       |         |
+| tie | bind      |             |               | association           |         |
+| try | test      | prove       |               | attempt               | bid     |
+| use | work      | apply       |               | evaluation,execution  | act     |
+| vow |           |             | expect        | promise               |         |
+| wax | grow      |             |               | increase              | add,eke |
 
 * from 4
 
-| 4    | 5           | 6      |       7 | concept            | syns      | ants       |
+| 4    | 5           | 6      | 7       | concept            | syns      | ants       |
 |------+-------------+--------+---------+--------------------+-----------+------------|
-| make |             | create |         |                    | cast      |            |
+| make | build       | create |         |                    | cast      |            |
 | read |             |        |         |                    |           |            |
 | edit | alter       | change |         | alteration         |           |            |
 | help |             | assist |         |                    |           |            |
@@ -116,26 +118,40 @@ Synonyms of verbs by size
 | lure | tempt       |        |         |                    |           |            |
 | wait |             | remain |         |                    | bide,stay |            |
 | tend |             |        |         |                    |           |            |
-
+| pose |             |        | arrange |                    |           |            |
+| know |             |        |         |                    |           |            |
+| walk |             |        |         |                    |           |            |
+| step |             |        |         |                    |           |            |
+| skip |             |        |         |                    |           |            |
+| bide |             |        |         |                    |           |            |
+| drop |             |        |         |                    |           |            |
+| emit |             |        |         |                    |           |            |
 * from 5
-- build
-- alter
-- fetch
-- erase
-- write
-- bring
-- throw
-- catch
-- track
-- watch
-- guide
-- trace
-- reach
-- adapt
-- merge
-- spurn
-- purge
-- cross
+| 5     | 6      |
+|-------+--------|
+| build | create |
+| alter | change |
+| fetch |        |
+| erase | delete |
+| write | render |
+| bring |        |
+| throw |        |
+| catch |        |
+| track | follow |
+| watch | follow |
+| guide |        |
+| trace |        |
+| reach |        |
+| adapt |        |
+| merge |        |
+| spurn |        |
+| purge |        |
+| cross |        |
+| pitch |        |
+| apply |        |
+| touch |        |
+| sense |        |
+
 * from 6
 - create
 - update
@@ -174,6 +190,7 @@ Synonyms of verbs by size
 - stretch
 - dismiss
 - request
+- arrange
 - respond
 - decline
 - discard
