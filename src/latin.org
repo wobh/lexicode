@@ -50,7 +50,7 @@ This will not be exhaustive.
 [fn:4] andante: moderately slow (music direction)
 
 * TODO Roots
-| prefix | meaning               | alternates         | examples                                                                                |
+| root   | meaning               | alternates         | examples                                                                                |
 |--------+-----------------------+--------------------+-----------------------------------------------------------------------------------------|
 | -cap   | to hold, take         | -cip, -capt, -cept | capture, capable, caption, concept, except, forcept, intercept, incipient, recipient    |
 | -fer   | to bear, to carry     |                    |                                                                                         |
@@ -115,8 +115,7 @@ from the wikipedia page
 
 * TODO References
 
--
-  http://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
+- http://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
 * COMMENT org settings
 #+KEYWORDS:
 #+LANGUAGE:  en

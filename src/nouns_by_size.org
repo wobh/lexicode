@@ -2,11 +2,16 @@
 #+DATE: <2014-10-20 Mon>
 #+AUTHOR: William Clifford
 #+EMAIL: wobh@yahoo.com
+#+DESCRIPTION: Synonyms of nouns by size
 
 * lists
 ** 3
 - arm
 - leg
+-----
+- egg
+- ova
+- cel
 -----
 - key
 - end
@@ -22,6 +27,10 @@
 -----
 - box
 - bag
+- set
+-----
+- row
+- col
 -----
 - ice
 - sky
@@ -43,6 +52,7 @@
 - xor
 - non
 - neg
+- nul
 -----
 - nil
 - one
@@ -63,6 +73,8 @@
 - node
 - edge
 - grid
+- list
+- item
 -----
 - wall
 - path
@@ -149,6 +161,7 @@
 - codex
 - glyph
 - image
+- token
 - graph
 -----
 - agent
@@ -161,7 +174,16 @@
 ------ 
 - shard
 - shore
-- trunk 
+- trunk
+------
+- asset
+- facet
+- field
+- table
+- tuple
+-----
+- query
+- reply
 ** 6
 - series
 - fellow
@@ -171,6 +193,11 @@
 - signal
 - number
 - length
+- aspect
+-----
+- target
+- source
+- origin
 -----
 - corner
 - vertex
@@ -183,27 +210,38 @@
 - vector
 - matrix
 - tensor
+-----
+- answer
+
 ** 7
 - channel
 - element
+- request
 
 ** 8
 - exchange
 - consumer
 - producer
 - distance
+- response
 * positioning
-- far/near
-- now/then
-- this/that
-- here/there
-- hither/thither
-- aft/fore
+- far-near
+- now-then
+- this-that
+- here-there
+- hither-thither
+- aft-fore
 - ere
 - eve
 - yon
-- oft
+- oft-rare
 - yore
+- twixt/tween
+- before-behind
+- foremost-hindmost
+- over-under
+- around
+- in-out
 * statefulness
 - exclusive (fermions)
 - inclusive (bosons)
@@ -218,7 +256,6 @@
 #+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil stat:t
 #+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
 #+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
-#+DESCRIPTION: Synonyms of nouns by size
 #+EXCLUDE_TAGS: noexport
 #+KEYWORDS: nouns, synonyms
 #+LANGUAGE: en

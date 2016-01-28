@@ -58,7 +58,7 @@ Synonyms of verbs by size
 | 4    | 5           | 6      | 7       | concept            | syns      | ants       |
 |------+-------------+--------+---------+--------------------+-----------+------------|
 | make | build       | create |         |                    | cast      |            |
-| read |             |        |         |                    |           |            |
+| read | parse       |        |         |                    | (copy?)   |            |
 | edit | alter       | change |         | alteration         |           |            |
 | help |             | assist |         |                    |           |            |
 | wipe | clear       |        |         |                    |           |            |
@@ -151,7 +151,8 @@ Synonyms of verbs by size
 | apply |        |
 | touch |        |
 | sense |        |
-
+| leave |        |
+| twist |        |
 * from 6
 - create
 - update
@@ -179,6 +180,7 @@ Synonyms of verbs by size
 - switch
 - browse
 - cleave
+- answer
 * from 7
 - enqueue
 - dequeue
@@ -190,6 +192,7 @@ Synonyms of verbs by size
 - stretch
 - dismiss
 - request
+- inquire
 - arrange
 - respond
 - decline
