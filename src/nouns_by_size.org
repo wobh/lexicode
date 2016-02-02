@@ -8,12 +8,16 @@
 ** 3
 - arm
 - leg
+- eye
+- ear
+- toe
 -----
 - egg
 - ova
 - cel
 -----
 - key
+- tag
 - end
 - bit
 - dot
@@ -24,6 +28,8 @@
 - map
 - orb
 - lux
+- rod
+- ell
 -----
 - box
 - bag
@@ -35,6 +41,7 @@
 - ice
 - sky
 - air
+- gem
 -----
 - bot
 - pod
@@ -58,6 +65,7 @@
 - one
 - two
 -----
+- tip
 - mid
 - aft
 ** 4
@@ -92,6 +100,9 @@
 - word
 - icon
 - mark
+- fold
+- lobe
+- cusp
 -----
 - fork
 - twin
@@ -146,6 +157,7 @@
 - event
 - world
 - cache
+- realm
 -----
 - track
 - trail
@@ -162,12 +174,13 @@
 - glyph
 - image
 - token
+- label
 - graph
 -----
 - agent
 - actor
 -----
-- water
+- water 
 - flame
 - earth
 - 
@@ -175,6 +188,12 @@
 - shard
 - shore
 - trunk
+------
+- sight
+- sound
+- scent
+- taste
+- sense
 ------
 - asset
 - facet
@@ -217,13 +236,18 @@
 - channel
 - element
 - request
-
+- pattern
+- segment
+- section
+- 
 ** 8
 - exchange
 - consumer
 - producer
 - distance
+- sequence
 - response
+- category
 * positioning
 - far-near
 - now-then
@@ -242,6 +266,14 @@
 - over-under
 - around
 - in-out
+- right-left
+- starboard-port
+- dexter-sinister
+
+| above | below |
+| upper | lower |
+| inner | outer |
+| until | since |
 * statefulness
 - exclusive (fermions)
 - inclusive (bosons)
@@ -250,6 +282,118 @@
 - nor
 - not
 
+* four elements
+** Sort
+| earth  | water | air    | fire |
+|--------+-------+--------+------|
+| solid  | fluid |        |      |
+|--------+-------+--------+------|
+|        | flow  | blow   | glow |
+| freeze |       | breeze |      |
+** Size
+| 3   | 4    | 5     | 6      |
+|-----+------+-------+--------|
+| gem | rock | stone |        |
+|     | dirt | earth | ground |
+|     | land |       |        |
+|     |      | solid |        |
+|-----+------+-------+--------|
+|     |      | water |        |
+| ice |      |       |        |
+| sea | lake | ocean |        |
+|     | pool | ocean |        |
+|     |      | river | stream |
+| wet | damp | moist |        |
+|-----+------+-------+--------|
+| gas | fume | ether |        |
+| fog |      | cloud |        |
+|     |      | vapor |        |
+|     |      | steam |        |
+| air |      |       |        |
+| sky |      |       |        |
+|     | gust | draft |        |
+|-----+------+-------+--------|
+|     | fire | flame | plasma |
+|-----+------+-------+--------|
+* size
+| 3 | 4    | 5     | 6      | 7       | 8        | 9 |         10 | 11 |           12 |
+|---+------+-------+--------+---------+----------+---+------------+----+--------------|
+|   | size | count | number |         |          |   | population |    |              |
+|   | sort | order |        |         |          |   |            |    |              |
+|   | span | range |        |         | interval |   |            |    |              |
+|   |      |       | metric | measure |          |   |            |    |              |
+|   |      | reach |        | stretch | distance |   |            |    |              |
+|   | move | shift |        |         | displace |   |            |    | displacement |
+|   |      | width | length | breadth |          |   |            |    |              |
+|   |      | depth | height |         |          |   |            |    |              |
+|   |      |       | volume |         |          |   |            |    |              |
+|   | mass |       | weight | density |          |   |            |    |              |
+|   | type | group |        |         | category |   |            |    |              |
+* figures
+** single
+- point 
+- scalar 
+- vertex 
+- position 
+- cusp 
+- apex 
+- meet 
+- join 
+- crest 
+- brink
+- climax
+- peak
+- gable
+- helm
+
+** book
+- recto
+- verso
+- folio
+- codex
+
+** 7-ment
+- element
+- segment
+- figment
+- augment
+** parts
+
+| 1       | 2       | 3       |
+|---------+---------+---------|
+| node    | edge    | grid    |
+| leaf    | limb    | tree    |
+| item    | list    | plan    |
+| mark    | line    | form    |
+| spot    | path    | area    |
+| field   | entry   | table   |
+| point   | curve   | plane   |
+| datum   | trace   | graph   |
+| value   | tuple   | array   |
+| scalar  | vector  | tensor  |
+|         | linear  | planar  |
+| vertex  |         | matrix  |
+| element | segment | figment |
+
+
+
+
+** heraldry
+- blazon
+- sheild escutcheon
+- field
+- tincture
+- supporter
+- motto
+- charge
+- crest
+- dexter (right)
+- sinister (left)
+- attitude
+  - guardant
+  - passant
+  - couchant
+  - rampant
 * COMMENT org settings
 #+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
 #+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t

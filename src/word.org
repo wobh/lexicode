@@ -184,7 +184,7 @@ examinee
 examiner
 
 * task 
-
+  
 ** states
 
 - TODO
@@ -195,6 +195,7 @@ examiner
 - HOLD
 - NULL
 - VOID
+- NOPE
 
 ** keys
 

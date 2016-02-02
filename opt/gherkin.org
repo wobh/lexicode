@@ -1,0 +1,49 @@
+#+TITLE: Gherkin
+#+DATE: [2016-01-31 Sun]
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+DESCRIPTION: outline of Gherkin in Org mode
+
+* Feature: Some terse yet descriptive text of what is desired
+ 
+- In order to realize a named business value
+- As an explicit system actor
+- I want to gain some beneficial outcome which furthers the goal
+
+** Rules:
+- an invariant of situation, behavior, or data
+- another one
+
+** Background:
+- Given a precondition shared by subsequent scenarios
+  - And another one
+
+*** Scenario: a situation requiring the above defined background
+
+** Scenario: Some determinable business situation
+- Given some precondition
+  - And some other precondition
+  - When some action by the actor
+    - And some other action
+    - And yet another action
+  - Then some testable outcome is achieved
+    - And something else we can check happens too
+
+** Scenario: A different situation
+
+** Scenario Outline:
+- Given an entity with <property>
+  - When we exercise the entity
+  - Then the outcome should be <result>
+
+*** examples
+| property | result |
+|----------+--------|
+| foo      |      0 |
+| bar      |      1 |
+| baz      |      2 |
+| qux      |      3 |
+
+* References
+- https://github.com/cucumber/cucumber/wiki/Gherkin
+- https://cucumber.io/docs/reference
