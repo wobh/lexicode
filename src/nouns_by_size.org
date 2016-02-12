@@ -66,6 +66,9 @@
 - two
 -----
 - tip
+- nib
+- pip
+-----
 - mid
 - aft
 ** 4
@@ -144,12 +147,12 @@
 - scape
 - scope
 -----
-- sense
 - shape
 - color
 - curve
 - point
 - cycle
+- noise
 -----
 - being
 - thing
@@ -199,6 +202,7 @@
 - facet
 - field
 - table
+- array
 - tuple
 -----
 - query
@@ -274,6 +278,15 @@
 | upper | lower |
 | inner | outer |
 | until | since |
+
+** face
+- orient
+- direction
+- point
+- arrow
+- compass
+- way
+- ray
 * statefulness
 - exclusive (fermions)
 - inclusive (bosons)
@@ -316,19 +329,35 @@
 |     | fire | flame | plasma |
 |-----+------+-------+--------|
 * size
-| 3 | 4    | 5     | 6      | 7       | 8        | 9 |         10 | 11 |           12 |
-|---+------+-------+--------+---------+----------+---+------------+----+--------------|
-|   | size | count | number |         |          |   | population |    |              |
-|   | sort | order |        |         |          |   |            |    |              |
-|   | span | range |        |         | interval |   |            |    |              |
-|   |      |       | metric | measure |          |   |            |    |              |
-|   |      | reach |        | stretch | distance |   |            |    |              |
-|   | move | shift |        |         | displace |   |            |    | displacement |
-|   |      | width | length | breadth |          |   |            |    |              |
-|   |      | depth | height |         |          |   |            |    |              |
-|   |      |       | volume |         |          |   |            |    |              |
-|   | mass |       | weight | density |          |   |            |    |              |
-|   | type | group |        |         | category |   |            |    |              |
+|   3 | 4    | 5     | 6      | 7       | 8        | 9 |         10 | 11 |           12 |
+|-----+------+-------+--------+---------+----------+---+------------+----+--------------|
+|     | size | count | number |         |          |   | population |    |              |
+|     | sort | order |        |         |          |   |            |    |              |
+| gap | span | range | spread |         | interval |   |            |    |              |
+|     |      |       | metric | measure |          |   |            |    |              |
+|     |      | reach |        | stretch | distance |   |            |    |              |
+|     | move | shift |        |         | displace |   |            |    | displacement |
+|     |      | width | length | breadth |          |   |            |    |              |
+|     |      | depth | height |         |          |   |            |    |              |
+|     |      |       | volume |         |          |   |            |    |              |
+|     | mass |       | weight | density |          |   |            |    |              |
+|     | type | group |        |         | category |   |            |    |              |
+* fence
+| post  | rail  |
+|-------+-------|
+| point | space |
+| stake | shift |
+|       |       |
+* hole
+| gap | hole | space |        |         |          |
+|     | door |       | window |         |          |
+|     | port | entry | portal |         |          |
+|     | gate |       |        |         |          |
+| way | pass |       |        | passage |          |
+|     | room |       |        |         |          |
+|     | hall |       |        |         | corridor |
+|     |      |       | tunnel |         |          |
+|     | cave |       | cavern |         |          |
 * figures
 ** single
 - point 
@@ -376,8 +405,6 @@
 | element | segment | figment |
 
 
-
-
 ** heraldry
 - blazon
 - sheild escutcheon
@@ -394,6 +421,8 @@
   - passant
   - couchant
   - rampant
+
+
 * COMMENT org settings
 #+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
 #+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
