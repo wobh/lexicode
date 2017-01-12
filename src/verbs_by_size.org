@@ -310,7 +310,7 @@ Synonyms of verbs by size
 - lo :: to look
 ** 3
 - let :: to allow, define
-- get :: to take
+- get :: to take, retrieve
 - set :: to define
 - put :: to leave, set down
 - add :: to append, grow
@@ -336,6 +336,7 @@ Synonyms of verbs by size
 - nim :: to take, steal
 - hap :: to occur, happen
 - ken :: to know
+- ply :: to fold
 *** abbrevs
 - enq :: enqueue
 - deq :: dequeue
@@ -348,40 +349,41 @@ Synonyms of verbs by size
 - edit :: to change
 - help :: to assist
 - wipe :: to clear
-- mark ::
-- hold ::
+- mark :: to write upon, impress
+- hold :: to grasp, fix
 - stow :: to store
 - bear :: to carry
-- fold :: 
 - seek :: to search
-- find ::
-- move ::
-- send ::
-- bind ::
-- gain ::
-- lose ::
-- give ::
-- take ::
-- turn ::
+- find :: to discover
 - deem :: to think, judge, (doom)
-- plan
-- swap
-- rate
-- jump
-- copy
-- fork
-- cast
-- push
-- pull
-- open
-- shut
-- lead
-- bend
-- meet
-- join
-- pass
-- wean
+- swap :: to exchange, trade
+- rate :: to judge, score, order, rank
+
+- bind :: to tie, fix
+- send :: to convey, encharge with message
+- move :: to displace
+- fold :: to ply, double-over, bend, halve
+- gain :: to attain
+- lose :: to forgo
+- give :: to release, offer
+- turn :: to rotate, spin
+- take :: to withdraw, retrieve
+- plan :: to think, anticipate
+- jump :: to leap
+- copy :: to duplicate
+- fork :: to split; to pierce
+- cast :: to throw; to shape
+- push :: to shove, move
+- pull :: to retract
+- shut :: to close
+- lead :: to go before
+- bend :: to fold, ply, double-over
+- open :: 
 - wane :: to wither
+- meet :: to join
+- join :: to meet
+- pass :: to leave
+- wean 
 - kill
 - yank
 - save
@@ -399,12 +401,22 @@ Synonyms of verbs by size
 - ship
 - call
 - drag
+- skew
+-
+*** dualities
+- mark-wipe
+- open-shut
+- lose-gain
+- give-take
+- tear-mend
+- 
 ** 5
 - build
 - alter
 - fetch
 - erase
 - write
+- merge
 - bring
 - throw
 - catch
@@ -414,7 +426,6 @@ Synonyms of verbs by size
 - trace
 - reach
 - adapt
-- merge
 - spurn
 - purge
 - cross
@@ -425,6 +436,7 @@ Synonyms of verbs by size
 - think
 - twist
 - quell
+- unite
 - cover
 ** 6
 - create
@@ -433,8 +445,8 @@ Synonyms of verbs by size
 - delete
 - change
 - gather
-- happen
 - follow
+- happen
 - remove
 - insert
 - reckon
@@ -477,12 +489,6 @@ Synonyms of verbs by size
 - utilize
 - compose :: include part in whole (parts compose whole)
 - dispose :: exclude part in whole
-** 8
-- comprise :: consist whole of part (whole comprises parts)
-- depurate :: cleanse whole of part (disprise?)
-- transfer
-- delegate
-
 * Verbs with the same written form of past and present tense
 
 Because when TODO changes to DONE it's nice to not have to go change the verb form.
@@ -494,7 +500,7 @@ In their base case, these seem more useful for todo lists:
 - cut (cutdown, cutup, cutout, undercut)
 - shut (shutdown, shutup, shutout)
 - put (putdown, putup, putout)
-- fit (retrofit)
+- fit (retrofit, refit)
 - cast (forecast, recast, broadcast, miscast)
 - quit
 - cost
