@@ -66,7 +66,7 @@ Synonyms of verbs by size
 | read | parse |        |         |                    | (copy?)   |            |
 | edit | alter | change |         | alteration         |           |            |
 | help |       | assist |         |                    |           |            |
-| wipe | clear |        |         |                    |           |            |
+| wipe | erase |        |         |                    | clear     |            |
 | mark |       |        |         |                    |           |            |
 | hold |       |        |         |                    | keep,stow |            |
 | stow | store |        |         |                    |           |            |
@@ -85,6 +85,8 @@ Synonyms of verbs by size
 | deem | think |        |         | acceptance         | doom      |            |
 | doom | judge |        |         | acceptance         | deem      |            |
 | plan |       |        |         |                    |           |            |
+| sort | order |        |         |                    |           |            |
+| sift | sieve | filter |         |                    |           |            |
 | swap | trade |        |         | exchange           |           |            |
 | rate | score |        | measure |                    | rank      |            |
 | jump |       |        |         |                    |           |            |
@@ -98,6 +100,7 @@ Synonyms of verbs by size
 | mend |       | repair |         |                    | heal      |            |
 | heal |       | repair |         |                    | mend      |            |
 | lead |       |        |         |                    |           |            |
+| pump |       | stroke | breathe |                    |           |            |
 | bend |       |        |         |                    |           |            |
 | meet |       |        |         |                    | join      |            |
 | join |       |        |         |                    | meet      |            |
@@ -132,7 +135,7 @@ Synonyms of verbs by size
 | drop |       |        |         |                    |           |            |
 | emit |       |        |         |                    |           |            |
 | chop |       |        |         |                    |           |            |
-
+| swat | swipe | strike |         |                    |           |            |
 * from 5
 | 5     | 6      |
 |-------+--------|
