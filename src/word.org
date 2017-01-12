@@ -183,8 +183,7 @@ response
 examinee
 examiner
 
-* task 
-  
+* task
 ** states
 
 - TODO
@@ -203,12 +202,36 @@ examiner
 - HOME
 - PLAY
 - LIFE
+- PLAN
+- MAKE
 
+** meetings and communications
+
+- CALL
+- MAIL
+- MEET
+- TALK
+- LATE
+- SKIP
+- OVER
+
+** priotizations
+
+- BUMP
+- PICK
+- NEXT
+- BURY
+- HIDE
+- LAST
+- BACK
+- DROP
+- STOP
+- WAIT
 * Programming abbreviations and short words
 
 ** Common elements of 
 
-** nouns
+* nouns
 
 | concept            | 3-letter    | 4-letter        | 5-letter    |
 |--------------------+-------------+-----------------+-------------|
