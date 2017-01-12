@@ -25,3 +25,9 @@ and naming things.
 _Lexicode: A Programmer's Thesaurus_ is my attempt to make naming
 things a little easier. For now it's an ever shifting set of Emacs
 Org-mode files, which I generate a webpage from.
+
+* References
+
+- http://www.etymonline.com/
+- http://wordnet.princeton.edu/
+- http://words.bighugelabs.com/
