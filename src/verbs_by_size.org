@@ -57,6 +57,7 @@ Synonyms of verbs by size
 | bet |           | guess       | gamble        |                             |         |
 | nip |           | pinch       |               |                             |         |
 | beg |           | plead       | grovel        | request,require             | ask     |
+| vie |           |             |               | contend,contest,dispute     |         |
 * from 4
 
 | 4    | 5     | 6      | 7       | concept            | syns      | ants       |
