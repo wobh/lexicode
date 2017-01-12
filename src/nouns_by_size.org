@@ -297,12 +297,21 @@
 
 * four elements
 ** Sort
-| earth  | water | air    | fire |
-|--------+-------+--------+------|
-| solid  | fluid |        |      |
-|--------+-------+--------+------|
-|        | flow  | blow   | glow |
-| freeze |       | breeze |      |
+| earth  | water | air    | fire   |
+|--------+-------+--------+--------|
+| solid  | fluid | vapid  | torrid |
+|--------+-------+--------+--------|
+|        | flow  | blow   | glow   |
+| freeze |       | breeze |        |
+| land   |       |        |        |
+|        |       |        | plasma |
+|        | humid |        | fervid |
+
+- solid, rigid
+- fluid, liquid
+- limpid, lucid
+- vivid
+- 
 ** Size
 | 3   | 4    | 5     | 6      |
 |-----+------+-------+--------|
@@ -311,37 +320,56 @@
 |     | land |       |        |
 |     |      | solid |        |
 |-----+------+-------+--------|
-|     |      | water |        |
+|     | rain | water |        |
 | ice |      |       |        |
 | sea | lake | ocean |        |
 |     | pool | ocean |        |
-|     |      | river | stream |
+| dew |      | river | stream |
 | wet | damp | moist |        |
 |-----+------+-------+--------|
 | gas | fume | ether |        |
 | fog |      | cloud |        |
 |     |      | vapor |        |
 |     |      | steam |        |
-| air |      |       |        |
-| sky |      |       |        |
+| air |      | smoke |        |
+| sky | wind |       |        |
 |     | gust | draft |        |
 |-----+------+-------+--------|
 |     | fire | flame | plasma |
 |-----+------+-------+--------|
+
+| dirt  | water | mud,ice   |
+| dirt  | wind  | gas,dust  |
+| wood  | fire  | ash,smoke |
+| water | air   | fog,cloud |
+| water | fire  | steam     |
+| air   | fire  | fire      |
+
+: air -> flame <- earth
+: air -> water <- earth
+: 
+
+metal
+wood
+water
+wind
 * size
-|   3 | 4    | 5     | 6      | 7       | 8        | 9 |         10 | 11 |           12 |
-|-----+------+-------+--------+---------+----------+---+------------+----+--------------|
-|     | size | count | number |         |          |   | population |    |              |
-|     | sort | order |        |         |          |   |            |    |              |
-| gap | span | range | spread |         | interval |   |            |    |              |
-|     |      |       | metric | measure |          |   |            |    |              |
-|     |      | reach |        | stretch | distance |   |            |    |              |
-|     | move | shift |        |         | displace |   |            |    | displacement |
-|     |      | width | length | breadth |          |   |            |    |              |
-|     |      | depth | height |         |          |   |            |    |              |
-|     |      |       | volume |         |          |   |            |    |              |
-|     | mass |       | weight | density |          |   |            |    |              |
-|     | type | group |        |         | category |   |            |    |              |
+|   3 | 4    | 5     | 6      | 7       | 8        | 9         | 10         | 11 |           12 |
+|-----+------+-------+--------+---------+----------+-----------+------------+----+--------------|
+|     | size | count | number |         |          |           | population |    |              |
+|     | sort | order |        |         |          |           |            |    |              |
+| gap | span | range | spread |         | interval |           |            |    |              |
+|     |      | scope | metric | measure |          | magnitude |            |    |              |
+|     |      | reach |        | stretch | distance |           |            |    |              |
+|     | move | shift |        |         | displace |           |            |    | displacement |
+|     | bulk | width | length | breadth | thinness | thickness |            |    |              |
+|     |      | depth | height |         | altitude |           |            |    |              |
+|     |      |       | volume |         |          |           |            |    |              |
+|     | mass |       | weight | density |          |           |            |    |              |
+|     | type | group |        |         | category |           |            |    |              |
+|     | area |       | extent | expanse | capacity | amplitude |            |    |              |
+|     | heft |       |        |         |          |           | proportion |    |              |
+
 * fence
 | post  | rail  |
 |-------+-------|
