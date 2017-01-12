@@ -259,32 +259,48 @@ Synonyms of verbs by size
 - propose
 - suppose
 - destroy
+- restore
 - scatter
 - stretch
+- squeeze
 - dismiss
 - request
 - inquire
 - arrange
 - respond
+- connect
 - decline
 - discard
 - forsake
+- forgive
+- fortell
 - exclude
 - include
 - consist
 - cleanse
-- bannish
 - contain
 - utilize
 - compose :: include part in whole (parts compose whole)
 - dispose :: exclude part in whole
+
+** Dualities
+- enqueue-dequeue
+- squeeze-stretch
+- decline-incline
+- include-exclude
+- request-respond
+- contain-release
+- compose-dispose
+- collect-scatter
+- arrange-derange
+- destroy-restore
 * from 8
 - comprise :: consist whole of part (whole comprises parts)
 - depurate :: cleanse whole of part (disprise?)
 - transfer
 - delegate
-
-
+- retrieve
+- withdraw
 * lists
 ** 2
 - do
