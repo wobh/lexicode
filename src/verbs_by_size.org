@@ -237,6 +237,21 @@ Synonyms of verbs by size
 - browse
 - cleave
 - answer
+- ignore
+- rotate
+- attend
+- arrive
+- modify
+- mutate
+- banish
+** Dualities
+- create-delete
+- remove-return
+- attack-defend
+- select-reject
+- ignore-attend
+- accept-refuse
+
 * from 7
 - enqueue
 - dequeue
