@@ -137,32 +137,78 @@ Synonyms of verbs by size
 | chop |       |        |         |                    |           |            |
 | swat | swipe | strike |         |                    |           |            |
 * from 5
-| 5     | 6      |
-|-------+--------|
-| build | create |
-| alter | change |
-| fetch |        |
-| erase | delete |
-| write | render |
-| bring |        |
-| throw |        |
-| catch |        |
-| track | follow |
-| watch | follow |
-| guide |        |
-| trace |        |
-| reach |        |
-| adapt |        |
-| merge |        |
-| spurn |        |
-| purge |        |
-| cross |        |
-| pitch |        |
-| apply |        |
-| touch |        |
-| sense |        |
-| leave |        |
-| twist |        |
+| 5           | 6             |
+|-------------+---------------|
+| build       | create        |
+| alter       | change        |
+| fetch       |               |
+| erase       | delete        |
+| write       | render        |
+| bring       |               |
+| throw       |               |
+| catch       |               |
+| track       | follow        |
+| watch       | follow        |
+| guide       |               |
+| trace       |               |
+| reach       |               |
+| adapt       |               |
+| merge       |               |
+| spurn       |               |
+| purge       |               |
+| cross       |               |
+| pitch       |               |
+| apply       |               |
+| touch       |               |
+| sense       |               |
+| leave       |               |
+| twist       |               |
+| apply       |               |
+| amend       | append,extend |
+|             |               |
+| offer       | tender        |
+| carve       | cleave        |
+|             | define        |
+| split       | divide        |
+| flunk       |               |
+| adapt,shape | sculpt        |
+|             | fasten,repair |
+| fetch       |               |
+| occur       | happen        |
+| learn       | reckon        |
+| allow       |               |
+| build       | create        |
+| steal       | thieve        |
+|             | refuse        |
+|             | reduce        |
+|             | remove        |
+| alter,amend | change,insert |
+| spurn,purge | reject        |
+|             |               |
+| speak,print |               |
+| watch       | notice,search |
+|             | define        |
+| touch,drain |               |
+|             | append        |
+| prove       |               |
+| apply       |               |
+|             | expect        |
+| punch       | strike        |
+| marry,agree | cleave        |
+| guess       | gamble        |
+| pinch       |               |
+| plead       | grovel        |
+| argue       |               |
+| shear       |               |
+** Dualities
+- throw-catch
+- binge-purge
+- merge-split
+- plead-spurn
+- write-erase
+- agree-argue
+- 
+
 * from 6
 - create
 - update
