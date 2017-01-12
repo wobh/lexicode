@@ -31,3 +31,5 @@ Org-mode files, which I generate a webpage from.
 - http://www.etymonline.com/
 - http://wordnet.princeton.edu/
 - http://words.bighugelabs.com/
+- http://www.roget.org
+- https://www.merriam-webster.com
