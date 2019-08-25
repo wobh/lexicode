@@ -1,0 +1,133 @@
+* Uniform Resource Identifier (URI)
+
+: URI = scheme:[//authority]path[?query][#fragment]
+
+: authority = [userinfo@]host[:port]
+
+Interesting to note that the ~authority~ component is optional, and
+dependant on the scheme. A URI like:
+
+: file:///
+
+seems like it should be considered invalid, although, what it could be
+saying is that ~/~ is a valid authority for the ~file~ schema.
+
+** Uniform Resource Name (URN)
+** Uniform Resource Location (URL)
+* HTML
+** elements
+** attributes
+*** id
+Should correspond to an acceptable fragment value
+
+*** class
+
+*** name
+Nowadays, only used for form fields (eg. input, select textarea) ...
+*** data
+
+the dataset API converts attributes like ~data-foo-bar~ to ~fooBar~
+
+*** aria
+
+ARIA attributes describe relations between elements
+
+*** role
+
+Should be a valid ARIA role
+
+* CSS
+** selectorsE
+* ARIA
+** roles
+** aria
+* Events
+- event :: object (usually a string) which is communicated through DOM
+           by "bubbling"
+- listener :: function which recieves event
+- target :: element which listener is associated with: origin, source
+- currentTarget :: element which the element has bubbled up whose
+                   which listener has run: target
+- dispatch :: the action of signalling or triggering the event on a
+              target element.
+* General
+- model
+- widget
+  - dialog
+  - form
+  - input
+- feature
+- action
+- effect
+
+
+idWidgetModel
+
+ModelWidget
+
+widgetModelId
+
+selectModelWidget
+
+Id attributes 
+
+: ModelWidget = document.getElementById( idModelWidget )
+
+: selectModelWidget = "#" + $.escapeSelector( idModelWidget )
+
+Would do this for use in jQuery selectors or data attributes which
+take selectors as values (looking at you, Bootstrap).
+
+: listModelWidgets = document.getElementsByClassName( classnameModelWidget )
+: $listModelWidgets = $( selectModelWidgets )
+
+
+: ModelWidget.addEventListener( Event, onEvent )
+
+: ModelWidget.dispatchEvent( Event )
+
+Presumably you know the ~Model~ context when you define this.
+
+: widget = event.target 
+
+In a jQuery context
+
+: ModelWidget.on( Event, onEvent )
+
+Inside the handler function:
+
+: $widget = $( event.target )
+
+One problem with ~onEvent~ style names is you might have the same
+handler for different events. I like this idea:
+
+This looks redundant. I like the semantics of this:
+
+: ModelWidget.addEventListener( Event, doAction )
+
+This reads even better in jQuery:
+
+: $ModelWidget.on( Event, doAction )
+
+
+
+Model.Widget.onEvent
+Model.Widget.doAction
+
+
+
+
+
+* References
+** URI
+- https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
+- https://tools.ietf.org/html/rfc3986
+
+** HTML id
+
+***  https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id
+
+#+begin_quote
+This attribute's value is an opaque string: this means that web
+authors must not use it to convey human-readable information.
+#+end_quote
