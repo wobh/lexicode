@@ -1,0 +1,353 @@
+#+TITLE: Linguistics
+#+DATE: <2015-09-04 Fri>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+#+DESCRIPTION: collection of linguistic concepts WIP
+
+* Semantic Roles
+A semantic role is the underlying relationship that a participant has
+with the main verb in a clause.
+
+- accompaniment :: the semantic role of a thing that participates in
+     close association with an agent, causer, or affected in an event
+- agent :: the semantic role of a person or thing who is the doer of
+     an event
+  - force :: the semantic role of an entity that instigates an action,
+       but not consciously or voluntarily
+  - causer :: the semantic role of the referent which instigates an
+       event rather than actually doing it.
+  - counteragent :: the semantic role of a force or resistance against
+- beneficiary :: the semantic role of a referent which is advantaged
+     or disadvantaged by an event.
+     which an action is carried out
+- dative :: the semantic role of a referent that is conscious of being
+     affected by the state or action identified by the verb.
+  - also known as Recipient
+- experiencer :: the semantic role of an entity (or referent) which
+  - receives
+  - accepts
+  - experiences
+  - undergoes the effect of an action.
+- factitive :: the semantic role of an referent that results from the
+     action or state identified by a verb
+- goal :: the semantic role of the
+  - place to which something moves, or
+  - thing toward which an action is directed.
+- instrument :: the semantic role of an inanimate thing that an agent
+     uses to implement an event. It is the stimulus or immediate
+     physical cause of an event
+- locative :: a semantic role which identifies the location or spatial
+     orientation of a state or action. A locative semantic role does
+     not imply motion to, from, or across the location.
+- manner :: a semantic role that notes how the action, experience, or
+     process of an event is carried out.
+- measure :: a semantic role which notes the quantification of an
+     event
+- path :: the semantic role describing the locale(s) transversed in
+     motion or propulsion predications.
+- patient :: a semantic role that is usually the surface object of the
+     verb in a sentence. Also known as affected, undergoer
+- range :: the semantic role of the entity that completes, is a
+     product of, or further specifies an event.
+- result :: a semantic role that refers to that which is produced by
+     an event. This role is usually encoded as the surface object of a
+     sentence.
+- source :: Source is the semantic role of the following referents:
+  - The place of origin (with verbs of motion, locomotion, and
+    propulsion)
+  - The entity from which a physical sensation emanates (with verbs of
+    sensation, attention, and speech)
+  - The original owner in a transfer (with verbs of acquisition,
+    transfer, and grab)
+- time :: the semantic role of the temporal placement of an event.
+ 
+* Grammatical Relations
+- subject
+- object
+* Syntactic Function
+- adjunct
+- complement
+- grammatical relation
+- head
+- modifier
+- predicate
+- predicator
+ 
+* Syntactic Classes
+- noun
+  - adjective
+  - article
+  - pronoun
+- verb
+  - adverb
+
+* Grammatical Categories
+  	
+A grammatical category is a set of syntactic features that
+  	
+  - express meanings from the same conceptual domain
+  - occur in contrast to each other, and
+  - are typically expressed in the same fashion.
+
+
+- aspect :: a grammatical category associated with verbs that
+     expresses a temporal view of the event or state expressed by the
+     verb.
+- case :: a grammatical category determined by the syntactic or
+     semantic function of a noun or pronoun.
+- definiteness :: a category concerned with the grammaticalization of
+     identifiability and nonidentifiability of referents on the part
+     of a speaker or addressee.
+- mood :: one of a set of distinctive forms that are used to signal
+     modality.
+  - modality :: a facet of illocutionary force, signaled by
+       grammatical devices (that is, moods), that expresses:
+    - the illocutionary point or general intent of a speaker, or
+    - a speaker’s degree of commitment to the expressed proposition's
+      believability, obligatoriness, desirability, or reality.
+- noun class :: a grammatical system that some languages use to
+     overtly categorize nouns. Noun classes are:
+  - often based, at least in part, on characteristics (such as gender,
+    animacy, shape) of the referents of some of the nouns in each
+    class
+  - distinguished by:
+    - an affix on the noun or by a clitic or word in the noun phrase
+    - agreement affixes on noun phrase constituents and on the verb
+- number :: a grammatical category of nouns, pronouns, and verb
+     agreement that expresses count distinctions (such as "one" or
+     "more than one").
+  - The count distinctions typically, but not always, correspond to
+    the actual count of the referents of the marked noun or pronoun.
+- polarity :: a grammatical category that distinguishes affirmative
+     and negative.
+- tense :: a grammatical category, typically marked on the verb, that
+     deictically refers to the time of the event or state denoted by
+     the verb in relation to some other temporal reference point.
+- transitivity :: the number of objects a verb requires or takes in a
+     given instance. See also Valency.
+- voice :: a grammatical category that expresses the semantic
+     functions attributed to the referents of a clause. It indicates
+     whether the subject is an:
+  - actor
+  - patient
+  - recipient
+
+** Aspects
+  	
+- imperfective
+- perfective
+- cessative
+- inchoative
+
+** Cases
+  	
+- abessive :: a case that expresses the lack or absence of the
+     referent of the noun it marks.
+- ablative :: a case that expresses a variety of meanings including
+  - instrument
+  - cause
+  - location
+  - source
+  - time
+
+- absolutive
+- accusative
+- allative
+- benefactive
+- causative
+- comitative
+- dative
+- delative
+- elative
+- equative
+- ergative
+- essive
+- genitive
+- illative
+- inessive
+- instrumental
+- lative
+- locative
+- nominative
+- partitive
+- prolative
+- superessive
+- translative
+- vocative
+
+** Definitives
+  	
+- identifiability
+- generic
+- indefiniteness
+- nonspecificity
+- specificity
+ 
+** Moods
+*** Modalities
+  	
+- irrealis
+- necessity
+- possibility
+- realis
+- alethic
+- deontic
+- epistemic
+ 
+** Noun Classes
+
+- animate
+- grammatical gender
+- human
+- inanimate
+
+** Numbers
+
+- singular (unal)
+- dual
+- trail
+- quadral
+- plural
+** Polarities
+- affirmative
+- negative
+** Tenses
+  	
+- absolute
+- absolute-relative
+- relative
+
+** Transitives
+
+- ditransitivity
+- intransitivity
+- transitive verb 
+
+** Voices
+  	
+- active
+- antipassive
+- middle
+- passive
+ 
+** Others
+
+- Adjunct
+- Affect (linguistics)
+- Agent
+- Agreement
+- Animacy
+- Associativity[1]
+- Argument
+- Aspect
+- Associated motion
+- Case
+- Case stacking/Suffixaufnahme
+- Classifier (linguistics)
+- Clusivity
+- Comparison
+- Complement
+- Contrast
+- Contraction
+- Construct state
+- Conjugation
+- Dative shift
+- Definiteness
+- Evidentiality
+- Feature
+- Focus
+- Gender
+- Honorifics
+- Incorporation
+- Markedness
+- Mirativity
+- Modality
+- Genitive construction
+- Mood
+- Noun class
+- Number
+- Object
+- Patient
+- Politeness
+- Person
+- Polarity
+- Possession
+- Pluractionality
+- Predicate
+- Species
+- Specificity
+- Subject
+- Suffix
+- Telicity
+- Tense
+- Topic
+- Transitivity
+- Valency
+- Voice
+- Volition
+
+* Verb forms
+
+- tense
+- indicative
+- imperative
+- imperfect
+- progressive
+- perfect
+- subjunctive
+- negative
+- evidentiality
+- transitive
+- intransitive
+- reflexive
+- static, passive
+- dynamic, active
+- deferential
+- benefactive
+
+* Pronouns
+
+** personal
+- speaker "first"
+- hearer "second"
+- other "third"
+
+- number :: singular, plural, dual
+- gender
+- animacy
+- inclusive/exclusive plural
+- formality
+- presence
+- third person proximate, obviative
+- real or hypothetical "one"
+- collective
+
+** corralative
+
+|           | query | this | that  | some      | no      | every      |
+|-----------+-------+------+-------+-----------+---------+------------|
+| adjective | which | this | that  | some      | no      | every      |
+| person    | who   | this | that  | someone   | no one  | everyone   |
+| thing     | what  | this | that  | something | nothing | everything |
+| place     | where | here | there | somewhere | nowhere | everywhere |
+| time      | when  | now  | then  | sometime  | never   | always     |
+| way       | how   |      | thus  | somehow   |         |            |
+| reason    | why   |      |       |           |         |            |
+
+- interrogative
+- demonstrative
+- indefinite
+- quantifying
+- 
+* References
+- http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/contents.htm
+- http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsCase.htm
+* COMMENT org options
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.5.1 (Org mode 8.3.1)
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:t p:nil pri:nil prop:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t title:t toc:t todo:t |:t

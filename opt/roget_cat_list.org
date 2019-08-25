@@ -1,0 +1,2700 @@
+* Roget categorization dictionary
+
+- CLASS I – ABSTRACT RELATIONS
+  - 1.1 EXISTENCE
+    - 1.1.1 BEING ABSTRACT
+      - 1 EXISTENCE
+      - 2 INEXISTENCE
+    - 1.1.2 BEING CONCRETE
+      - 3 SUBSTANTIALITY
+      - 4 UNSUBSTANTIALITY		
+    - 1.1.3 FORMAL EXISTENCE
+      - 1.1.3.1 INTERNAL CONDITIONS
+	- 5 INTRINSICALITY
+      - 1.1.3.2 EXTERNAL CONDITIONS
+	- 6 EXTRINSICALITY
+    - 1.1.4 MODAL EXISTENCE
+      - 7 ABSOLUTE/STATE
+      - 8 RELATIVE/CIRCUMSTANCE
+  - 1.2 RELATION
+    - 1.2.1 ABSOLUTE RELATION
+      - 9 RELATION
+      - 10 IRRELATION
+      - 11 CONSANGUINITY
+      - 12 CORRELATION
+      - 13 IDENTITY
+      - 14 CONTRARIETY
+      - 15 DIFFERENCE
+    - 1.2.2 CONTINUOUS RELATION
+      - 16 UNIFORMITY
+      - 17 NON-UNIFORMITY		
+    - 1.2.3 PARTIAL RELATION
+      - 18 SIMILARITY
+      - 19 DISSIMILARITY
+      - 20 IMITATION
+      - 21 NON-IMITATION
+      - 22 VARIATION
+      - 23 COPY
+      - 24 PROTOTYPE		
+    - 1.2.4 GENERAL RELATION
+      - 25 AGREEMENT
+      - 26 DISAGREEMENT
+  - 1.3 QUANTITY
+    - 1.3.1 SIMPLE QUANTITY
+      - 27 QUANTITY
+      - 28 DEGREE		
+    - 1.3.2 COMPARATIVE QUANTITY
+      - 1.3.2.1 COMPARISON GENERAL
+	- 29 EQUALITY
+	- 30 INEQUALITY
+	- 31 MEAN
+	- 32 COMPENSATION
+      - 1.3.2.2 COMPARISON WITH STANDARD
+	- 33 GREATNESS
+	- 34 SMALLNESS
+      - 1.3.2.3 COMPARISON WITH SIMILAR
+	- 35 SUPERIORITY
+	- 36 INFERIORITY
+      - 1.3.2.4 CHANGES IN QUANTITY
+	- 37 INCREASE
+	- 38 DECREASE
+    - 1.3.3 CONJUNCTIVE QUANTITY
+      - 39 ADDITION
+      - 40 SUBTRACTION
+      - 41 ADJUNCT
+      - 42 REMAINDER
+      - 43 DECREMENT
+      - 44 MIXTURE
+      - 45 SIMPLENESS
+      - 46 JUNCTION
+      - 47 DISJUNCTION
+      - 48 CONNECTION
+      - 49 COHERENCE
+      - 50 INCOHERENCE
+      - 51 COMBINATION
+      - 52 DECOMPOSITION
+    - 1.3.4 CONCRETE QUANTITY
+      - 53 WHOLE
+      - 54 PART
+      - 55 3 COMPLETENESS
+      - 56 INCOMPLETENESS
+      - 57 COMPOSITION
+      - 58 EXCLUSION
+      - 59 COMPONENT
+      - 60 EXTRANEOUSNESS
+  - 1.4 ORDER
+    - 1.4.1 ORDER GENERAL
+      - 61 ORDER
+      - 62 DISORDER
+      - 63 COMPLEXITY
+      - 64 ARRANGEMENT
+      - 65 DERANGEMENT
+    - 1.4.2 CONSECUTIVE ORDER
+      - 66 PRECEDENCE
+      - 67 SEQUENCE
+      - 68 PRECURSOR
+      - 69 SEQUEL
+      - 70 BEGINNING
+      - 71 END
+      - 72 MIDDLE
+      - 73 CONTINUITY
+      - 74 DISCONTINUITY
+      - 75 TERM
+    - 1.4.3 COLLECTIVE ORDER
+      - 76 ASSEMBLAGE
+      - 77 DISPERSION
+      - 78 FOCUS
+    - 1.4.4 DISTRIBUTIVE ORDER
+      - 79 CLASS
+      - 80 INCLUSION
+      - 81 EXCLUSION
+      - 82 GENERALITY
+      - 83 SPECIALITY
+    - 1.4.5 CATEGORICAL ORDER
+      - 84 NORMALITY
+      - 85 MULTIFORMITY
+      - 86 CONFORMITY
+      - 87 UNCONFORMITY
+  - 1.5 NUMBER
+    - 1.5.1 NUMBER IN THE ABSTRACT
+      - 88 NUMBER
+      - 89 NUMERATION
+      - 90 LIST
+    - 1.5.2 DETERMINATE NUMBER
+      - 91 UNITY
+      - 92 ACCOMPANIMENT
+      - 93 DUALITY
+      - 94 DUPLICATION
+      - 95 BISECTION
+      - 96 TRIALITY
+      - 97 TRIPLICATION
+      - 98 TRISECTION
+      - 99 FOUR
+      - 100 QUADRUPLICATION
+      - 101 QUADRISECTION
+      - 102 FIVE AND OVER
+      - 103 MULTISECTION
+    - 1.5.3 INDETERMINATE NUMBER
+      - 104 PLURALITY
+      - 105 FRACTION
+      - 106 ZERO
+      - 107 MULTITUDE
+      - 108 FEWNESS
+      - 109 REPETITION
+      - 110 INFINITY
+  - 1.6 TIME
+    - 1.6.1 ABSOLUTE TIME
+      - 111 TIME
+      - 112 NEVERNESS
+      - 113 PERIOD
+      - 114 CONTINGENT DURATION
+      - 115 COURSE
+      - 116 DIUTURNITY
+      - 117 TRANSIENTNESS
+      - 118 PERPETUITY
+      - 119 INSTANTANEITY
+      - 120 CHRONOMETRY
+      - 121 ANACHRONISM
+    - 1.6.2 RELATIVE TIME
+      - 1.6.2.1 RELATIVE TO SUCCESSION
+	- 122 PRIORITY
+	- 123 POSTERIORITY
+	- 124 THE PRESENT TIME
+	- 125 DIFFERENT TIME
+	- 126 SYNCHRONISM
+      - 1.6.2.2 RELATIVE TO A PERIOD
+	- 127 FUTURITY
+	- 128 THE PAST
+	- 129 NEWNESS
+	- 130 OLDNESS
+	- 131 MORNING
+	- 132 EVENING
+	- 133 YOUTH
+	- 134 AGE
+	- 135 INFANT
+	- 136 VETERAN
+	- 137 ADOLESCENCE
+      - 1.6.2.3 REFERENCE TO EFFECT/PURPOSE
+	- 138 EARLINESS
+	- 139 PUNCTUALITY
+	- 140 LATENESS
+	- 141 OCCASION
+	- 142 UNTIMELINESS
+    - 1.6.3 RECURRENT TIME
+      - 143 FREQUENCY
+      - 144 INFREQUENCY
+      - 145 PERIODICITY
+      - 146 FITFULLNESS
+  - 1.7 CHANGE
+    - 1.7.1 SIMPLE CHANGE
+      - 147 CHANGE
+      - 148 PERMANENCE
+      - 149 CESSATION
+      - 150 CONTINUANCE IN ACTION
+      - 151 CONVERSION
+      - 152 REVERSION
+      - 153 REVOLUTION
+      - 154 SUBSTITUTION
+      - 155 INTERCHANGE
+    - 1.7.2 COMPLEX CHANGE
+      - 156 CHANGEABLENESS
+      - 157 STABILITY
+      - 158 EVENTUALITY
+      - 159 DESTINY
+  - 1.8 CAUSATION
+    - 1.8.1 CONSTANCY OF SEQUENCE
+      - 160 CAUSE
+      - 161 EFFECT
+      - 162 ATTRIBUTION
+      - 163 CHANCE
+    - 1.8.2 ABOUT CAUSE AND EFFECT
+      - 164 POWER
+      - 165 IMPOTENCE
+      - 166 STRENGTH
+      - 167 WEAKNESS
+    - 1.8.3 POWER IN OPERATION
+      - 168 PRODUCTION
+      - 169 DESTRUCTION
+      - 170 REPRODUCTION
+      - 171 PRODUCER
+      - 172 DESTROYER
+      - 173 PATERNITY
+      - 174 POSTERITY
+      - 175 PRODUCTIVENESS
+      - 176 UNPRODUCTIVENESS
+      - 177 AGENCY
+      - 178 PHYSICAL ENERGY
+      - 179 PHYSICAL INERTNESS
+      - 180 VIOLENCE
+      - 181 MODERATION
+    - 1.8.4 INDIRECT POWER
+      - 182 INFLUENCE
+      - 183 ABSENCE OF INFLUENCE
+      - 184 TENDENCY
+      - 185 LIABILITY
+    - 1.8.5 COMBINATION OF CAUSES
+      - 186 CONCURRENCE
+      - 187 COUNTERACTION
+- CLASS II – RELATED TO SPACE
+  - 2.1 SPACE IN GENERAL
+    - 2.1.1 ABSTRACT SPACE
+      - 188 SPACE
+      - 189 INEXTENSION
+      - 190 REGION
+      - 191 PLACE
+    - 2.1.2 RELATIVE SPACE
+      - 192 SITUATION
+      - 193 LOCATION
+      - 194 DISPLACEMENT
+    - 2.1.3 EXISTENCE IN SPACE
+      - 195 PRESENCE
+      - 196 ABSENCE
+      - 197 INHABITANT
+      - 198 ABODE
+      - 199 CONTENTS
+      - 200 RECEPTACLE
+  - 2.2 DIMENSIONS
+    - 2.1.1 GENERAL DIMENSIONS
+      - 201 SIZE
+      - 202 LITTLENESS
+      - 203 EXPANSION
+      - 204 CONTRACTION
+      - 205 DISTANCE
+      - 206 NEARNESS
+      - 207 INTERVAL
+      - 208 CONTIGUITY
+    - 2.2.2 LINEAR DIMENSIONS
+      - 209 LENGTH
+      - 210 SHORTNESS
+      - 211 BREADTH
+      - 212 NARROWNESS
+      - 213 LAYER
+      - 214 FILAMENT
+      - 215 HEIGHT
+      - 216 LOWNESS
+      - 217 DEPTH
+      - 218 SHALLOWNESS
+      - 219 SUMMIT
+      - 220 BASE
+      - 221 VERTICALITY
+      - 222 HORIZONTALITY
+      - 223 PENDENCY
+      - 224 SUPPORT
+      - 225 PARALLELISM
+      - 226 PERPENDICULARITY
+      - 227 OBLIQUITY
+      - 228 INVERSION
+      - 229 CROSSING
+    - 2.2.3 CENTRICAL DIMENSIONS
+      - 230 EXTERIORITY
+      - 231 INTERIORITY
+      - 232 CENTRALITY
+      - 233 COVERING
+      - 234 LINING
+      - 235 CLOTHING
+      - 236 DIVESTMENT
+      - 237 CIRCUMJACENCE
+      - 238 INTERPOSITION
+      - 239 CIRCUMSCRIPTION
+      - 240 OUTLINE
+      - 241 EDGE
+      - 242 INCLOSURE
+      - 243 LIMIT
+    - 2.2.4 SPECIAL DIMENSIONS
+      - 244 FRONT
+      - 245 REAR
+      - 246 LATERALITY
+      - 247 CONTRAPOSITION
+      - 248 DEXTRALITY
+      - 249 SINISTRALITY
+  - 2.3 FORM
+    - 2.3.1 GENERAL FORM
+      - 250 FORM
+      - 251 AMORPHISM
+      - 252 SYMMETRY
+      - 253 DISTORTION
+    - 2.3.2 SPECIAL FORM
+      - 254 ANGULARITY
+      - 255 CURVATURE
+      - 256 STRAIGHTNESS
+      - 257 CIRCULARITY
+      - 258 CONVOLUTION
+      - 259 ROTUNDITY
+    - 2.3.3 SUPERFICIAL FORM
+      - 260 CONVEXITY
+      - 261 FLATNESS
+      - 262 CONCAVITY
+      - 263 SHARPNESS
+      - 264 BLUNTNESS
+      - 265 SMOOTHNESS
+      - 266 ROUGHNESS
+      - 267 NOTCH
+      - 268 FOLD
+      - 269 FURROW
+      - 270 OPENING
+      - 271 CLOSURE
+      - 272 PERFORATOR
+      - 273 STOPPER
+  - 2.4 MOTION
+    - 2.4.1 MOTION IN GENERAL
+      - 274 MOTION
+      - 275 QUIESCENCE
+      - 276 JOURNEY
+      - 277 NAVIGATION
+      - 278 TRAVELER
+      - 279 MARINER
+      - 280 TRANSFERENCE
+      - 281 CARRIER
+      - 282 VEHICLE
+      - 283 SHIP
+    - 2.4.2 DEGREES OF MOTION
+      - 284 VELOCITY
+      - 285 SLOWNESS
+    - 2.4.3 MOTION WITH FORCE
+      - 286 IMPULSE
+      - 287 RECOIL
+    - 2.4.4 MOTION WITH DIRECTION
+      - 288 DIRECTION
+      - 289 DEVIATION
+      - 290 PRECESSION
+      - 291 SEQUENCE
+      - 292 PROGRESSION
+      - 293 REGRESSION
+      - 294 PROPULSION
+      - 295 TRACTION
+      - 296 APPROACH
+      - 297 RECESSION
+      - 298 ATTRACTION
+      - 299 REPULSION
+      - 300 CONVERGENCE
+      - 301 DIVERGENCE
+      - 302 ARRIVAL
+      - 303 DEPARTURE
+      - 304 INGRESS
+      - 305 EGRESS
+      - 306 RECEPTION
+      - 307 EJECTION
+      - 308 FOOD
+      - 309 EXCRETION
+      - 310 INSERTION
+      - 311 EXTRACTION
+      - 312 PASSAGE
+      - 313 TRANSCURSION
+      - 314 SHORTCOMING
+      - 315 ASCENT
+      - 316 DESCENT
+      - 317 ELEVATION
+      - 318 DEPRESSION
+      - 319 LEAP
+      - 320 PLUNGE
+      - 321 CIRCUITION
+      - 322 ROTATION
+      - 323 EVOLUTION
+      - 324 OSCILLATION
+      - 325 AGITATION
+- CLASS III – RELATED TO MATTER
+  - 3.1 MATTER IN GENERAL
+    - 326 MATERIALITY
+    - 327 IMMATERIALITY
+    - 328 WORLD
+    - 329 GRAVITY
+    - 330 LEVITY
+  - 3.2 INORGANIC MATTER
+    - 3.2.1 SOLID MATTER
+      - 331 DENSITY
+      - 332 RARITY
+      - 333 HARDNESS
+      - 334 SOFTNESS
+      - 335 ELASTICITY
+      - 336 INELASTICITY
+      - 337 TENACITY
+      - 338 BRITTLENESS
+      - 339 TEXTURE
+      - 340 PULVERULENCE
+      - 341 FRICTION
+      - 342 LUBRICATION
+    - 3.2.2 FLUID MATTER
+      - 3.2.2.1 FLUIDES IN GENERAL
+	- 343 FLUIDITY
+	- 344 GASEITY
+	- 345 LIQUEFACTION
+	- 346 VAPORIZATION
+      - 3.2.2.2 SPECIFIC FLUIDS
+	- 347 WATER
+	- 348 AIR
+	- 349 MOISTURE
+	- 350 DRYNESS
+	- 351 OCEAN
+	- 352 LAND
+	- 353 GULF/LAKE
+	- 354 PLAIN
+	- 355 MARSH
+      - 3.2.2.3 FLUIDS IN MOTION
+	- 356 ISLAND
+	- 357 STREAM
+	- 358 RIVER
+	- 359 WIND
+	- 360 CONDUIT
+	- 361 AIRPIPE
+    - 3.2.3 IMPERFECT FLUIDS
+      - 362 SEMILIQUIDITY
+      - 363 BUBBLE
+      - 364 PULPINESS
+      - 365 UNCTUOUSNESS
+      - 366 OIL
+      - 367 RESIN
+  - 3.3 ORGANIC MATTER
+    - 3.3.1 VITALITY
+      - 3.3.1.1 VITALITY IN GENERAL
+	- 368 ORGANIZATION
+	- 369 INORGANIZATION
+	- 370 LIFE
+	- 371 DEATH
+	- 372 KILLING
+	- 373 CORPSE
+	- 374 INTERMENT
+    - 3.3.1.2 SPECIAL VITALITY
+      - 375 ANIMALITY
+      - 376 VEGETABILITY
+      - 377 ANIMAL
+      - 378 VEGETABLE
+      - 379 ZOOLOGY
+      - 380 BOTANY
+      - 381 HUSBANDRY
+      - 382 AGRICULTURE
+      - 383 MANKIND
+      - 384 MAN
+      - 385 WOMAN
+      - 386 SEXUALITY
+  - 3.3.2 SENSATION
+    - 3.3.2.1 SENSATION IN GENERAL
+      - 387 SENSIBILITY
+      - 388 INSENSIBILITY
+      - 389 PLEASURE
+      - 390 PAIN
+    - 3.3.2.2 SPECIAL SENSATION
+    - 3.3.2.3 TOUCH
+      - 391 TOUCH
+      - 392 OF TOUCH
+      - 393 NUMBNESS
+    - 3.3.2.4 HEAT
+      - 394 HEAT
+      - 395 COLD
+      - 396 CALEFACTION
+      - 397 REFRIGERATION
+      - 398 FURNACE
+      - 399 REFRIGERATOR
+      - 400 FUEL
+      - 401 EXTINCTION
+      - 402 THERMOMETER
+    - 3.3.2.5 TASTE
+      - 403 TASTE
+      - 404 INSIPIDITY
+      - 405 PUNGENCY
+      - 406 SALTINESS
+      - 407 BITTERNESS
+      - 408 CONDIMENT
+      - 409 SAVORINESS
+      - 410 UNSAVORINESS
+      - 411 SWEETNESS
+      - 412 SOURNESS
+    - 3.3.2.6 ODOR
+      - 413 ODOR
+      - 414 INODOROUSNESS
+      - 415 FRAGRANCE
+      - 416 FETOR
+      - 417 ACRIDITY
+    - 3.3.2.7 SOUND
+      - 3.3.2.7.1 SOUND IN GENERAL
+	- 418 SOUND
+	- 419 SILENCE
+	- 420 LOUDNESS
+	- 421 FAINTNESS
+      - 3.3.2.7.2 SPECIFIC SOUNDS
+	- 422 SNAP
+	- 423 ROLL
+	- 424 RESONANCE
+	- 425 NONRESONANCE
+	- 426 SIBILATION
+	- 427 STRIDOR
+	- 428 CRY
+	- 429 ULULATION
+      - 3.3.2.7.3 MUSICAL SOUNDS
+	- 430 MELODY/CONCORD
+	- 431 DISCORD
+	- 432 MUSIC
+	- 433 MUSICIAN
+	- 434 INSTRUMENTS
+      - 3.3.2.7.4 PERCEPTION OF SOUND
+	- 435 HEARING
+	- 436 DEAFNESS
+    - 3.3.2.8 LIGHT
+      - 3.3.2.8.1 LIGHT IN GENERAL
+	- 437 LIGHT
+	- 438 DARKNESS
+	- 439 DIMNESS
+	- 440 LUMINARY
+	- 441 SHADE
+	- 442 TRANSPARENCY
+	- 443 OPACITY
+	- 444 TURBIDITY
+	- 445 SEMITRANSPARENCY
+      - 3.3.2.8.2 SPECIFIC LIGHT
+	- 446 COLOR
+	- 447 ACHROMATISM
+	- 448 WHITENESS
+	- 449 BLACKNESS
+	- 450 GRAY
+	- 451 BROWN
+	- 452 REDNESS
+	- 453 GREENNESS
+	- 454 YELLOWNESS
+	- 455 PURPLE
+	- 456 BLUENESS
+	- 457 ORANGE
+	- 458 VARIEGATION
+      - 3.3.2.8.3 PERCEPTIONS OF LIGHT
+	- 459 VISION
+	- 460 BLINDNESS
+	- 461 DIMSIGHTEDNESS
+	- 462 SPECTATOR
+	- 463 INSTRUMENTS
+	- 464 VISIBILITY
+	- 465 INVISIBILITY
+	- 466 APPEARANCE
+	- 467 DISAPPEARANCE
+- CLASS IV – INTELLECTUAL FACULTIES
+  - 4.1 FORMATION OF IDEAS
+    - 4.1.1 OPERATIONS OF INTELLECT IN GENERAL
+      - 468 INTELLECT
+      - 469 NON-INTELLECT
+      - 470 THOUGHT
+      - 471 INCOGITANCY
+      - 472 IDEA
+      - 473 TOPIC
+    - 4.1.2 PRECURSORY CONDITIONS AND OPERATIONS
+      - 474 CURIOSITY
+      - 475 INCURIOSITY
+      - 476 ATTENTION
+      - 477 INATTENTION
+      - 478 CARE
+      - 479 NEGLECT
+      - 480 INQUIRY
+      - 481 ANSWER
+      - 482 EXPERIMENT
+      - 483 COMPARISON
+      - 484 INCOMPARABILITY
+      - 485 DISCRIMINATION
+      - 486 INDISCRIMINATION
+      - 487 IDENTIFICATION
+      - 488 MEASUREMENT
+    - 4.1.3 MATERIALS FOR REASONING
+      - 4.1.3.1 GENERAL EVIDENCE
+	- 489 EVIDENCE
+	- 490 COUNTER EVIDENCE
+	- 491 QUALIFICATION
+      - 4.1.3.2 DEGREES OF EVIDENCE
+	- 492 POSSIBILITY
+	- 493 IMPOSSIBILITY
+	- 494 PROBABILITY
+	- 495 IMPROBABILITY
+	- 496 CERTAINTY
+	- 497 UNCERTAINTY
+    - 4.1.4 REASONING PROCESSES
+      - 498 REASONING
+      - 499 INTUITION/SOPHISTRY
+      - 500 DEMONSTRATION
+      - 501 CONFUTATION
+    - 4.1.5 RESULTS OF REASONING
+      - 4.1.5.1 GENERAL
+	- 502 JUDGMENT
+	- 503 DISCOVERY
+	- 504 MISJUDGMENT
+	- 505 OVERESTIMATION
+	- 506 UNDERESTIMATION
+	- 507 BELIEF
+	- 508 UNBELIEF/DOUBT
+	- 509 CREDULITY
+	- 510 INCREDULITY
+	- 511 ASSENT
+	- 512 DISSENT
+	- 513 KNOWLEDGE
+	- 514 IGNORANCE
+	- 515 SCHOLAR
+	- 516 IGNORAMUS
+	- 517 TRUTH
+	- 518 ERROR
+	- 519 MAXIM
+	- 520 ABSURDITY
+      - 4.1.5.2 FACULTIES
+	- 521 INTELLIGENCE/WISDOM
+	- 522 IMBECILITY/FOLLY
+	- 523 SAGE
+	- 524 FOOL
+	- 525 SANITY
+	- 526 INSANITY
+	- 527 MADMAN
+    - 4.1.6 EXTENSION OF THOUGHT
+      - 4.1.6.1 TO THE PAST
+	- 528 MEMORY
+	- 529 OBLIVION
+      - 4.1.6.2 TO THE FUTURE
+	- 530 EXPECTATION
+	- 531 INEXPECTATION
+	- 532 DISAPPOINTMENT
+	- 533 FORESIGHT
+	- 534 PREDICTION
+	- 535 OMEN
+	- 536 ORACLE
+    - 4.1.7 CREATIVE THOUGHT
+      - 537 SUPPOSITION
+      - 538 ANALOGY
+      - 539 IMAGINATION
+  - 4.2 COMMUNICATION OF IDEAS
+    - 4.2.1 NATURE OF IDEAS COMMUNICATED
+      - 540 MEANING
+      - 541 UNMEANINGNESS
+      - 542 INTELLIGIBILITY
+      - 543 UNINTELLIGIBILITY
+      - 544 EQUIVOCALNESS
+      - 545 METAPHOR
+      - 546 INTERPRETATION
+      - 547 MISINTERPRETATION
+      - 548 INTERPRETER
+    - 4.2.2 MODES OF COMMUNICATION
+      - 549 MANIFESTATION
+      - 550 LATENCY/IMPLICATION
+      - 551 INFORMATION
+      - 552 CORRECTION
+      - 553 CONCEALMENT
+      - 554 DISCLOSURE
+      - 555 AMBUSH
+      - 556 PUBLICATION
+      - 557 NEWS
+      - 558 SECRET
+      - 559 MESSENGER
+      - 560 AFFIRMATION
+      - 561 NEGATION
+      - 562 TEACHING
+      - 563 MISTEACHING
+      - 564 LEARNING
+      - 565 TEACHER
+      - 566 LEARNER
+      - 567 SCHOOL
+      - 568 VERACITY
+      - 569 FALSEHOOD
+      - 570 DECEPTION
+      - 571 UNTRUTH
+      - 572 DUPE
+      - 573 DECEIVER
+      - 574 EXAGGERATION
+    - 4.2.3 MEANS OF COMMUNICATING IDEAS
+      - 4.2.3.1 NATURAL MEANS
+	- 575 INDICATION
+	- 576 RECORD
+	- 577 OBLITERATION
+	- 578 RECORDER
+	- 579 REPRESENTATION
+	- 580 MISREPRESENTATION
+	- 581 PAINTING
+	- 582 SCULPTURE
+	- 583 ENGRAVING
+	- 584 ARTIST
+      - 4.2.3.2 CONVENTIONAL MEANS
+	- 4.2.3.2.1 LANGUAGE GENERALLY
+	  - 585 LANGUAGE
+	  - 586 LETTER
+	  - 587 WORD
+	  - 588 NEOLOGISM
+	  - 589 NOMENCLATURE
+	  - 590 MISNOMER
+	  - 591 PHRASE
+	  - 592 GRAMMAR
+	  - 593 SOLECISM
+	  - 594 STYLE
+	  - 595 PERSPICUITY
+	  - 596 OBSCURITY
+	  - 597 CONCISENESS
+	  - 598 DIFFUSENESS
+	  - 599 VIGOR
+	  - 600 FEEBLENESS
+	  - 601 PLAINNESS
+	  - 602 ORNAMENT
+	  - 603 ELEGANCE
+	  - 604 INELEGANCE
+	- 4.2.3.2.2 SPOKEN LANGUAGE
+	  - 605 VOICE
+	  - 606 APHONY
+	  - 607 SPEECH
+	  - 608 STAMMERING
+	  - 609 LOQUACITY
+	  - 610 TACITURNITY
+	  - 611 ALLOCUTION
+	  - 612 RESPONSE
+	  - 613 CONVERSATION
+	  - 614 SOLILOQUY
+	- 4.2.3.2.3 WRITTEN LANGUAGE
+	  - 615 WRITING
+	  - 616 PRINTING
+	  - 617 CORRESPONDENCE
+	  - 618 BOOK
+	  - 619 DESCRIPTION
+	  - 620 DISSERTATION
+	  - 621 COMPENDIUM
+	  - 622 POETRY
+	  - 623 PROSE
+	  - 624 THE DRAMA
+- CLASS V – VOLONTARY POWERS
+  - 5.1 INDIVIDUAL VOLITION
+    - 5.1.1 VOLITION IN GENERAL
+      - 5.1.1.1 ACTS OF VOLITIONS
+	- 625 WILL
+	- 626 NECESSITY
+	- 627 WILLINGNESS
+	- 628 UNWILLINGNESS
+	- 629 RESOLUTION
+	- 630 PERSEVERANCE
+	- 631 IRRESOLUTION
+	- 632 OBSTINACY
+	- 633 TERGIVERSATION
+	- 634 CAPRICE
+	- 635 CHOICE
+	- 636 OF CHOICE
+	- 637 REJECTION
+	- 638 PREDETERMINATION
+	- 639 IMPULSE
+	- 640 HABIT
+	- 641 DESUETUDE
+      - 5.1.1.2 CAUSES OF VOLITION
+	- 642 MOTIVE
+	- 643 OF MOTIVE
+	- 644 DISSUASION
+	- 645 PRETEXT
+      - 5.1.1.3 OBJECTS OF VOLITION
+	- 646 GOOD
+	- 647 EVIL
+    - 5.1.2 PROSPECTIVE VOLITION
+      - 5.1.2.1 CONCEPTIONAL VOLITION
+	- 648 INTENTION
+	- 649 CHANCE
+	- 650 PURSUIT
+	- 651 AVOIDANCE
+	- 652 RELINQUISHMENT
+	- 653 BUSINESS
+	- 654 PLAN
+	- 655 METHOD
+	- 656 MID-COURSE
+	- 657 CIRCUIT
+	- 658 REQUIREMENT
+      - 5.1.2.2 SUBSERVIENCE TO ENDS
+	- 5.1.2.2.1 ACTUAL SUBSERVIENCE
+	  - 659 INSTRUMENTALITY
+	  - 660 MEANS
+	  - 661 INSTRUMENT
+	  - 662 SUBSTITUTE
+	  - 663 MATERIALS
+	  - 664 STORE
+	  - 665 PROVISION
+	  - 666 WASTE
+	  - 667 SUFFICIENCY
+	  - 668 INSUFFICIENCY
+	  - 669 REDUNDANCY
+	  - 670 IMPORTANCE
+	  - 671 UNIMPORTANCE
+	  - 672 UTILITY
+	  - 673 INUTILITY
+	  - 674 EXPEDIENCE
+	  - 675 INEXPEDIENCE
+	  - 676 GOODNESS
+	  - 677 BADNESS
+	  - 678 PERFECTION
+	  - 679 IMPERFECTION
+	  - 680 CLEANNESS
+	  - 681 UNCLEANNESS
+	  - 682 HEALTH
+	  - 683 DISEASE
+	  - 684 SALUBRITY
+	  - 685 INSALUBRITY
+	  - 686 IMPROVEMENT
+	  - 687 DETERIORATION
+	  - 688 RESTORATION
+	  - 689 RELAPSE
+	  - 690 REMEDY
+	  - 691 BANE
+	- 5.1.2.2.2 CONTINGENT SUBSERVIENCE
+	  - 692 SAFETY
+	  - 693 DANGER
+	  - 694 REFUGE
+	  - 695 PITFALL
+	  - 696 WARNING
+	  - 697 ALARM
+	  - 698 PRESERVATION
+	  - 699 ESCAPE
+	  - 700 DELIVERANCE
+	- 5.1.2.2.3 PRECURSORY MEASURES
+	  - 701 PREPARATION
+	  - 702 NONPREPARATION
+	  - 703 ESSAY
+	  - 704 UNDERTAKING
+	  - 705 USE
+	  - 706 DISUSE
+	  - 707 MISUSE
+    - 5.1.3 VOLUNTARY ACTION
+      - 5.1.3.1 SIMPLE VOLUNTARY ACTION
+	- 708 ACTION
+	- 709 INACTION
+	- 710 ACTIVITY
+	- 711 INACTIVITY
+	- 712 HASTE
+	- 713 LEISURE
+	- 714 EXERTION
+	- 715 REPOSE
+	- 716 FATIGUE
+	- 717 REFRESHMENT
+	- 718 AGENT
+	- 719 WORKSHOP
+      - 5.1.3.2 COMPLEX VOLUNTARY ACTION
+	- 720 CONDUCT
+	- 721 DIRECTION
+	- 722 DIRECTOR
+	- 723 ADVICE
+	- 724 COUNCIL
+	- 725 PRECEPT
+	- 726 SKILL
+	- 727 UNSKILLFULNESS
+	- 728 PROFICIENT
+	- 729 BUNGLER
+	- 730 CUNNING
+	- 731 ARTLESSNESS
+    - 5.1.4 ANTAGONISM
+      - 5.1.4.1 CONDITIONAL ANTAGONISM
+	- 732 DIFFICULTY
+	- 733 FACILITY
+	- 734 HINDRANCE
+	- 735 AID
+	- 736 OPPOSITION
+	- 737 COOPERATION
+	- 738 OPPONENT
+	- 739 AUXILIARY
+	- 740 PARTY
+	- 741 DISCORD
+	- 742 CONCORD
+	- 743 DEFIANCE
+	- 744 ATTACK
+	- 745 DEFENSE
+	- 746 RETALIATION
+	- 747 RESISTANCE
+	- 748 CONTENTION
+	- 749 PEACE
+	- 750 WARFARE
+	- 751 PACIFICATION
+	- 752 MEDIATION
+	- 753 SUBMISSION
+	- 754 COMBATANT
+	- 755 ARMS
+	- 756 ARENA
+    - 5.1.5 RESULTS OF VOLUNTARY ACTION
+      - 757 COMPLETION
+      - 758 NONCOMPLETION
+      - 759 SUCCESS
+      - 760 FAILURE
+      - 761 TROPHY
+      - 762 PROSPERITY
+      - 763 ADVERSITY
+      - 764 MEDIOCRITY
+  - 5.2 INTERSOCIAL VOLITION SECTION
+    - 5.2.1 GENERAL INTERSOCIAL VOLITION
+      - 765 AUTHORITY
+      - 766 GOVERNMENT
+      - 767 POLITICS
+      - 768 LAXITY
+      - 769 SEVERITY
+      - 770 LENITY
+      - 771 COMMAND
+      - 772 DISOBEDIENCE
+      - 773 OBEDIENCE
+      - 774 COMPULSION
+      - 775 MASTER
+      - 776 SERVANT
+      - 777 SCEPTER
+      - 778 FREEDOM
+      - 779 SUBJECTION
+      - 780 LIBERATION
+      - 781 RESTRAINT
+      - 782 PRISON
+      - 783 KEEPER
+      - 784 PRISONER
+      - 785 COMMISSION
+      - 786 ABROGATION
+      - 787 RESIGNATION
+      - 788 CONSIGNEE
+      - 789 DEPUTY
+    - 5.2.2 SPECIAL INTERSOCIAL VOLITION
+      - 790 PERMISSION
+      - 791 PROHIBITION
+      - 792 CONSENT
+      - 793 OFFER
+      - 794 REFUSAL
+      - 795 REQUEST
+      - 796 DEPRECATION
+      - 797 PETITIONER
+    - 5.2.3 CONDITIONAL INTERSOCIAL VOLITION
+      - 798 PROMISE
+      - 799 RELEASE FROM ENGAGEMENT
+      - 800 COMPACT
+      - 801 CONDITIONS
+      - 802 SECURITY
+      - 803 OBSERVANCE
+      - 804 NONOBSERVANCE
+      - 805 COMPROMISE
+    - 5.2.4 POSSESSIVE RELATIONS
+      - 5.2.4.1 PROPERTY IN GENERAL
+	- 806 ACQUISITION
+	- 807 LOSS
+	- 808 POSSESSION
+	- 809 EXEMPTION
+	- 810 PARTICIPATION
+	- 811 POSSESSOR
+	- 812 PROPERTY
+	- 813 RETENTION
+	- 814 RELINQUISHMENT
+      - 5.2.4.2 TRANSFER OF PROPERTY
+	- 815 TRANSFER
+	- 816 GIVING
+	- 817 RECEIVING
+	- 818 APPORTIONMENT
+	- 819 LENDING
+	- 820 BORROWING
+	- 821 TAKING
+	- 822 RESTITUTION
+	- 823 STEALING
+	- 824 THIEF
+	- 825 BOOTY
+      - 5.2.4.3 INTERCHANGE OF PROPERTY
+	- 826 BARTER
+	- 827 PURCHASE
+	- 828 SALE
+	- 829 MERCHANT
+	- 830 MERCHANDISE
+	- 831 MART
+	- 832 STOCK MARKET
+	- 833 SECURITIES
+      - 5.2.4.4 MONETARY RELATIONS
+	- 834 MONEY
+	- 835 TREASURER
+	- 836 TREASURY
+	- 837 WEALTH
+	- 838 POVERTY
+	- 839 CREDIT
+	- 840 DEBT
+	- 841 PAYMENT
+	- 842 NONPAYMENT
+	- 843 EXPENDITURE
+	- 844 RECEIPT
+	- 845 ACCOUNTS
+	- 846 PRICE
+	- 847 VALUE
+	- 848 WORTHLESSNESS
+	- 849 DISCOUNT
+	- 850 DEARNESS
+	- 851 CHEAPNESS
+	- 852 LIBERALITY
+	- 853 ECONOMY
+	- 854 GREED
+	- 855 PRODIGALITY
+	- 856 PARSIMONY
+- CLASS VI – SENTIMENT AND MORAL POWERS
+  - 6.1 AFFECTIONS IN GENERAL
+    - 857 AFFECTIONS
+    - 858 FEELING
+    - 859 SENSIBILITY
+    - 860 INSENSIBILITY
+    - 861 EXCITATION
+    - 862 EXCITABILITY
+    - 863 INEXCITABILITY
+  - 6.2 PERSONAL AFFECTIONS
+    - 6.2.1 PASSIVE AFFECTIONS
+      - 864 PLEASURE
+      - 865 PAIN
+      - 866 PLEASURABLENESS
+      - 867 PAINFULNESS
+      - 868 CONTENT
+      - 869 DISCONTENT
+      - 870 REGRET
+      - 871 RELIEF
+      - 872 AGGRAVATION
+      - 873 CHEERFULNESS
+      - 874 DEJECTION
+      - 875 REJOICING
+      - 876 LAMENTATION
+      - 877 AMUSEMENT
+      - 878 WEARINESS
+      - 879 WIT
+      - 880 DULLNESS
+      - 881 HUMORIST
+    - 6.2.2 DISCRIMINATIVE AFFECTIONS
+      - 882 BEAUTY
+      - 883 UGLINESS
+      - 884 ORNAMENT
+      - 885 JEWELRY
+      - 886 BLEMISH
+      - 887 SIMPLICITY
+      - 888 TASTE
+      - 889 VULGARITY
+      - 890 FASHION
+      - 891 RIDICULOUSNESS
+      - 892 FOP
+      - 893 AFFECTATION
+      - 894 RIDICULE
+      - 895 LAUGHINGSTOCK
+    - 6.2.3 PROSPECTIVE AFFECTIONS
+      - 896 HOPE
+      - 897 HOPELESSNESS
+      - 898 FEAR
+      - 899 COURAGE
+      - 900 COWARDICE
+      - 901 RASHNESS
+      - 902 CAUTION
+      - 903 DESIRE
+      - 904 INDIFFERENCE
+      - 905 DISLIKE
+      - 906 FASTIDIOUSNESS
+      - 907 SATIETY
+    - 6.2.4 CONTEMPLATIVE AFFECTIONS
+      - 908 WONDER
+      - 909 EXPECTANCE
+      - 910 PRODIGY
+    - 6.2.5 EXTRINSIC AFFECTIONS
+      - 911 REPUTE
+      - 912 DISREPUTE
+      - 913 NOBILITY
+      - 914 COMMONALTY
+      - 915 TITLE
+      - 916 PRIDE
+      - 917 HUMILITY
+      - 918 VANITY
+      - 919 MODESTY
+      - 920 OSTENTATION
+      - 921 CELEBRATION
+      - 922 BOASTING
+      - 923 INSOLENCE
+      - 924 SERVILITY
+      - 925 BLUSTERER
+  - 6.3 SYMPATHETIC AFFECTIONS
+    - 6.3.1 SOCIAL AFFECTIONS
+      - 926 FRIENDSHIP
+      - 927 ENMITY
+      - 928 FRIEND
+      - 929 ENEMY
+      - 930 SOCIALITY
+      - 931 EXCLUSION
+      - 932 COURTESY
+      - 933 DISCOURTESY
+      - 934 CONGRATULATION
+      - 935 LOVE
+      - 936 HATE
+      - 937 FAVORITE
+      - 938 RESENTMENT
+      - 939 IRASCIBILITY
+      - 940 SULLENNESS
+      - 941 ENDEARMENT
+      - 942 MARRIAGE
+      - 943 CELIBACY
+      - 944 DIVORCE
+    - 6.3.2 DIFFUSIVE SYMPATHETIC AFFECTIONS
+      - 945 BENEVOLENCE
+      - 946 MALEVOLENCE
+      - 947 MALEDICTION
+      - 948 THREAT
+      - 949 PHILANTHROPY
+      - 950 MISANTHROPY
+      - 951 BENEFACTOR
+      - 952 EVIL DOER
+    - 6.3.3 SPECIAL SYMPATHETIC AFFECTIONS
+      - 953 PITY
+      - 954 PITILESSNESS
+      - 955 CONDOLENCE
+    - 6.3.4 RETROSPECTIVE SYMPATHETIC AFFECTIONS
+      - 956 GRATITUDE
+      - 957 INGRATITUDE
+      - 958 FORGIVENESS
+      - 959 REVENGE
+      - 960 JEALOUSY
+      - 961 ENVY
+  - 6.4 MORAL AFFECTIONS
+    - 6.4.1 MORAL OBLIGATIONS
+      - 962 RIGHT
+      - 963 WRONG
+      - 964 DUENESS
+      - 965 UNDUENESS
+      - 966 DUTY
+      - 967 DERELICTION OF DUTY
+      - 968 EXEMPTION
+    - 6.4.2 MORAL SENTIMENTS
+      - 969 RESPECT
+      - 970 DISRESPECT
+      - 971 CONTEMPT
+      - 972 APPROBATION
+      - 973 DISAPPROBATION
+      - 974 FLATTERY
+      - 975 DETRACTION
+      - 976 FLATTERER
+      - 977 DETRACTOR
+      - 978 VINDICATION
+      - 979 ACCUSATION
+    - 6.4.3 MORAL CONDITIONS
+      - 980 PROBITY
+      - 981 IMPROBITY
+      - 982 KNAVE
+      - 983 DISINTERESTEDNESS
+      - 984 SELFISHNESS
+      - 985 VIRTUE
+      - 986 VICE
+      - 987 INNOCENCE
+      - 988 GUILT
+      - 989 GOOD MAN
+      - 990 BAD MAN
+      - 991 PENITENCE
+      - 992 IMPENITENCE
+      - 993 ATONEMENT
+    - 6.4.4 MORAL PRACTICE
+      - 994 TEMPERANCE
+      - 995 INTEMPERANCE
+      - 996 SENSUALIST
+      - 997 ASCETICISM
+      - 998 FASTING
+      - 999 GLUTTONY
+      - 1000 SOBRIETY
+      - 1001 DRUNKENNESS
+      - 1002 PURITY
+      - 1003 IMPURITY
+      - 1004 LIBERTINE
+      - 1005 LEGALITY
+    - 6.4.5 INSTITUTIONS
+      - 1006 ILLEGALITY
+      - 1007 JURISDICTION
+      - 1008 TRIBUNAL
+      - 1009 JUDGE
+      - 1010 LAWYER
+      - 1011 LAWSUIT
+      - 1012 ACQUITTAL
+      - 1013 CONDEMNATION
+      - 1014 PUNISHMENT
+      - 1015 REWARD
+      - 1016 PENALTY
+      - 1017 SCOURGE
+  - 6.5 RELIGIOUS AFFECTIONS
+    - 6.5.1 SUPERHUMAN BEINGS AND REGIONS
+      - 1018 DEITY
+      - 1019 ANGEL
+      - 1020 SATAN
+    - 6.5.2 RELIGIOUS SENTIMENTS
+      - 1021 PIETY
+      - 1022 IMPIETY
+      - 1023 IRRELIGION
+    - 6.5.3 ACTS OF RELIGION
+      - 1024 WORSHIP
+      - 1025 IDOLATRY
+      - 1026 SORCERY
+      - 1027 SPELL
+      - 1028 SORCERER
+    - 6.5.4 MYTHOLOGICAL DEITIES AND POWERS
+      - 1029 JUPITER
+      - 1030 DEMON
+      - 1031 HEAVEN
+      - 1032 HELL
+      - 1033 THEOLOGY
+      - 1034 ORTHODOXY
+      - 1035 HETERODOXY
+      - 1036 JUDEO-CHRISTIAN REVELATION
+      - 1037 PSEUDO-REVELATION
+    - 6.5.5 RELIGIOUS INSTITUTIONS
+      - 1038 CHURCHDOM
+      - 1039 CLERGY
+      - 1040 LAITY
+      - 1041 RITE
+      - 1042 CANONICALS
+      - 1043 TEMPLE
+
+* Source: dictionary.com
+
+- I. WORDS EXPRESSING ABSTRACT RELATIONS
+
+  - I. EXISTENCE
+
+    - BEING, IN THE ABSTRACT
+
+      - Existence.
+      - Inexistence.
+
+    - BEING, IN THE CONCRETE
+
+      - Substantiality.
+      - Unsubstantiality.
+
+    - FORMAL EXISTENCE; Internal conditions
+
+      - Intrinsicality.
+
+    - FORMAL EXISTENCE; External conditions
+
+      - Extrinsicality.
+
+    - MODAL EXISTENCE; Absolute
+
+      - State.
+
+    - MODAL EXISTENCE; Relative
+
+      - Circumstance.
+
+  - II. RELATION
+
+    - ABSOLUTE RELATION
+
+      - Relation.
+      - Irrelation. [Want, or absence of relation.]
+
+    - ABSOLUTE RELATION; RELATIONS
+
+      - Consanguinity. [Relations of kindred.]
+      - Correlation. [Double or reciprocal relation.]
+      - Identity.
+      - Contrariety. [Noncoincidence.]
+      - Difference.
+
+    - CONTINUOUS RELATION
+
+      - Uniformity.
+
+    - PARTIAL RELATION
+
+      - Nonuniformity. [Absence or want of uniformity.]
+      - Similarity.
+      - Dissimilarity.
+      - Imitation.
+      - Nonimitation.
+      - Variation.
+      - Copy. [Result of imitation.]
+      - Prototype. [Thing copied.]
+
+    - GENERAL RELATION
+
+      - Agreement.
+      - Disagreement.
+
+  - III. QUANTITY
+
+    - SIMPLE QUANTITY
+
+      - Quantity. [Absolute quantity.]
+      - Motion. [Successive change of place.]
+
+    - COMPARATIVE QUANTITY
+
+      - Equality. [Sameness of quantity or degree.]
+      - Inequality. [Difference of quantity or degree.]
+      - Mean.
+      - Compensation.
+
+    - COMPARATIVE QUANTITY; QUANTITY BY COMPARISON WITH A STANDARD
+
+      - Greatness.
+      - Smallness.
+
+    - COMPARATIVE QUANTITY; QUANTITY BY COMPARISON WITH A SIMILAR OBJECT
+
+      - Superiority.
+
+    - COMPARATIVE QUANTITY; CHANGES IN QUANTITY
+
+      - Inferiority.
+      - Increase.
+      - Nonincrease, Decrease.
+
+    - CONJUNCTIVE QUANTITY
+
+      - Addition.
+      - Nonaddition.
+      - Adjunct. [Thing added]
+      - Remainder. [Thing remaining.]
+      - Decrement. [Thing deducted.]
+      - Mixture. [Forming a whole without coherence.]
+      - Simpleness. [Freedom from mixture.]
+      - Junction.
+      - Disjunction.
+      - Vinculum. [Connecting medium.]
+      - Coherence.
+      - Incoherence. [Want of adhesion, nonadhesion, immiscibility.]
+      - Combination.
+      - Decomposition.
+
+    - CONCRETE QUANTITY
+
+      - Whole.
+      - Part.
+      - Completeness.
+      - Incompleteness.
+      - Composition.
+      - Exclusion.
+      - Component.
+      - Extraneousness.
+
+  - IV. ORDER
+
+    - ORDER
+
+      - Order.
+      - Disorder. [Absence, or want of Order,]
+      - Complexity
+      - Arrangement. [Reduction to Order.]
+      - Derangement. [Subversion of Order; bringing into disorder.]
+
+    - CONSECUTIVE ORDER
+
+      - Precedence.
+      - Sequence.
+      - Precursor.
+      - Sequel.
+      - Beginning.
+      - End.
+      - Middle.
+      - Continuity. [Uninterrupted sequence.]
+      - Discontinuity. [Interrupted sequence.]
+      - Term.
+
+    - COLLECTIVE ORDER
+
+      - Assemblage.
+      - Nonassemblage.
+      - Focus. [Place of meeting.]
+
+    - DISTRIBUTIVE ORDER
+
+      - Class.
+      - Inclusion.
+      - Exclusion.
+      - Generality.
+      - Speciality.
+
+    - ORDER AS REGARDS CATEGORIES
+
+      - Normality.
+      - Multiformity.
+      - Conformity.
+      - Unconformity.
+
+  - V. NUMBER
+
+    - NUMBER, IN THE ABSTRACT
+
+      - Number.
+      - Numeration.
+      - List.
+
+    - DETERMINATE NUMBER
+
+      - Unity. {opp. 100}
+      - Accompaniment.
+      - Duality.
+      - Duplication.
+      - Bisection. [Division into two parts.]
+      - Triality.
+      - Triplication.
+      - Trisection. [Division into three parts.]
+      - Quaternity.
+      - Quadruplication.
+      - Quadrisection. [Division into four parts.]
+      - Five,
+      - Quinquesection,
+      - Plurality. {opp. 87} [More than one.]
+
+    - Indeterminate Number
+
+      - Fraction. [Less than one.]
+      - Zero.
+      - Multitude.
+      - Fewness.
+      - Repetition.
+      - Infinity.
+
+  - VI. TIME
+
+    - ABSOLUTE TIME
+
+      - Time.
+      - Neverness.
+      - Period. [Definite duration, or portion of time.]
+      - Contingent
+      - Course. [Indefinite duration.]
+      - Diuturnity. [Long duration.]
+      - Transientness. [Short duration.]
+      - Perpetuity. [Endless duration.]
+      - Instantaneity. [Point of time]
+      - Chronometry. [Estimation, measurement, and record of time.]
+      - Anachronism. [False estimate of time.]
+
+    - RELATIVE TIME; Time with reference to Succession
+
+      - Priority.
+      - Posteriority.
+      - The Present Time.
+      - Different time. [Time different from the present.]
+      - Synchronism.
+      - Futurity. [Prospective time.]
+      - Preterition. [Retrospective time.]
+      - Newness.
+      - Oldness.
+      - Morning.
+      - Evening.
+      - Youth.
+      - Age.
+      - Infant.
+      - Veteran.
+      - Adolescence.
+
+    - RELATIVE TIME; Time with reference to an Effect or Purpose
+
+      - Earliness.
+      - Punctuality
+      - Lateness.
+      - Occasion.
+      - Untimeliness.
+
+    - RECURRENT TIME
+
+      - Frequency.
+      - Infrequency.
+      - Regularity of recurrence. Periodicity.
+      - Irregularity of recurrence.
+
+  - VII. CHANGE
+
+    - SIMPLE CHANGE
+
+      - Change. [Difference at different times.]
+      - Permanence. [Absence of change.]
+      - Cessation. [Change from action to rest.]
+      - Continuance in action.
+      - Conversion. [Gradual change to something different.]
+      - Reversion.
+      - Revolution. [Sudden or violent change.]
+      - Substitution. [Change of one thing for another.]
+      - Interchange. [Double or mutual change.]
+
+    - COMPLEX CHANGE
+
+      - Changeableness.
+      - Stability.
+
+    - COMPLEX CHANGE; Present Events
+
+      - Eventuality.
+
+    - COMPLEX CHANGE; Future Events
+
+      - Destiny.
+
+  - VIII. CAUSATION
+
+    - CONSTANCY OF SEQUENCE IN EVENTS
+
+      - Cause. [Constant antecedent.]
+      - Effect. [Constant sequent.]
+      - Attribution. [Assignment of cause.]
+      - Chance. [Absence of assignable cause.]
+
+    - CONNECTION BETWEEN CAUSE AND EFFECT
+
+      - Power.
+      - Impotence.
+      - Strength. [Degree of power.]
+      - Weakness.
+
+    - POWER IN OPERATION
+
+      - Production.
+      - Destruction. [Nonproduction.]
+      - Reproduction.
+      - Producer.
+      - Destroyer.
+      - Paternity.
+      - Posterity.
+      - Productiveness
+      - Unproductiveness.
+      - Agency.
+      - Physical
+      - Physical
+      - Violence.
+      - Moderation.
+
+    - Indirect Power
+
+      - Influence.
+      - Absence of Influence.
+      - Tendency.
+      - Liability.
+
+    - Combinations of Causes
+
+      - Concurrence.
+      - Counteraction.
+
+- II. WORDS RELATING TO SPACE
+
+  - I. SPACE IN GENERAL
+
+    - ABSTRACT SPACE
+
+      - Space. [Indefinite space.]
+      - Inextension.
+      - Region. [Definite space.]
+      - Place. [Limited space.]
+
+    - RELATIVE SPACE
+
+      - Situation.
+      - Location.
+      - Displacement.
+
+    - EXISTENCE IN SPACE
+
+      - Presence.
+      - Absence. [Nullibiety.]
+      - Inhabitant.
+      - Abode. [Place of habitation, or resort.]
+      - Contents. [Things contained.]
+      - Receptacle.
+
+  - II. DIMENSIONS
+
+    - GENERAL DIMENSIONS
+
+      - Size.
+      - Littleness.
+      - Expansion.
+      - Contraction.
+      - Distance.
+      - Nearness.
+      - Interval.
+      - Contiguity.
+
+    - LINEAR DIMENSIONS
+
+      - Length.
+      - Shortness.
+      - Breadth, Thickness.
+      - Narrowness.
+      - Layer.
+      - Filament.
+      - Height.
+      - Lowness.
+      - Depth.
+      - Shallowness.
+      - Summit.
+      - Base.
+      - Verticality.
+      - Horizontality.
+      - Pendency.
+      - Support.
+      - Parallelism.
+      - Obliquity.
+      - Inversion.
+      - Crossing.
+
+    - Centrical Dimensions; General
+
+      - Exteriority.
+      - Interiority.
+      - Centrality.
+      - Covering.
+      - Lining.
+      - Investment. [Covering, clothing.]
+      - Divestment. [Taking off.]
+      - Circumjacence.
+      - Interjacence.
+      - Circumscription.
+      - Outline.
+      - Edge.
+      - Inclosure.
+      - Limit.
+
+    - Centrical Dimensions; Special
+
+      - Front.
+      - Rear.
+      - Laterality.
+      - Contraposition.
+      - Dextrality.
+      - Sinistrality.
+
+  - III. FORM
+
+    - General Form
+
+      - Form.
+      - Amorphism. [Absence of form.]
+      - Symmetry [Regularity of Form.]
+      - Distortion [Irregularity of form.]
+
+    - Special Form
+
+      - Angularity.
+      - Curvature.
+      - Straightness.
+      - Circularity. [Simple circularity.]
+      - Convolution. [Complex curvature.]
+      - Rotundity.
+
+    - Superficial Form
+
+      - Convexity.
+      - Flatness.
+      - Concavity.
+      - Sharpness.
+      - Bluntness.
+      - Smoothness.
+      - Roughness.
+      - Notch.
+      - Fold.
+      - Furrow.
+      - Opening
+      - Closure.
+      - Perforator.
+      - Stopper.
+
+  - IV. MOTION
+
+    - Motion in General
+
+      - Motion. [Successive change of place.]
+      - Quiescence.
+      - Journey. [Locomotion by land.]
+      - Navigation. [Locomotion by water, or air.]
+      - Traveler.
+      - Mariner.
+      - Transference.
+      - Carrier.
+      - Vehicle.
+      - Ship.
+
+    - Degrees of Motion
+
+      - Velocity.
+      - Slowness.
+
+    - Motion conjoined with Force
+
+      - Impulse.
+      - Recoil.
+
+    - Motion with reference to Direction
+
+      - Direction.
+      - Deviation.
+      - Precession. [Going before.]
+      - Sequence. [Going after.]
+      - Progression. [Motion forward; progressive motion.]
+      - Regression. [Motion backwards.]
+      - Propulsion. [Motion given to an object situated in front.]
+      - Traction. [Motion given to an object situated behind.]
+      - Approach. [Motion towards.]
+      - Recession. [Motion from.]
+      - Attraction. [Motion towards, actively.]
+      - Repulsion. [Motion from, actively; force driving apart.]
+      - Convergence. [Motion nearer to.]
+      - Divergence. [Motion further off.]
+      - Arrival. [Terminal motion at.]
+      - Departure. [Initial motion from.]
+      - Ingress. [Motion into.]
+      - Egress. [Motion out of.]
+      - Reception. [Motion into, actively.]
+      - Ejection. [Motion out of, actively.]
+      - Food. [Eating.]
+      - Excretion.
+      - Insertion. [Forcible ingress.]
+      - Extraction. [Forcible egress.]
+      - Passage. [Motion through.]
+      - Transcursion. [Motion beyond.]
+      - Shortcoming. [Motion short of.]
+      - Ascent. [Motion upwards.]
+      - Descent. [Motion downwards.]
+      - Elevation.
+      - Depression.
+      - Leap.
+      - Plunge.
+      - Circuition. [Curvilinear motion.]
+      - Rotation. [Motion in a continued circle.]
+      - Evolution. [Motion in the reverse circle.]
+      - Oscillation. [Reciprocating motion, motion to and fro.]
+      - Agitation. [Irregular motion.]
+
+- III. WORDS RELATING TO MATTER
+
+  - I. MATTER IN GENERAL
+
+    - Materiality.
+    - Immateriality.
+    - World.
+    - Gravity.
+    - Levity.
+
+  - II. INORGANIC MATTER
+
+    - Solid Matter
+
+      - Density.
+      - Rarity.
+      - Hardness.
+      - Softness.
+      - Elasticity.
+      - Inelasticity.
+      - Tenacity.
+      - Brittleness.
+      - Texture. [Structure.]
+      - Pulverulence.
+      - Friction.
+      - Lubrication. [Absence of friction. Prevention of friction.]
+
+    - Fluid Matter; Fluids in General
+
+      - Fluidity.
+      - Gaseity.
+      - Liquefaction.
+      - Vaporization.
+
+    - Fluid Matter; Specific Fluids
+
+      - Water.
+      - Air.
+      - Moisture.
+      - Dryness.
+      - Ocean
+      - Land.
+      - Gulf.
+      - Plain.
+      - Marsh.
+      - Island.
+
+    - Fluid Matter; Fluids in Motion
+
+      - Stream. [Fluid in motion.]
+      - River. [Water in motion.]
+      - Wind. [Air in motion.]
+      - Conduit. [Channel for the passage of water.]
+      - Airpipe. [Channel for the passage of air.]
+
+    - IMPERFECT FLUIDS
+
+      - Semiliquidity.
+      - Bubble. [Mixture of air and water.]
+      - Pulpiness.
+      - Unctuousness.
+      - Oil.
+      - Resin.
+
+  - III. ORGANIC MATTER
+
+    - Vitality; Vitality in general
+
+      - Organization.
+      - Inorganization.
+      - Life.
+      - Death.
+      - Killing. [Destruction of live; violent death.]
+      - Corpse.
+      - Interment.
+
+    - Vitality; Special Vitality
+
+      - Animality.
+      - Vegetability.
+      - Animal.
+      - Vegetable.
+      - Zoology. [The science of animals.]
+      - Botany. [The science of plants.]
+      - Husbandry. [The economy or management of animals.]
+      - Agriculture. [The economy or management of plants.]
+      - Mankind.
+      - Man.
+      - Woman.
+
+    - Sensation; Sensation in general
+
+      - Physical Sensibility.
+      - Physical Insensibility.
+      - Physical Pleasure.
+      - Physical Pain.
+
+    - Sensation; Special Sensation; Touch
+
+      - Touch. [Sensation of pressure.]
+      - Sensations
+      - Numbness. [Insensibility to touch.]
+
+    - Sensation; Special Sensation; Heat
+
+      - Heat.
+      - Cold.
+      - Calefaction.
+      - Refrigeration.
+      - Furnace.
+      - Refrigeratory.
+      - Fuel.
+      - Thermometer.
+
+    - Sensation; Special Sensation; Taste
+
+      - Taste.
+      - Insipidity.
+      - Pungency.
+      - Condiment.
+      - Savoriness.
+      - Unsavoriness.
+      - Sweetness.
+      - Sourness.
+
+    - Sensation; Special Sensation; Odor
+
+      - Odor.
+      - Inodorousness.
+      - Fragrance.
+      - Fetor.
+
+    - Sensation; Special Sensation; Sound; Sound in General
+
+      - Sound.
+      - Silence.
+      - Loudness.
+      - Faintness.
+
+    - Sensation; Special Sensation; Sound; Specific Sounds
+
+      - Snap. [Sudden and violent sounds.]
+      - Roll. [Repeated and protracted sounds.]
+      - Resonance.
+      - Nonresonance.
+      - Sibilation. [Hissing sounds.]
+      - Stridor. [Harsh sounds.]
+      - Cry.
+      - Ululation. [Animal sounds.]
+
+    - Sensation; Special Sensation; Sound; Musical Sounds
+
+      - Melody.
+      - Discord.
+      - Music.
+      - Musician.
+      - Musical Instruments.
+
+    - Sensation; Special Sensation; Sound; Perception of Sound
+
+      - Hearing. [Sense of sound.]
+      - Deafness.
+
+    - Sensation; Special Sensation; Light; Light in General
+
+      - Light.
+      - Darkness.
+      - Dimness.
+      - Luminary. [Source of light, self-luminous body.]
+      - Shade.
+      - Transparency.
+      - Opacity.
+      - Semitransparency.
+
+    - Sensation; Special Sensation; Light; Specific Light
+
+      - Color.
+      - Achromatism. [Absence of color.]
+      - Whiteness.
+      - Blackness.
+      - Gray.
+      - Brown.
+
+    - Sensation; Special Sensation; Light; Primitive Colors
+
+      - Redness.
+
+    - Sensation; Special Sensation; Light; Complementary Colors
+
+      - Greenness.
+      - Yellowness.
+      - Purple.
+      - Blueness.
+      - Orange.
+      - Variegation.
+
+    - Sensation; Special Sensation; Light; Perceptions of Light
+
+      - Vision.
+      - Blindness.
+      - Dimsightedness. [Imperfect vision.] [Fallacies of vision.]
+      - Spectator.
+      - Optical Instruments.
+      - Visibility.
+      - Invisibility.
+      - Appearance.
+      - Disappearance.
+
+- IV. WORDS RELATING TO THE INTELLECTUAL FACULTIES; FORMATION OF IDEAS
+
+  - I. OPERATIONS OF INTELLECT IN GENERAL
+
+    - Intellect.
+    - Absence
+    - Thought.
+    - Incogitancy. [Absence or want of thought.]
+    - Idea. [Object of thought.]
+    - Topic. [Subject of thought, noemata .]
+
+  - II. PRECURSORY CONDITIONS AND OPERATIONS
+
+    - Curiosity. [The desire of knowledge.]
+    - Incuriosity. [Absence of curiosity.]
+    - Attention.
+    - Inattention.
+    - Care.
+    - Neglect.
+    - Inquiry
+    - Answer.
+    - Experiment.
+    - Comparison.
+    - Discrimination. [Results of comparison. 1]
+    - Indiscrimination. [Results of comparison.
+    - Measurement.
+
+  - III. MATERIALS FOR REASONING
+
+    - Evidence. [On one side.]
+    - Counter Evidence. [Evidence on the other side, on the other hand.]
+    - Qualification.
+
+    - Degrees of Evidence
+
+      - Possibility.
+      - Impossibility.
+      - Probability.
+      - Improbability.
+      - Certainty.
+      - Uncertainty.
+
+  - IV. REASONING PROCESSES
+
+    - Reasoning.
+    - Intuition. [The absence of reasoning.] Sophistry. [False or vicious
+    - reasoning; show of reason.]
+    - Demonstration.
+    - Confutation.
+
+  - V. RESULTS OF REASONING
+
+    - Judgment.
+    - Discovery. [Result of search or inquiry.]
+    - Misjudgment.
+    - Overestimation.
+    - Underestimation.
+    - Belief.
+    - Unbelief.
+    - Credulity.
+    - Incredulity.
+    - Assent.
+    - Dissent.
+    - Knowledge.
+    - Ignorance.
+    - Scholar.
+    - Ignoramus.
+    - Truth. [Object of knowlege.]
+    - Error.
+    - Maxim.
+    - Absurdity.
+    - Intelligence.
+    - Imbecility.
+    - Sage.
+    - Fool.
+    - Sanity.
+    - Insanity.
+    - Madman.
+
+  - VI. EXTENSION OF THOUGHT
+
+    - To the Past
+
+      - Memory.
+      - Oblivion.
+
+    - To the Future
+
+      - Expectation.
+      - Inexpectation.
+      - Disappointment. [Failure of expectation.]
+      - Foresight.
+      - Prediction.
+      - Omen.
+      - Oracle.
+
+  - VII. CREATIVE THOUGHT
+
+    - Supposition.
+    - Imagination.
+
+- IV. WORDS RELATING TO THE INTELLECTUAL FACULTIES; COMMUNICATION OF IDEAS
+
+  - I. NATURE OF IDEAS COMMUNICATED
+
+    - Meaning. [Idea to be conveyed.]
+    - Unmeaningness. [Absence of meaning.]
+    - Intelligibility.
+    - Unintelligibility.
+    - Equivocalness. [Having a double sense.]
+    - Metaphor.
+    - Interpretation.
+    - Misinterpretation.
+    - Interpreter.
+
+  - II. MODES OF COMMUNICATION
+
+    - Manifestation.
+    - Latency.
+    - Information.
+    - Concealment.
+    - Disclosure.
+    - Ambush. [Means of concealment].
+    - Publication.
+    - News.
+    - Secret.
+    - Messenger.
+    - Affirmation.
+    - Negation.
+    - Teaching.
+    - Misteaching.
+    - Learning.
+    - Teacher.
+    - Learner.
+    - School.
+    - Veracity.
+    - Falsehood.
+    - Deception.
+    - Untruth.
+    - Dupe.
+    - Deceiver.
+    - Exaggeration.
+
+  - III. MEANS OF COMMUNICATING IDEAS
+
+    - Natural Means
+
+      - Indication.
+      - Record.
+      - Obliteration. [Suppression of sign.]
+      - Recorder.
+      - Representation.
+      - Misrepresentation.
+      - Painting.
+      - Sculpture.
+      - Engraving.
+      - Artist.
+
+    - Conventional Means; Language Generally
+
+      - Language.
+      - Letter.
+      - Word.
+      - Neologism.
+      - Nomenclature.
+      - Misnomer.
+      - Phrase.
+      - Grammar.
+      - Solecism.
+      - Style.
+
+    - Conventional Means; Language Generally; Various Qualities of Style
+
+      - Perspicuity.
+      - Obscurity.
+      - Conciseness.
+      - Diffuseness.
+      - Vigor.
+      - Feebleness.
+      - Plainness.
+      - Ornament.
+      - Elegance.
+      - Inelegance.
+
+    - Conventional Means; Spoken Language
+
+      - Voice.
+      - Aphony.
+      - Speech.
+      - Stammering. [Imperfect Speech.]
+      - Loquacity.
+      - Taciturnity.
+      - Allocution.
+      - Interlocution.
+      - Soliloquy.
+
+    - Conventional Means; Written Language
+
+      - Writing.
+      - Printing.
+      - Correspondence.
+      - Book.
+      - Description.
+      - Dissertation.
+      - Compendium.
+      - Poetry.
+      - Prose.
+      - The Drama.
+
+- V. WORDS RELATING TO THE VOLUNTARY POWERS; INDIVIDUAL VOLITION
+
+  - I. VOLITION IN GENERAL
+
+    - Acts of Volition
+
+      - Will.
+      - Necessity.
+      - Willingness.
+      - Unwillingness.
+      - Resolution.
+      - Perseverance.
+      - Irresolution.
+      - Obstinacy.
+      - Tergiversation.
+      - Caprice.
+      - Choice.
+      - Absence of Choice.
+      - Rejection.
+      - Predetermination.
+      - Impulse.
+      - Habit.
+      - Desuetude.
+
+    - Causes of Volition
+
+      - Motive.
+      - Absence of Motive.
+      - Dissuasion.
+      - Pretext. [Ostensible motive, ground, or reason assigned.]
+
+    - Objects of Volition
+
+      - Good.
+      - Evil.
+
+  - II. Prospective Volition
+
+    - Conceptional Volition
+
+      - Intention.
+      - Chance. [Absence of purpose in the succession of events.]
+      - Pursuit. [Purpose in action.]
+      - Avoidance. [Absence of pursuit.]
+      - Relinquishment.
+      - Business.
+      - Plan.
+      - Method.
+      - Mid-course.
+      - Circuit.
+      - Requirement.
+
+    - Subservience to Ends; Actual Subservience
+
+      - Instrumentality.
+      - Means.
+      - Instrument.
+      - Substitute.
+      - Materials.
+      - Store.
+      - Provision.
+      - Waste.
+      - Sufficiency.
+      - Insufficiency.
+      - Redundance.
+
+    - Subservience to Ends; Degree of Subservience
+
+      - Importance.
+      - Unimportance.
+      - Utility.
+      - Inutility.
+      - Expedience. [Specific subservience.]
+      - Inexpedience.
+      - Goodness. [Capability of producing good. Good qualities.]
+      - Badness. [Capability of producing evil. Bad qualities.]
+      - Perfection.
+      - Imperfection.
+      - Cleanness.
+      - Uncleanness.
+      - Health.
+      - Disease.
+      - Salubrity.
+      - Insalubrity.
+      - Improvement.
+      - Deterioration.
+      - Restoration.
+      - Relapse.
+      - Remedy.
+      - Bane.
+
+    - Subservience to Ends; Contingent Subservience
+
+      - Safety.
+      - Danger.
+      - Refuge. [Means of safety.]
+      - Pitfall. [Source of danger.]
+      - Warning.
+      - Alarm. [Indication of danger.]
+      - Preservation.
+      - Escape.
+      - Deliverance.
+
+    - Subservience to Ends; Precursory Measures
+
+      - Preparation.
+      - Nonpreparation.
+      - Essay.
+      - Undertaking.
+      - Use.
+      - Disuse.
+      - Misuse.
+
+  - III. VOLUNTARY ACTION
+
+    - Simple voluntary Action
+
+      - Action.
+      - Inaction.
+      - Activity.
+      - Inactivity.
+      - Haste.
+      - Leisure.
+      - Exertion.
+      - Repose.
+      - Fatigue.
+      - Refreshment.
+      - Agent.
+      - Workshop.
+
+    - Complex Voluntary Action
+
+      - Conduct.
+      - Direction.
+      - Director.
+      - Advice.
+      - Council.
+      - Precept.
+      - Skill.
+      - Unskillfulness.
+      - Proficient.
+      - Bungler.
+      - Cunning.
+      - Artlessness.
+
+  - IV. ANTAGONISM
+
+    - Conditional Antagonism
+
+      - Difficulty.
+      - Facility.
+      - Hindrance.
+      - Aid.
+      - Opposition.
+      - Cooperation.
+      - Opponent.
+      - Auxiliary.
+      - Party.
+      - Discord.
+      - Concord.
+      - Defiance.
+      - Attack.
+      - Defense
+      - Retaliation.
+      - Resistance.
+      - Contention.
+      - Peace.
+      - Warfare.
+      - Pacification.
+      - Mediation.
+      - Submission.
+      - Combatant.
+      - Arms.
+      - Arena.
+
+  - V. RESULTS OF VOLUNTARY ACTION
+
+    - Completion.
+    - Noncompletion.
+    - Success.
+    - Failure.
+    - Trophy.
+    - Prosperity.
+    - Adversity.
+    - Mediocrity.
+
+- V. WORDS RELATING TO THE VOLUNTARY POWERS; INTERSOCIAL VOLITION
+
+  - I. GENERAL INTERSOCIAL VOLITION (Implying the action of the will of one mind over the will of another)
+
+    - Authority.
+    - Laxity. [Absence of authority.]
+    - Severity.
+    - Lenity.
+    - Command.
+    - Disobedience.
+    - Obedience.
+    - Compulsion.
+    - Master.
+    - Servant.
+    - Scepter.
+    - Freedom.
+    - Subjection.
+    - Liberation.
+    - Restraint.
+    - Prison. [Means of restraint.]
+    - Keeper.
+    - Prisoner.
+    - Commission. [Vicarious authority.]
+    - Abrogation.
+    - Resignation.
+    - Consignee.
+    - Deputy.
+
+  - II. SPECIAL INTERSOCIAL VOLITION
+
+    - Permission.
+    - Prohibition.
+    - Consent.
+    - Offer.
+    - Refusal.
+    - Request.
+    - Deprecation. [Negative request.]
+    - Petitioner.
+
+  - III. CONDITIONAL INTERSOCIAL VOLITION
+
+    - Promise.
+    - Release from engagement.
+    - Compact.
+    - Conditions.
+    - Security.
+    - Observance.
+    - Nonobservance.
+    - Compromise.
+
+  - IV. POSSESSIVE RELATIONS (relations which concern property)
+
+    - Property in general
+
+      - Acquisition.
+      - Loss.
+      - Posession.
+      - Exemption.
+      - Participation. [Joint possession.]
+      - Possessor.
+      - Property.
+      - Retention.
+      - Relinquishment.
+
+    - Transfer of Property
+
+      - Transfer.
+      - Giving.
+      - Receiving.
+      - Apportionment.
+      - Lending.
+      - Borrowing.
+      - Taking.
+      - Restitution.
+      - Stealing.
+      - Thief.
+      - Booty.
+
+    - Interchange of Property
+
+      - Barter.
+      - Purchase.
+      - Sale.
+      - Merchant.
+      - Merchandise.
+      - Mart.
+
+    - Monetary Relations
+
+      - Money.
+      - Treasurer.
+      - Treasury.
+      - Wealth.
+      - Poverty.
+      - Credit.
+      - Debt.
+      - Payment.
+      - Nonpayment
+      - Expenditure.
+      - Receipt.
+      - Accounts.
+      - Price.
+      - Discount.
+      - Dearness.
+      - Cheapness.
+      - Liberality.
+      - Economy.
+      - Prodigality.
+      - Parsimony.
+
+- VI. WORDS RELATING TO THE SENTIMENT AND MORAL POWERS
+
+  - I. AFFECTIONS IN GENERAL
+
+    - Affections.
+    - Feeling.
+    - Sensibility.
+    - Insensibility.
+    - Excitation.
+    - Excitability. [Excess of sensitiveness.]
+    - Inexcitability. [Absence of excitability, or of excitement.]
+
+  - II. PERSONAL AFFECTIONS
+
+    - Passive Affections
+
+      - Pleasure.
+      - Pain.
+      - Pleasurableness. [Capability of giving pleasure; cause or source of pleasure.]
+      - Painfulness. [Capability of giving pain; cause or source of pain.]
+      - Content.
+      - Discontent.
+      - Regret.
+      - Relief.
+      - Aggravation.
+      - Cheerfulness.
+      - Dejection.
+      - Rejoicing. [Expression of pleasure.]
+      - Lamentation. [Expression of pain.]
+      - Amusement.
+      - Weariness.
+      - Wit.
+      - Dullness.
+      - Humorist.
+
+    - Discriminative Affections
+
+      - Beauty.
+      - Ugliness.
+      - Ornament.
+      - Blemish.
+      - Simplicity.
+      - Taste. [Good taste.]
+      - Vulgarity. [Bad taste.]
+      - Fashion.
+      - Ridiculousness.
+      - Fop.
+      - Affectation.
+      - Ridicule.
+      - Laughingstock. [Object and cause of ridicule.]
+
+    - Prospective Affections
+
+      - Hope.
+      - Hopelessness. [Absence, want or loss of hope.]
+      - Fear.
+      - Courage. [Absence of fear.]
+      - Cowardice. [Excess of fear.]
+      - Rashness.
+      - Caution.
+      - Desire.
+      - Indifference.
+      - Dislike.
+      - Fastidiousness.
+      - Satiety.
+
+    - Contemplative Affections
+
+      - Wonder.
+      - Expectance. [Absence of wonder.]
+      - Prodigy.
+
+    - Extrinsic Affections; personal affections derived from the opinions or feelings of others)
+
+      - Repute.
+      - Disrepute.
+      - Nobility.
+      - Commonalty.
+      - Title.
+      - Pride.
+      - Humility.
+      - Vanity.
+      - Modesty.
+      - Ostentation.
+      - Celebration.
+      - Boasting.
+      - Insolence. [Undue assumption of superiority.]
+      - Servility.
+      - Blusterer.
+
+  - III. SYMPATHETIC AFFECTIONS
+
+    - Social Affections
+
+      - Friendship.
+      - Enmity.
+      - Friend.
+      - Enemy.
+      - Sociality.
+      - Seclusion.
+      - Courtesy.
+      - Discourtesy.
+      - Congratulation.
+      - Love.
+      - Hate.
+      - Favorite.
+      - Resentment.
+      - Irascibility.
+      - Sullenness.
+      - Endearment. [Expression of affection or love.]
+      - Marriage.
+      - Celibacy.
+      - Divorce.
+
+    - Diffusive Sympathetic Affections
+
+      - Benevolence.
+      - Malevolence.
+      - Malediction.
+      - Threat.
+      - Philanthropy.
+      - Misanthropy.
+      - Benefactor.
+      - Evil doer. [Maleficent being.]
+
+    - Special Sympathetic Affections
+
+      - Pity.
+      - Pitilessness.
+      - Condolence.
+
+    - Retrospective Sympathetic Affections
+
+      - Gratitude.
+      - Ingratitude.
+      - Forgiveness.
+      - Revenge.
+      - Jealousy.
+      - Envy.
+
+  - IV. MORAL AFFECTIONS
+
+    - Moral Obligations
+
+      - Right.
+      - Wrong.
+      - Dueness.
+      - Undueness. [Absence of right.]
+      - Duty.
+      - Dereliction of Duty.
+      - Exemption.
+
+    - Moral Sentiments
+
+      - Respect.
+      - Disrespect.
+      - Contempt.
+      - Approbation.
+      - Disapprobation.
+      - Flattery.
+      - Detraction.
+      - Flatterer.
+      - Detractor.
+      - Vindication.
+      - Accusation.
+
+    - Moral Conditions
+
+      - Probity.
+      - Improbity.
+      - Knave.
+      - Disinterestedness.
+      - Selfishness.
+      - Virtue.
+      - Vice.
+      - Innocence.
+      - Guilt.
+      - Good man
+      - Bad man
+      - Penitence.
+      - Impenitence.
+      - Atonement.
+
+    - Moral Practice
+
+      - Temperance.
+      - Intemperance.
+      - Sensualist.
+      - Asceticism.
+      - Fasting.
+      - Gluttony.
+      - Sobriety.
+      - Drunkenness.
+      - Purity.
+      - Impurity.
+      - Libertine.
+
+    - Institutions
+
+      - Legality.
+      - Illegality. [Absence or violation of law.]
+      - Jurisdiction.
+      - Tribunal.
+      - Judge.
+      - Lawyer.
+      - Lawsuit.
+      - Acquittal.
+      - Condemnation.
+      - Punishment.
+      - Reward.
+      - Penalty.
+      - Scourge. [Instrument of punishment.]
+
+  - V. RELIGIOUS AFFECTIONS
+
+    - Superhuman Beings and Regions
+
+      - Deity.
+      - Angel. [Beneficent spirits.]
+      - Satan. [Maleficent spirits.]
+
+    - Mythological and other fabulous Deities and Powers
+
+      - Jupiter.
+      - Demon.
+      - Heaven.
+      - Hell.
+      - Theology. [Religious knowledge.]
+      - Orthodoxy.
+      - Heterodoxy.
+      - Revelation.
+      - Pseudo-Revelation.
+
+    - Religious Sentiments
+
+      - Piety.
+      - Impiety.
+      - Irreligon.
+
+    - Acts of Religion
+
+      - Worship.
+      - Idolatry.
+      - Sorcery.
+      - Spell.
+      - Sorcerer.
+
+    - Religious Institutions
+
+      - Churchdom.
+      - Clergy.
+      - Laity.
+      - Rite.
+      - Canonicals.
+      - Temple.
+
