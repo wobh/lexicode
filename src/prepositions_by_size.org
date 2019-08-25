@@ -1,5 +1,5 @@
-#+TITLE: Lexicode: Verbs by Size
-#+DATE: <2014-10-19 Sun>
+#+TITLE: Lexicode: Prepositions by Size
+#+DATE: <2019-08-24 Sat>
 #+AUTHOR: William Clifford
 #+EMAIL: wobh@yahoo.com
 
