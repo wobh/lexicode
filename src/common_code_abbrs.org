@@ -181,7 +181,8 @@ like they *have* to are:
 | pic | pict | picture/photo    | binary |
 | drw | draw | illustration     | binary |
 | snd |      | sound file       | binary |
-| msc |      | music file       | binary |
+| msc |      | music file       | either |
+| aud |      | audio file       | binary |
 | vid |      | video file       | binary |
 | fnt | font | font file        | binary |
 | doc |      | document         | text   |
@@ -464,6 +465,7 @@ abbreviation, prefixes, suffixes, and infixes abound.
 |   | nm |     | name |       | name                 |      |
 |   | fn |     |      |       | file name            |      |
 |   | dn |     |      |       | directory name       |      |
+|   |    | set |      |       | set                  |      |
 
 *** opportunities
 

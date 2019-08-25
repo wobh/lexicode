@@ -230,7 +230,14 @@ examiner
 * Programming abbreviations and short words
 
 ** Common elements of 
-
+*** Web page projects
+- assets
+  - images :: media, var/img
+  - audios :: media, var/aud, var/snd
+  - videos :: media, var/vid
+  - source :: src, js, html, txt, csv, sql
+  - styles :: style, css, sass, scss
+*** 
 * nouns
 
 | concept            | 3-letter    | 4-letter        | 5-letter    |
