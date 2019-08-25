@@ -1,3 +1,8 @@
+#+TITLE: Naming Things for Web Development
+#+DATE: <2019-08-24 Sat>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+
 * Uniform Resource Identifier (URI)
 
 : URI = scheme:[//authority]path[?query][#fragment]
@@ -18,16 +23,24 @@ saying is that ~/~ is a valid authority for the ~file~ schema.
 ** elements
 ** attributes
 *** id
-Should correspond to an acceptable fragment value
+
+Should correspond to an acceptable fragment value.
+
+Should be an "opaque" string
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id
+
 
 *** class
 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class
 *** name
 Nowadays, only used for form fields (eg. input, select textarea) ...
-*** data
+*** data-*
 
 the dataset API converts attributes like ~data-foo-bar~ to ~fooBar~
 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
 *** aria
 
 ARIA attributes describe relations between elements
@@ -37,7 +50,7 @@ ARIA attributes describe relations between elements
 Should be a valid ARIA role
 
 * CSS
-** selectorsE
+** selectors
 * ARIA
 ** roles
 ** aria
@@ -51,6 +64,7 @@ Should be a valid ARIA role
 - dispatch :: the action of signalling or triggering the event on a
               target element.
 * General
+** Things that need names
 - model
 - widget
   - dialog
@@ -60,63 +74,141 @@ Should be a valid ARIA role
 - action
 - effect
 
+** Basics
 
-idWidgetModel
+- ~FooBar~ a class, object, model or namespace
+- ~bazQux~ a function/method, or variable
+- ~zot-wat~ a classname
 
-ModelWidget
+** Notes
 
-widgetModelId
+Uses of the ~id~ attribute
 
-selectModelWidget
+- URL fragments ~https://example.com#idValue~
+- CSS selectors ~#idValue~
+- parameters for ~docuemnt~ element finding:
+  ~document.getElementById("idValue")~
+- in many browsers they are variables in the ~window~ object,
+  accessable with either:
+  - ~window["idValue"]~
+  - ~window.idValue~
+- Many ARIA attributes use ids as references
+  - an "ID reference" is a single id
+  - an "ID reference list" is a list of IDs (space separated?)
 
-Id attributes 
+Two bits of advice are commonly given for ~id~ values:
 
-: ModelWidget = document.getElementById( idModelWidget )
+- they should be unique to the page
+- they should be opaque to the user
 
-: selectModelWidget = "#" + $.escapeSelector( idModelWidget )
+This last one means developers should count on users knowing what they
+are or what they mean, or that they have any semantic structure in their
+value. Except for their use in URL fragments for the most part, this
+second condition is easily met, even for id's which developers have
+given semantically structured values for purposes of identifying in
+application code. However ...
+
+These all combine to make coming up with values for ~id~ a potentially
+fraught matter, requiring a lot of architectual alignment with page
+generation and application configuration. It's advised that values for
+~id~ attributes be unique to the page for good reason, but browsers
+are also expected to be robust in handling accidental id
+reassignments. Since application code might count on certain elements
+having certain ~id~ values, duplicates might break the application in
+surprising ways.
+
+So it seems to me that a good practice for dealing with ~id~ values
+should be generated and passed to applications as configurations. Only
+then can uniqueness be guarenteed. Opacity too, can be guarenteed,
+even on an application level, making it more robust to change.
+
+** a model of variable names
+
+Name features after a model in the problem domain. Specialize those
+names base on the type of interface the feature has implementations
+for. ARIA roles provide a useful ontology of page features, some
+examples:
+
+- dialog
+- form
+- list
+- listitem
+- document
+- article
+- application
+- button
+- input
+  - (not an ARIA role, but necessary for form inputs, named after the
+    ":input" selector in jQuery.)
+
+This basic ontology of "roles" will serve for naming "Features" we
+implement even if the role isn't literally used (although it probably
+should be in a few cases).
+
+Suppose an ~Options~ object provides the generated id's in use on the
+page and has mapped them to variables used by the application:
+
+: idModelFeature = Options.idModelFeature
+
+Find the element:
+
+: ModelFeature = document.getElementById( idModelFeature )
+
+Make a selector if necessary:
+
+: selectModelFeature = "#" + $.escapeSelector( idModelFeature )
 
 Would do this for use in jQuery selectors or data attributes which
 take selectors as values (looking at you, Bootstrap).
 
-: listModelWidgets = document.getElementsByClassName( classnameModelWidget )
-: $listModelWidgets = $( selectModelWidgets )
+The need for this isn't as strong for classnames, but for classes that
+might otherwise get named ~js-my-application-class~ 
 
+: classnameModelFeatures = Options.classnameModelFeatures
 
-: ModelWidget.addEventListener( Event, onEvent )
+(Using ~classname~ is clearer than ~class~ would be).
 
-: ModelWidget.dispatchEvent( Event )
+Get a list of features:
 
-Presumably you know the ~Model~ context when you define this.
+: listModelFeatures = document.getElementsByClassName( classnameModelFeatures )
 
-: widget = event.target 
+Or: 
 
-In a jQuery context
+: $listModelFeatures = $( selectModelFeatures )
 
-: ModelWidget.on( Event, onEvent )
+Setup an event listener. A widespread practice is to name the
+function handling the event, ~onThisEventName~:
 
-Inside the handler function:
+: ModelFeature.addEventListener( Event, onEvent )
 
-: $widget = $( event.target )
+Dispatch an event:
+
+: ModelFeature.dispatchEvent( Event )
+
+In the handler function, presumably you know the ~Model~ context when
+you define this. Make the code handling the event target more clear by
+assigning it to a variable named after the base feature name:
+
+: feature = event.target 
+
+In a jQuery context:
+
+: ModelFeature.on( Event, onEvent )
+
+Inside the jQuery handler function:
+
+: $feature = $( event.target )
 
 One problem with ~onEvent~ style names is you might have the same
 handler for different events. I like this idea:
 
 This looks redundant. I like the semantics of this:
 
-: ModelWidget.addEventListener( Event, doAction )
+: ModelFeature.addEventListener( Event, doAction )
 
 This reads even better in jQuery:
 
-: $ModelWidget.on( Event, doAction )
-
-
-
-Model.Widget.onEvent
-Model.Widget.doAction
-
-
-
-
+: $ModelFeature.on( Event, doAction )
 
 * References
 ** URI
