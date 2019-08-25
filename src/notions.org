@@ -1,0 +1,242 @@
+#+TITLE: Notions
+#+DATE: <2015-09-10 Thu>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+ 
+* Making
+
+- process -> ? (product)
+  - materials
+  - technique
+
+#+NAME: makings-table
+| action    | agent       | end                     | counteract        |
+|-----------+-------------+-------------------------+-------------------|
+| make      | maker       | (making)                | break             |
+| create    | creator     | creation, creature      |                   |
+| produce   | producer    | product, production     |                   |
+| construct | constructor | construction, structure | destruct          |
+| -facture  | factory     |                         |                   |
+| compose   | composer    | composition             | depose, decompose |
+| arrange   | arranger    | arrangement             | derange           |
+| build     | builder     | building                |                   |
+
+** constructure
+
+- form
+- mold
+- 
+
+** destructure
+
+- destroy
+- fall
+  - collapse
+  - implode
+- throw
+  - hurl
+  - fling
+  - explode
+  - reject
+- break
+- cut
+  - split
+  - slice
+  - chop
+  - chomp
+- crush
+- burn
+  - dissolve
+- kill
+  - slay
+  - murder
+- pierce
+  - puncture
+
+* Keeping
+
+#+NAME: makings-table
+| action | agent  | end     | counteract |
+|--------+--------+---------+------------|
+| keep   | keeper | keeping |            |
+| store  | store  | storing |            |
+| hold   | holder | holding |            |
+| bind   | binder | binding | unbind     |
+
+- bind
+  - tie
+  - constrain
+  - restrain
+  - confine
+
+
+* Asking
+
+- ask
+  - query
+    - inquire
+    - require
+    - question
+      - request
+- answer
+  - reply
+    - respond
+      - response
+  - cognovit
+
+** Query languages
+- Structured Query Language
+- Gellish
+- Datalog
+
+* Moving
+
+** event
+
+| action | agent | end    | counteract |
+|--------+-------+--------+------------|
+| move   | mover | moving | stay       |
+
+** world
+
+- distance relation of places
+  - metric
+- composition of places
+
+: - : move move -> move
+: - : spot spot -> move
+: - : move spot -> spot
+
+: + : move move -> move
+: + : spot move -> spot
+: + : spot spot -> spot
+
+origin
+source
+target
+ 
+*** references
+
+- http://www.nacgeo.com Natural Area Code
+  - https://en.wikipedia.org/wiki/Natural_Area_Code
+- http://geohash.org Geohash
+  - https://en.wikipedia.org/wiki/Geohash
+- http://wiki.openstreetmap.org/wiki/QuadTiles
+
+** space
+
+- interval
+- distance
+- duration
+
+- direct
+- orient
+  - turn
+  - spin
+  - face
+
+- position
+- size
+
+- direction
+- magnitude
+
+** where
+
+- occur
+- occupy
+- inhabit
+- coincide
+
+*** gather
+
+- gather
+- collect
+- coalesce
+- cohere
+- dilation
+- compress
+- arrive
+- enter
+- focus
+- deliver
+- entangle
+- associate
+- assign
+- join
+- marry
+- pair
+- connect
+
+*** scatter
+
+- leave
+- spread
+- scatter
+- dispense
+- disperse
+- disinter
+- dissolve
+- displace
+- displant
+- diffract
+- dislodge
+- dispatch
+
+** when
+
+- commence
+
+* Turning
+
+- affine
+- scalar
+- vector
+- tensor
+
+- vertex
+- matrix
+
+- spline
+
+- difference
+
+- orientation
+- displacement
+
+- complect
+- simplect
+
+- collapse
+
+- disjunction
+- conjunction
+
+* Naming
+- praenomen
+- cognomen
+- agnomen
+
+
+* Warning (Boding)
+
+- disaster
+- dishonor
+- dissuade
+- foretell
+- portend
+- predict
+
+
+
+
+
+* COMMENT Org settings
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.5.1 (Org mode 8.3.1)
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:t p:nil pri:nil prop:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t title:t toc:t todo:t |:t
