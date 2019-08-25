@@ -41,6 +41,27 @@ Nowadays, only used for form fields (eg. input, select textarea) ...
 the dataset API converts attributes like ~data-foo-bar~ to ~fooBar~
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+
+**** Data attributes used in Bootstrap
+https://stackoverflow.com/a/38341753
+
+The feature distinguishing attribute is ~data-toggle~ which uses the
+following values:
+
+- ~modal~
+- ~popover~
+- ~collapse~
+- ~dropdown~
+- ~scroll~
+- ~tab~/~pill~
+- ~tooltip~
+- ~button~
+
+There's also:
+
+- ~data-ride=carousel~
+- ~data-spy=affix~
+
 *** aria
 
 ARIA attributes describe relations between elements
@@ -65,27 +86,36 @@ Should be a valid ARIA role
               target element.
 * General
 ** Things that need names
-- model
-- widget
-  - dialog
-  - form
-  - input
-- feature
-- action
-- effect
-
+- URIs
+- models
+  - features
+    - actions
+    - effects
+- roles
+  - dialogs
+  - forms
+  - inputs
+- events
+  - dispatchers
+  - listeners
+- selectors
+  - ids
+  - classnames
+- data-attributes
+  - keys
+  - values
 ** Basics
 
 - ~FooBar~ a class, object, model or namespace
 - ~bazQux~ a function/method, or variable
 - ~zot-wat~ a classname
 
-** Notes
+** The Perils of Identifiers
 
-Uses of the ~id~ attribute
+Uses of the ~id~ in the ~id~ attribute:
 
-- URL fragments ~https://example.com#idValue~
-- CSS selectors ~#idValue~
+- fragments: ~https://example.com#idValue~
+- selectors: ~#idValue~
 - parameters for ~docuemnt~ element finding:
   ~document.getElementById("idValue")~
 - in many browsers they are variables in the ~window~ object,
@@ -94,19 +124,19 @@ Uses of the ~id~ attribute
   - ~window.idValue~
 - Many ARIA attributes use ids as references
   - an "ID reference" is a single id
-  - an "ID reference list" is a list of IDs (space separated?)
+  - an "ID reference list" is a list of ids (space separated?)
 
 Two bits of advice are commonly given for ~id~ values:
 
 - they should be unique to the page
 - they should be opaque to the user
 
-This last one means developers should count on users knowing what they
-are or what they mean, or that they have any semantic structure in their
-value. Except for their use in URL fragments for the most part, this
-second condition is easily met, even for id's which developers have
-given semantically structured values for purposes of identifying in
-application code. However ...
+This last one means developers should not count on users knowing what
+the ids are, what their values mean, or that they have any semantic
+structure in their value. Except for their use in URL fragments, for
+the most part, this second condition is easily met. Even for id's
+which developers have given semantically structured values for
+purposes of identifying in application code. However ...
 
 These all combine to make coming up with values for ~id~ a potentially
 fraught matter, requiring a lot of architectual alignment with page
@@ -119,8 +149,90 @@ surprising ways.
 
 So it seems to me that a good practice for dealing with ~id~ values
 should be generated and passed to applications as configurations. Only
-then can uniqueness be guarenteed. Opacity too, can be guarenteed,
+then can uniqueness be guaranteed. Opacity too, can be guaranteed,
 even on an application level, making it more robust to change.
+
+** REST-like names, a detour
+
+Forms elements have two attribute to describe how form contents are
+submitted:
+
+- ~action~ attribute is the URI where the form contents are submitted
+- ~method~ attribute is the HTTP method of submitting contents; ~POST~
+  by default
+
+Here's the, now classic, breakdown of URIs and actions in REST:
+
+| resource path | HTTP method | resource type | resource method     |
+|---------------+-------------+---------------+---------------------|
+| /model        | POST        | collection    | create              |
+| /model/{id}   | DELETE      | member        | destroy             |
+| /model/{id}   | PATCH       | member        | update              |
+| /model/{id}   | PUT         | member        | update/replace      |
+|---------------+-------------+---------------+---------------------|
+| /model        | GET         | collection    | index/list/retrieve |
+| /model/{id}   | GET         | member        | show/read/retrieve  |
+
+These are what make a basic REST API, although, it should be noted:
+none of this, or what follows is prescribed in Fielding's paper which
+is much more generic.
+
+For web interfaces there's two common ~GET~ interfaces:
+
+| resource path    | HTTP method | resource type | resource method |
+|------------------+-------------+---------------+-----------------|
+| /model/new       | GET         | collection    | new             |
+| /model/{id}/edit | GET         | member        | edit            |
+
+These both provide forms. Form ~new~ has fields derived from an empty
+or default model for creating a new resource:
+
+: <form action="/model" method="POST">...</form>
+
+Form ~edit~ has fields based on an existing resource for updating
+them:
+
+: <form action="/model/id" method="PATCH">...</form>
+
+It could use ~PUT~ too.
+
+Interestingly, these could be combined. A domain might support
+deriving new resources from existing ones:
+
+| resource path    | HTTP method | resource type | resource method   |
+|------------------+-------------+---------------+-------------------|
+| /model/{id}/copy | GET         | member        | copy/reply/revise |
+
+Form ~copy~ has fields derived from an existing model, like ~edit~,
+but it's has the same action and method as ~new~.
+
+More commonly are variations or extensions of ~index~ to enable
+searching, sorting, or filtering the collection to a desired subset:
+
+| resource path   | HTTP method | resource type | resource method |
+|-----------------+-------------+---------------+-----------------|
+| /model?{params} | GET         | collection    | search          |
+
+What about aggregations? Could these be handled for this resource? I
+think it might be reasonable to have something like this as a
+variation of ~index~:
+
+| resource path         | HTTP method | resource type | resource method |
+|-----------------------+-------------+---------------+-----------------|
+| /model/total?{params} | GET         | aggregation   | total           |
+
+However, if you don't mind overloading the representation of the index
+method, you could support that with parameters on ~index~.
+
+It's fair to ask what it might mean to ~POST~ to a member resource or
+to ~PATCH~ a collection. It's also fair to ask what the point of this
+detour was.
+
+To answer these questions together, although I can imagine some
+possible uses and names for the speculative methods, but I'm trying to
+collect resource methods that are "natural" to the API of a "typical"
+web application. More creative uses of these interfaces is a topic of
+a presentation I'm working on.
 
 ** a model of variable names
 
@@ -209,6 +321,15 @@ This looks redundant. I like the semantics of this:
 This reads even better in jQuery:
 
 : $ModelFeature.on( Event, doAction )
+
+** examples
+
+- Model ~Post~
+  - Feature ~formNew~
+  - Feature ~formEdit~
+- Model ~Comment~
+  - Feature ~formNew~
+  - Feature ~formReply~
 
 * References
 ** URI
