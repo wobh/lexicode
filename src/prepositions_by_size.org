@@ -1,0 +1,81 @@
+#+TITLE: Lexicode: Verbs by Size
+#+DATE: <2014-10-19 Sun>
+#+AUTHOR: William Clifford
+#+EMAIL: wobh@yahoo.com
+
+* 2
+
+- at
+- by
+- in
+- on
+- of
+- re(garding)
+- to
+- up
+
+* 3
+
+- for
+- but
+- off
+- out
+
+* 4
+
+- down
+- into
+- like
+- near
+- over
+- upon
+- with
+
+* 5
+
+- about
+- above
+- along
+- after
+- since
+- until
+- under
+
+* 6
+
+- across
+- around
+- before
+- behind
+- beyond
+- during
+- except
+- within
+
+* 7 and up
+
+- against
+- between
+- despite (?)
+- through
+- towards
+- without
+
+- follows (ing)
+- regards (ing)
+
+- concerns (ing)
+- excludes (ing)
+- includes (ing)
+
+* COMMENT org settings
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
+#+DESCRIPTION: Synonyms of verbs by size
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS: verbs, synonyms
+#+LANGUAGE: en
+#+SELECT_TAGS: export
