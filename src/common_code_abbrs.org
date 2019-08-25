@@ -398,6 +398,30 @@ A basic rails app:
 - test
 - prod
 
+** Middlemanapp
+- mymiddlemansite/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - config.rb
+  - source
+    - images
+      - background.png
+      - middleman.png
+    - index.html.erb
+    - javascripts
+      - all.js
+    - layouts
+     - layout.erb
+    - stylesheets
+      - all.css
+      - normalize.css
+  - data
+  - lib
+  - build
+*** References
+- https://middlemanapp.com/basics/directory-structure/
+
 * Code abbreviations
 
 Most programming language abstract way storage and retrieval of data
