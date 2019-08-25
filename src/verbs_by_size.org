@@ -31,7 +31,7 @@ Synonyms of verbs by size
 | eke | grow      |             |               | append                      | add,wax |
 | fit | mold,form | adapt,shape | sculpt        | configuration               |         |
 | fix | mend,keep |             | fasten,repair | constantization             |         |
-| get | take      | fetch       |               | retrieve,                   |         |
+| get | take,grab | fetch       |               | retrieve,                   |         |
 | hap |           | occur       | happen        | events                      |         |
 | ken | know      | learn       | reckon        | association                 |         |
 | let |           | allow       |               | definition                  | def     |
@@ -39,7 +39,7 @@ Synonyms of verbs by size
 | nim | take      | steal       | thieve        | reduction,removal           |         |
 | nix | deny      |             | refuse        | rejection                   |         |
 | ply | fold      |             | reduce        | reduction,abstraction       |         |
-| pop | take      |             | remove        | truncation                  |         |
+| pop | take      |             | remove        | release,truncation          |         |
 | put | stow,hold | alter,amend | change,insert | mutation,amendment          | set     |
 | rid | drop      | spurn,purge | reject        | rejection,removal           |         |
 | run | exec,work |             |               | execution                   | act     |
@@ -54,16 +54,17 @@ Synonyms of verbs by size
 | wax | grow      |             |               | increase                    | add,eke |
 | hit | kick      | punch       | strike        |                             |         |
 | wed | join      | marry,agree | cleave        | interleave,contract,connect |         |
-| bet |           | guess       | gamble        |                             |         |
-| nip |           | pinch       |               |                             |         |
+| bet |           | guess       | gamble        | suppose                     |         |
+| nip | bite      | pinch       |               | truncate a small amount     |         |
 | beg |           | plead       | grovel        | request,require             | ask     |
 | vie |           |             |               | contend,contest,dispute     |         |
+| vex |           | anger       |               | provoke,irritate,aggravate  |         |
 * from 4
 
 | 4    | 5     | 6      | 7       | concept            | syns      | ants       |
 |------+-------+--------+---------+--------------------+-----------+------------|
 | make | build | create |         |                    | cast      |            |
-| read | parse |        |         |                    | (copy?)   |            |
+| read | parse | access |         |                    | (copy?)   |            |
 | edit | alter | change |         | alteration         |           |            |
 | help |       | assist |         |                    |           |            |
 | wipe | erase |        |         |                    | clear     |            |
@@ -140,7 +141,7 @@ Synonyms of verbs by size
 | 5           | 6             |
 |-------------+---------------|
 | build       | create        |
-| alter       | change        |
+| alter       | change,mutate |
 | fetch       |               |
 | erase       | delete        |
 | write       | render        |
@@ -210,11 +211,14 @@ Synonyms of verbs by size
 - 
 
 * from 6
+- access
 - create
+- mutate
+- delete
 - update
 - render
-- delete
 - change
+- modify
 - gather
 - happen
 - follow
@@ -229,21 +233,24 @@ Synonyms of verbs by size
 - reject
 - refuse
 - select
-- desert
 - slough
 - filter
-- shrive
 - switch
 - browse
-- cleave
 - answer
 - ignore
 - rotate
 - attend
 - arrive
-- modify
-- mutate
 - banish
+- desert
+- cleave
+- shrive
+- enlist
+- resign
+- append
+- record
+
 ** Dualities
 - create-delete
 - remove-return
@@ -280,6 +287,7 @@ Synonyms of verbs by size
 - cleanse
 - contain
 - utilize
+- trigger
 - compose :: include part in whole (parts compose whole)
 - dispose :: exclude part in whole
 
@@ -301,6 +309,8 @@ Synonyms of verbs by size
 - delegate
 - retrieve
 - withdraw
+- dispatch
+- register
 * lists
 ** 2
 - do
@@ -491,7 +501,8 @@ Synonyms of verbs by size
 - dispose :: exclude part in whole
 * Verbs with the same written form of past and present tense
 
-Because when TODO changes to DONE it's nice to not have to go change the verb form.
+Because when TODO changes to DONE it's nice to not have to go change
+the verb form. (Think of commit messages)
 
 In their base case, these seem more useful for todo lists:
 
@@ -500,11 +511,11 @@ In their base case, these seem more useful for todo lists:
 - cut (cutdown, cutup, cutout, undercut)
 - shut (shutdown, shutup, shutout)
 - put (putdown, putup, putout)
-- fit (retrofit, refit)
+- fit (retrofit, refit, outfit)
 - cast (forecast, recast, broadcast, miscast)
 - quit
 - cost
-- read
+- read (readout)
 - bet
 - bid
 
@@ -519,6 +530,7 @@ Less useful for todo lists:
 - hurt
 - burst
 - wed
+- spread
 
 * COMMENT org settings
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
