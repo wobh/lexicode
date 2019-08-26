@@ -152,7 +152,7 @@ should be generated and passed to applications as configurations. Only
 then can uniqueness be guaranteed. Opacity too, can be guaranteed,
 even on an application level, making it more robust to change.
 
-** REST-like names, a detour
+** HTTP API names and processes, a detour
 
 Forms elements have two attribute to describe how form contents are
 submitted:
@@ -161,7 +161,8 @@ submitted:
 - ~method~ attribute is the HTTP method of submitting contents; ~POST~
   by default
 
-Here's the, now classic, breakdown of URIs and actions in REST:
+Here's the, now classic, mapping of URI paths HTTP methods, resources,
+and actions:
 
 | resource path | HTTP method | resource type | resource method     |
 |---------------+-------------+---------------+---------------------|
@@ -173,9 +174,9 @@ Here's the, now classic, breakdown of URIs and actions in REST:
 | /model        | GET         | collection    | index/list/retrieve |
 | /model/{id}   | GET         | member        | show/read/retrieve  |
 
-These are what make a basic REST API, although, it should be noted:
-none of this, or what follows is prescribed in Fielding's paper which
-is much more generic.
+These are what make a basic HTTP-based API, although, it should be
+noted: none of this, or what follows is prescribed in Fielding's paper
+on REST which is much more generic.
 
 For web interfaces there's two common ~GET~ interfaces:
 
@@ -323,14 +324,55 @@ This reads even better in jQuery:
 : $ModelFeature.on( Event, doAction )
 
 ** examples
-
+*** Blog
 - Model ~Post~
   - Feature ~formNew~
   - Feature ~formEdit~
+  - Feature ~listComments~
+  - Feature ~buttonDelete~
 - Model ~Comment~
   - Feature ~formNew~
   - Feature ~formReply~
+- Model ~Author~
+  - Feature ~listPosts~
+  - Feature ~listComments~
 
+One thing to note of caution here has to do with the "Model" of the
+service. Although it's reasonable to name the "Model" after the
+problem domain and the service it interacts with, it is different from
+the model on the server. 
+
+User data might be represented in several ways, including:
+
+- as values in form fields
+- as columns in a table row
+- as "key: value" pairs in a record (listitems, generally)
+- as "x-www-form-urlencoded" form submission
+- as JSON or JSON-API "application/vnd.api+json"
+- as XML
+
+But in most all of these cases, none of it requires the application to
+do anything with directly (validation and normalization being
+exceptions I don't want to dismiss, but don't want to get distracted
+with either).
+
+Mostly, we're talking about browser application whose concerns are
+oriented around displaying and updating the display, revealing or
+concealing elements of that display. Those elements include the user
+data, but as "cargo" so to speak. The actual models are the
+representations, as form fields, as tables, lists of records, as JSON,
+etc. This suggests to me that naming the features of a browser
+application should be oriented around those containers and the events
+that change what is displayed to the user. Hence, features are named
+with role-like names as prefixes, eg. ~listPosts~.
+
+*** REA
+- Model ~Events~
+  - Feature ~rowEvent~
+  - Feature ~formNew~
+  - Feature ~formEdit~
+- Model ~Agents~
+- Model ~Resources~
 * References
 ** URI
 - https://en.wikipedia.org/wiki/Uniform_Resource_Identifier
