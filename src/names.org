@@ -237,6 +237,8 @@ a presentation I'm working on.
 
 ** a model of variable names
 
+*** Roles
+
 Name features after a model in the problem domain. Specialize those
 names base on the type of interface the feature has implementations
 for. ARIA roles provide a useful ontology of page features, some
@@ -257,6 +259,8 @@ examples:
 This basic ontology of "roles" will serve for naming "Features" we
 implement even if the role isn't literally used (although it probably
 should be in a few cases).
+
+*** Configurations
 
 Suppose an ~Options~ object provides the generated id's in use on the
 page and has mapped them to variables used by the application:
@@ -313,9 +317,7 @@ Inside the jQuery handler function:
 : $feature = $( event.target )
 
 One problem with ~onEvent~ style names is you might have the same
-handler for different events. I like this idea:
-
-This looks redundant. I like the semantics of this:
+handler for different events. I like the semantics of this:
 
 : ModelFeature.addEventListener( Event, doAction )
 
@@ -323,6 +325,35 @@ This reads even better in jQuery:
 
 : $ModelFeature.on( Event, doAction )
 
+*** Features, Events and Actions
+
+- buttons
+  - click
+    - may dispatch other events
+- dialogs
+  - show
+    - dispatched by a click, or other
+  - hide
+    - dispatched by a click, or other
+- forms
+  - submit
+  - change
+  - reset
+  - dismiss
+    - dispatched by submit action, listened for by:
+      - form to reset
+      - dialog to hide
+- lists and tables
+  - prepend
+    - dispatched by reception of new data
+  - append
+    - dispatched by reception of new data
+  - sort
+    - dispatched by click
+  - remove
+    - dispatched by click
+  - filter
+    - dispatched by click
 ** examples
 *** Blog
 - Model ~Post~
@@ -344,27 +375,28 @@ the model on the server.
 
 User data might be represented in several ways, including:
 
-- as values in form fields
-- as columns in a table row
-- as "key: value" pairs in a record (listitems, generally)
+- HTML as values in form fields
+- HTML as columns in a table row
+- HTML as "key: value" pairs in a record (listitems, generally)
 - as "x-www-form-urlencoded" form submission
-- as JSON or JSON-API "application/vnd.api+json"
+- as JSON ("application/json") or JSON-API ("application/vnd.api+json")
+- as SVG
 - as XML
 
 But in most all of these cases, none of it requires the application to
-do anything with directly (validation and normalization being
-exceptions I don't want to dismiss, but don't want to get distracted
-with either).
+do anything with the user data directly (validation and normalization
+being exceptions I don't want to dismiss, but don't want to get
+distracted with either).
 
 Mostly, we're talking about browser application whose concerns are
-oriented around displaying and updating the display, revealing or
+oriented around displaying user data, updating the display, revealing or
 concealing elements of that display. Those elements include the user
 data, but as "cargo" so to speak. The actual models are the
 representations, as form fields, as tables, lists of records, as JSON,
 etc. This suggests to me that naming the features of a browser
 application should be oriented around those containers and the events
 that change what is displayed to the user. Hence, features are named
-with role-like names as prefixes, eg. ~listPosts~.
+with role-like names as prefixes, eg. ~listPosts~, ~articlePost~.
 
 *** REA
 - Model ~Events~
