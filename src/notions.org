@@ -237,6 +237,80 @@ between functions and mappings, even as far as more . Something like this:
 : get → map → key → val
 : set → map → key → val → map
 
+* Typing
+- type, category, group, etc
+
+Not strictly mathematical, but an impressionistic gathering of "kinds"
+
+(TODO I could really use something like a "grammar of types" here)
+
+Data types:
+
+- numbers
+  - integers
+  - rationals
+  - floating point
+  - complex (at least three different kinds)
+- sets (unordered collection)
+  - "hash", "associative-array"
+  - records
+- tuples (ordered collections)
+  - "arrays"
+  - "strings"
+
+Entity types:
+
+- Agent: 
+  - Person
+  - Process
+  - Organization
+- Name:
+  - long
+  - short
+  - agent proxies
+    - phone
+    - email
+    - website
+    - ...
+- Datetime:
+  - Date
+  - Time
+  - Duration
+  - Range
+- Place:
+  - Postal Address
+  - LatLong
+  - Name
+- Order:
+  - numeric
+  - lexigraphic, see name
+- Count:
+  - aggregations of all kinds really
+    - total
+    - average
+    - minimum
+    - maximum
+    - ...
+- Purpose:
+  - Reason
+  - Comment
+  - Note
+- Description:
+- Pattern:
+  - Regular Expression
+- 
+
+Type-referring prepositions
+- _on :: Date
+- _at :: Datetime || Place
+- _by :: Agent
+- _to :: Agent, receiver
+- _from :: Agent, provider
+- _for :: Purpose || Duration
+- _with :: Agent
+- _until :: Datetime
+- _since :: Datetime
+
 * COMMENT Org settings
 #+LANGUAGE: en
 #+SELECT_TAGS: export
