@@ -240,7 +240,15 @@ between functions and mappings. Something like this:
 : get → map → key → val
 : set → map → key → val → map
 
+For some kinds of "maps" (stacks and queues) a "key" isn't
+necessary. The semantics here are "pop/pull" and "put/push" rather
+than "get" or "set".
+
+: pop → map → val
+: put → map → val → map
+
 * Typing
+
 - type, category, group, etc
 
 Not strictly mathematical, but an impressionistic gathering of "kinds"
