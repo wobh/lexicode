@@ -232,7 +232,7 @@ target
 
 A "pure" function is often described as a mapping of inputs and
 outputs. So we should be able to see a correspondence in interfaces
-between functions and mappings, even as far as more . Something like this:
+between functions and mappings. Something like this:
 
 | get | fetch | call | read   | GET  | extract |
 | set | store | defn | create | POST | extend  |
