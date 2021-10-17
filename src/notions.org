@@ -20,12 +20,15 @@
 | compose   | composer    | composition             | depose, decompose |
 | arrange   | arranger    | arrangement             | derange           |
 | build     | builder     | building                |                   |
+| assemble  | assembler   | assembly, semblance     | disassemble       |
+| gather    | gatherer    | gathering               | scatter           |
 
 ** constructure
 
 - form
 - mold
-- 
+- shape
+- sculpt
 
 ** destructure
 
