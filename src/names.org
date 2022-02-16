@@ -418,3 +418,17 @@ with role-like names as prefixes, eg. ~listPosts~, ~articlePost~.
 This attribute's value is an opaque string: this means that web
 authors must not use it to convey human-readable information.
 #+end_quote
+
+** HTML form-controls
+
+*** https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#naming-form-controls:-the-name-attribute
+
+#+begin_quote
+Other than isindex, any non-empty value for ~name~ is allowed. An
+[[https://infra.spec.whatwg.org/#ascii-case-insensitive][ASCII case-insensitive]] match for the name =_charset_= is special: if
+used as the name of a [[https://html.spec.whatwg.org/multipage/input.html#hidden-state-(type=hidden)][Hidden]] control with no ~value~ attribute, then
+during submission the ~value~ attribute is automatically given a value
+consisting of the submission character encoding.
+
+The ~name~ IDL attribute must reflect the ~name~ content attribute.
+#+end_quote
