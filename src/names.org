@@ -432,3 +432,10 @@ consisting of the submission character encoding.
 
 The ~name~ IDL attribute must reflect the ~name~ content attribute.
 #+end_quote
+
+Avoid names which are also properties of forms:
+
+- =action=
+- =method=
+- =enctype=
+- etc ...
