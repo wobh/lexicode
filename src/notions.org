@@ -309,18 +309,28 @@ Entity types:
 - Description:
 - Pattern:
   - Regular Expression
-- 
+- Kind
+  - type
+  - group
+  - category
+  - classification
 
 Type-referring prepositions
 - _on :: Date
 - _at :: Datetime || Place
 - _by :: Agent
-- _to :: Agent, receiver
-- _from :: Agent, provider
+- _to :: Agent, receiver || Place
+- _from :: Agent, provider || Place
 - _for :: Purpose || Duration
 - _with :: Agent
 - _until :: Datetime
 - _since :: Datetime
+- _like :: Pattern
+- _of :: Kind
+- _the :: Kind
+  - _by_the :: Kind, agents
+- _in :: Kind, groups
+  - _in_the :: Kind, counts 
 
 * COMMENT Org settings
 #+LANGUAGE: en
