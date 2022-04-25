@@ -354,8 +354,8 @@ This reads even better in jQuery:
     - dispatched by click
   - filter
     - dispatched by click
-** examples
-*** Blog
+*** examples
+**** Blog
 - Model ~Post~
   - Feature ~formNew~
   - Feature ~formEdit~
@@ -398,7 +398,7 @@ application should be oriented around those containers and the events
 that change what is displayed to the user. Hence, features are named
 with role-like names as prefixes, eg. ~listPosts~, ~articlePost~.
 
-*** REA
+**** REA
 - Model ~Events~
   - Feature ~rowEvent~
   - Feature ~formNew~

@@ -274,6 +274,7 @@ comp.lang.lisp and one of the poster's suggested a layout like this:
       - resource
     - specifications
     - tests
+
 ** FHS-like
 
 Because FHS has worked so well it's worth considering a variant of it.
@@ -310,7 +311,7 @@ It might look a bit like this:
     - logs
     - plugins
 
-** rails
+** Ruby on Rails
 
 A basic rails app:
 
