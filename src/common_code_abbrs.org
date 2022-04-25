@@ -424,6 +424,37 @@ A basic rails app:
 *** References
 - https://middlemanapp.com/basics/directory-structure/
 
+** CMake
+
+- project
+  - .gitignore
+  - README.md
+  - LICENCE.md
+  - CMakeLists.txt
+  - cmake
+    - FindSomeLib.cmake
+    - something_else.cmake
+  - include
+    - project
+      - lib.hpp
+  - src
+    - CMakeLists.txt
+    - lib.cpp
+  - apps
+    - CMakeLists.txt
+    - app.cpp
+  - tests
+    - CMakeLists.txt
+    - testlib.cpp
+  - docs
+    - CMakeLists.txt
+  - extern (git submodules)
+    - googletest
+  - scripts
+    - helper.py
+
+*** References
+- https://cliutils.gitlab.io/modern-cmake/chapters/basics/structure.html
 * Code abbreviations
 
 Most programming language abstract way storage and retrieval of data
