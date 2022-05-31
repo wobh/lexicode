@@ -267,7 +267,12 @@ Data types:
   - records
 - tuples (ordered collections)
   - "arrays"
+  - "vectors"
   - "strings"
+- characters
+  - potentially a kind of "number"
+- lists (ordered collection, using linked lists)
+  - trees
 
 Entity types:
 
@@ -296,7 +301,7 @@ Entity types:
   - numeric
   - lexigraphic, see name
 - Count:
-  - aggregations of all kinds really
+  - aggregations of all kinds really (including Collections)
     - total
     - average
     - minimum
@@ -314,6 +319,7 @@ Entity types:
   - group
   - category
   - classification
+    - "tag" or "label"
 
 Type-referring prepositions
 - _on :: Date
@@ -326,7 +332,7 @@ Type-referring prepositions
 - _until :: Datetime
 - _since :: Datetime
 - _like :: Pattern
-- _of :: Kind
+- _of :: Kind || Agent
 - _the :: Kind
   - _by_the :: Kind, agents
 - _in :: Kind, groups
