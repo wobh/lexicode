@@ -1,7 +1,7 @@
-#+TITLE: Naming Things for Web Development
-#+DATE: <2019-08-24 Sat>
-#+AUTHOR: William Clifford
-#+EMAIL: wobh@yahoo.com
+#+title: Naming Things for Web Development
+#+date: <2019-08-24 Sat>
+#+author: William Clifford
+#+email: wobh@yahoo.com
 
 * Uniform Resource Identifier (URI)
 
@@ -30,7 +30,6 @@ Should be an "opaque" string
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id
 
-
 *** class
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class
@@ -40,7 +39,7 @@ Nowadays, only used for form fields (eg. input, select textarea) ...
 
 the dataset API converts attributes like ~data-foo-bar~ to ~fooBar~
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+[[https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*]]
 
 **** Data attributes used in Bootstrap
 https://stackoverflow.com/a/38341753

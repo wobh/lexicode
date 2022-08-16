@@ -1,10 +1,10 @@
-#+TITLE:     Maven Standard Directory Layout
-#+AUTHOR:    William Clifford
-#+EMAIL:     wobh@yahoo.com
-#+DATE:      2014-10-26 Sun
-#+DESCRIPTION: Description of Maven standard directory layout
-#+KEYWORDS: layout, code
-#+LANGUAGE:  en
+#+title: Maven Standard Directory Layout
+#+author: William Clifford
+#+email: wobh@yahoo.com
+#+date: 2014-10-26 Sun
+#+description: Description of Maven standard directory layout
+#+keywords: layout, code
+#+language:  en
 
 * Table
 

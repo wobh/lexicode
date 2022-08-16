@@ -1,9 +1,9 @@
-#+TITLE:     Filesystem Hierarchy Standard 2.3 Org mode edition
-#+AUTHOR:    Filesystem Hierarchy Standard Group
-#+AUTHOR:    William Clifford
-#+EMAIL:     wobh@yahoo.com
-#+DESCRIPTION: FHS 2.3 converted to org-mode
-#+KEYWORDS:
+#+title: Filesystem Hierarchy Standard 2.3 Org mode edition
+#+author: Filesystem Hierarchy Standard Group
+#+author: William Clifford
+#+email: wobh@yahoo.com
+#+description: FHS 2.3 converted to org-mode
+#+keywords:
 
 * Frontmatter of original FHS 2.3
 

@@ -1,9 +1,9 @@
-#+TITLE:     Plan 9 namespace
-#+AUTHOR:    William Clifford
-#+EMAIL:     wobh@yahoo.com
-#+DATE:      2014-10-23 Thu
-#+DESCRIPTION:
-#+KEYWORDS:
+#+title: Plan 9 namespace
+#+author: William Clifford
+#+email: wobh@yahoo.com
+#+date: 2014-10-23 Thu
+#+description:
+#+keywords:
 
 * Introduction
 

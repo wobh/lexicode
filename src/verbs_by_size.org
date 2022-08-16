@@ -1,7 +1,7 @@
-#+TITLE: Lexicode: Verbs by Size
-#+DATE: <2014-10-19 Sun>
-#+AUTHOR: William Clifford
-#+EMAIL: wobh@yahoo.com
+#+title: Lexicode: Verbs by Size
+#+date: <2014-10-19 Sun>
+#+author: William Clifford
+#+email: wobh@yahoo.com
 
 Synonyms of verbs by size
 
@@ -533,13 +533,13 @@ Less useful for todo lists:
 - spread
 
 * COMMENT org settings
-#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment date:t
-#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
-#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
-#+DESCRIPTION: Synonyms of verbs by size
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS: verbs, synonyms
-#+LANGUAGE: en
-#+SELECT_TAGS: export
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t c:nil creator:comment date:t
+#+options: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
+#+options: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+creator: Emacs 24.3.1 (Org mode 8.2.9)
+#+description: Synonyms of verbs by size
+#+exclude_tags: noexport
+#+keywords: verbs, synonyms
+#+language: en
+#+select_tags: export

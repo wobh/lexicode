@@ -1,7 +1,7 @@
-#+TITLE: Lexicode README
-#+DATE: <2014-10-19 Sun>
-#+AUTHOR: William Clifford
-#+EMAIL: wobh@crowdcompass.com
+#+title: Lexicode README
+#+date: <2014-10-19 Sun>
+#+author: William Clifford
+#+email: will@wobh.org
 
 * Introduction
 

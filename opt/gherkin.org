@@ -1,8 +1,8 @@
-#+TITLE: Gherkin
-#+DATE: [2016-01-31 Sun]
-#+AUTHOR: William Clifford
-#+EMAIL: wobh@yahoo.com
-#+DESCRIPTION: outline of Gherkin in Org mode
+#+title: Gherkin
+#+date: [2016-01-31 Sun]
+#+author: William Clifford
+#+email: wobh@yahoo.com
+#+description: outline of Gherkin in Org mode
 
 * Feature: Some terse yet descriptive text of what is desired
  
