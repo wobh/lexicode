@@ -97,6 +97,9 @@
 - Gellish
 - Datalog
 
+** negotiation
+- bid, offer, tender
+
 * Moving
 
 ** event
