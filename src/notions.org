@@ -72,6 +72,12 @@
   - restrain
   - confine
 
+- analogies
+  - set:element
+  - group:member
+  - collection:item
+  - variable:value (see [[*Typing]])
+
 * Asking
 
 - ask
@@ -187,7 +193,12 @@ target
 
 ** when
 
-- commence
+- start
+  - begin
+  - commence
+- stop
+  - halt
+  - cease
 
 * Turning
 
@@ -338,6 +349,33 @@ Type-referring prepositions
 - _in :: Kind, groups
   - _in_the :: Kind, counts 
 
+* Grouping
+
+- collection, stock, store, list
+  - item
+  - singleton (
+  - member (ruby-on-rails)
+- table
+  - rows
+    - columns
+- group
+  - member
+
+Sometimes "things" may be considers "groups" of "properties"
+
+- record
+  - field
+    - name, label
+    - value
+    - type
+- object
+  - attribute
+  - relationship
+- relation
+  - ?
+  - references
+- model
+  - property
 * COMMENT Org settings
 #+language: en
 #+select_tags: export
