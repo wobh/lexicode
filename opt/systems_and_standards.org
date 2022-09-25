@@ -1,0 +1,1639 @@
+#+title: systems_and_standards
+#+date: <2022-09-25 Sun>
+#+author: William Clifford
+#+email: wobh@wobh.org
+
+* TODO Filesystem Hierarchy Standard
+* TODO XDG Basedir
+** Folders
+- ~${XDG_DATA_HOME:-{HOME}/.local/share}~ :: to which user-specific
+  data files should be written
+- ~${XDG_CONFIG_HOME:-{HOME}/.config}~ :: to which user-specific
+  configuration files should be written
+- ~${XDG_STATE_HOME:-{HOME}/.local/state}~ :: to which user-specific
+  state data should be written
+- ~${XDG_CACHE_HOME:-{HOME}/.cache}~ :: to which user-specific
+  non-essential (cached) data should be written
+- undefined (maybe ~${XDG_DATA_HOME}/bin~) :: relative to which
+  user-specific executable files may be written
+- ~${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}~ :: a set of
+  preference ordered base directories relative to which data files
+  should be searched
+- ~${XDG_CONFIG_DIRS:-/etc/xdg}~ :: a set of preference ordered base
+  directories relative to which configuration files should be searched
+- ~${XDG_RUNTIME_DIR:?}~ :: to which user-specific runtime files and
+  other file objects should be placed
+
+** References
+- https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+- https://wiki.archlinux.org/title/XDG_Base_Directory
+- https://ploum.net/207-modify-your-application-to-use-xdg-folders/
+- https://github.com/grawity/dotfiles/blob/master/.environ.notes
+- https://github.com/grawity/dotfiles/blob/master/.dotfiles.notes
+* TODO XDG User directories
+** Folders
+- ~${XDG_DESKTOP_DIR:-{HOME}/Desktop}~
+- ~${XDG_DOCUMENTS_DIR:-{HOME}/Documents}~
+- ~${XDG_DOWNLOAD_DIR:-{HOME}/Downloads}~
+- ~${XDG_MUSIC_DIR:-{HOME}/Music}~
+- ~${XDG_PICTURES_DIR:-{HOME}/Pictures}~
+- ~${XDG_PUBLICSHARE_DIR:-{HOME}/Public}~
+- ~${XDG_TEMPLATES_DIR:-{HOME}/Templates}~
+- ~${XDG_VIDEOS_DIR:-{HOME}/Videos}~
+
+** References
+- https://wiki.archlinux.org/title/XDG_user_directories
+* TODO RelaxNG
+** Patterns
+- choice
+- group
+- empty
+- text
+- oneOrMore
+- interleave
+- element and attribute
+- data and value
+- list
+- built-in
+** References
+- https://relaxng.org/spec-20011203.html
+* TODO HTTP
+
+methods:
+
+- RFC 7231
+  - GET :: Transfer a current representation of the target resource.
+  - HEAD :: Same as GET, but only transfer the status line and header
+    section.
+  - POST :: Perform resource-specific processing on the request
+    payload.
+  - PUT :: Replace all current representations of the target resource
+    with the request payload.
+  - DELETE :: Remove all current representations of the target
+    resource.
+  - CONNECT :: Establish a tunnel to the server identified by the
+    target resource.
+  - OPTIONS :: Describe the communication options for the target
+    resource.
+  - TRACE :: Perform a message loop-back test along the path to the
+    target resource.
+- RFC 5789
+  - PATCH :: Perform a modification of 
+
+** Responses
+
+There are many responses but these are the one's most likely to be
+useful at the web application later.
+
+- 2xx Successful
+  - 200 OK
+  - 201 Created
+  - 202 Accepted
+  - 204 No Content
+  - 205 Reset Content
+- 3xx Redirection
+  - 301 Moved Permanently
+  - 302 Found
+  - 303 See Other
+- 4xx Client Error
+  - 400 Bad Request
+  - 403 Forbidden
+  - 404 Not Found
+  - 409 Conflict
+- 5xx Server Error
+  - 500 Internal Server Error
+
+** TODO Representational State Transfer (REST)
+
+** References
+- https://datatracker.ietf.org/doc/html/rfc7231/
+- https://datatracker.ietf.org/doc/html/rfc5789/
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+* TODO JSON Pointer
+** References
+- https://datatracker.ietf.org/doc/html/rfc6901/
+* TODO JSON Patch
+** Operations
+- add :: The "add" operation performs one of the following functions,
+  depending upon what the target location references:
+  - path  
+    - array index :: a new value is inserted into the array at the
+	specified index.
+    - object member, nonexistent :: a new member is added to the object.
+    - object member, exists :: that member's value is replaced.
+  - value
+- remove ::
+  - path
+- replace :: 
+  - path 
+  - value
+- move ::
+  - path
+  - from
+- copy ::
+  - path
+  - from
+- test ::
+  - path
+  - value
+** Media type and file
+- media :: application/json-patch+json
+- ext :: .json-patch
+
+** References
+- https://jsonpatch.com/
+- https://datatracker.ietf.org/doc/html/rfc6902/
+- 
+* TODO JSON:API
+- resource object
+  - data
+    - id
+    - type
+    - attributes
+    - relationships
+  - meta
+  - links
+    - self
+    - related
+  - included
+  - jsonapi
+- error object
+  - errors
+  - meta
+** Media type
+- application/vnd.api+json
+** Schema
+#+begin_src json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "JSON:API Schema",
+  "description": "This is a schema for responses in the JSON:API format. For more, see http://jsonapi.org",
+  "oneOf": [
+    {
+      "$ref": "#/definitions/success"
+    },
+    {
+      "$ref": "#/definitions/failure"
+    },
+    {
+      "$ref": "#/definitions/info"
+    }
+  ],
+
+  "definitions": {
+    "success": {
+      "type": "object",
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/data"
+        },
+        "included": {
+          "description": "To reduce the number of HTTP requests, servers **MAY** allow responses that include related resources along with the requested primary resources. Such responses are called \"compound documents\".",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/resource"
+          },
+          "uniqueItems": true
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        },
+        "links": {
+          "description": "Link members related to the primary data.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/links"
+            },
+            {
+              "$ref": "#/definitions/pagination"
+            }
+          ]
+        },
+        "jsonapi": {
+          "$ref": "#/definitions/jsonapi"
+        }
+      },
+      "additionalProperties": false
+    },
+    "failure": {
+      "type": "object",
+      "required": [
+        "errors"
+      ],
+      "properties": {
+        "errors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/error"
+          },
+          "uniqueItems": true
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        },
+        "jsonapi": {
+          "$ref": "#/definitions/jsonapi"
+        },
+        "links": {
+          "$ref": "#/definitions/links"
+        }
+      },
+      "additionalProperties": false
+    },
+    "info": {
+      "type": "object",
+      "required": [
+        "meta"
+      ],
+      "properties": {
+        "meta": {
+          "$ref": "#/definitions/meta"
+        },
+        "links": {
+          "$ref": "#/definitions/links"
+        },
+        "jsonapi": {
+          "$ref": "#/definitions/jsonapi"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "meta": {
+      "description": "Non-standard meta-information that can not be represented as an attribute or relationship.",
+      "type": "object",
+      "additionalProperties": true
+    },
+    "data": {
+      "description": "The document's \"primary data\" is a representation of the resource or collection of resources targeted by a request.",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/resource"
+        },
+        {
+          "description": "An array of resource objects, an array of resource identifier objects, or an empty array ([]), for requests that target resource collections.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/resource"
+          },
+          "uniqueItems": true
+        },
+        {
+          "description": "null if the request is one that might correspond to a single resource, but doesn't currently.",
+          "type": "null"
+        }
+      ]
+    },
+    "resource": {
+      "description": "\"Resource objects\" appear in a JSON:API document to represent resources.",
+      "type": "object",
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "attributes": {
+          "$ref": "#/definitions/attributes"
+        },
+        "relationships": {
+          "$ref": "#/definitions/relationships"
+        },
+        "links": {
+          "$ref": "#/definitions/links"
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        }
+      },
+      "additionalProperties": false
+    },
+    "relationshipLinks": {
+      "description": "A resource object **MAY** contain references to other resource objects (\"relationships\"). Relationships may be to-one or to-many. Relationships can be specified by including a member in a resource's links object.",
+      "type": "object",
+      "properties": {
+        "self": {
+          "description": "A `self` member, whose value is a URL for the relationship itself (a \"relationship URL\"). This URL allows the client to directly manipulate the relationship. For example, it would allow a client to remove an `author` from an `article` without deleting the people resource itself.",
+          "$ref": "#/definitions/link"
+        },
+        "related": {
+          "$ref": "#/definitions/link"
+        }
+      },
+      "additionalProperties": true
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/link"
+      }
+    },
+    "link": {
+      "description": "A link **MUST** be represented as either: a string containing the link's URL or a link object.",
+      "oneOf": [
+        {
+          "description": "A string containing the link's URL.",
+          "type": "string",
+          "format": "uri-reference"
+        },
+        {
+          "type": "object",
+          "required": [
+            "href"
+          ],
+          "properties": {
+            "href": {
+              "description": "A string containing the link's URL.",
+              "type": "string",
+              "format": "uri-reference"
+            },
+            "meta": {
+              "$ref": "#/definitions/meta"
+            }
+          }
+        }
+      ]
+    },
+
+    "attributes": {
+      "description": "Members of the attributes object (\"attributes\") represent information about the resource object in which it's defined.",
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9](?:[-\\w]*[a-zA-Z0-9])?$": {
+          "description": "Attributes may contain any valid JSON value."
+        }
+      },
+      "not": {
+        "anyOf": [
+          {"required": ["relationships"]},
+          {"required": ["links"]},
+          {"required": ["id"]},
+          {"required": ["type"]}
+        ]
+      },
+      "additionalProperties": false
+    },
+
+    "relationships": {
+      "description": "Members of the relationships object (\"relationships\") represent references from the resource object in which it's defined to other resource objects.",
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9](?:[-\\w]*[a-zA-Z0-9])?$": {
+          "properties": {
+            "links": {
+              "$ref": "#/definitions/relationshipLinks"
+            },
+            "data": {
+              "description": "Member, whose value represents \"resource linkage\".",
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/relationshipToOne"
+                },
+                {
+                  "$ref": "#/definitions/relationshipToMany"
+                }
+              ]
+            },
+            "meta": {
+              "$ref": "#/definitions/meta"
+            }
+          },
+          "anyOf": [
+            {"required": ["data"]},
+            {"required": ["meta"]},
+            {"required": ["links"]}
+          ],
+          "not": {
+            "anyOf": [
+              {"required": ["id"]},
+              {"required": ["type"]}
+            ]
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "relationshipToOne": {
+      "description": "References to other resource objects in a to-one (\"relationship\"). Relationships can be specified by including a member in a resource's links object.",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/empty"
+        },
+        {
+          "$ref": "#/definitions/linkage"
+        }
+      ]
+    },
+    "relationshipToMany": {
+      "description": "An array of objects each containing \"type\" and \"id\" members for to-many relationships.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/linkage"
+      },
+      "uniqueItems": true
+    },
+    "empty": {
+      "description": "Describes an empty to-one relationship.",
+      "type": "null"
+    },
+    "linkage": {
+      "description": "The \"type\" and \"id\" to non-empty members.",
+      "type": "object",
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        }
+      },
+      "additionalProperties": false
+    },
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "first": {
+          "description": "The first page of data",
+          "oneOf": [
+            { "$ref": "#/definitions/link" },
+            { "type": "null" }
+          ]
+        },
+        "last": {
+          "description": "The last page of data",
+          "oneOf": [
+            { "$ref": "#/definitions/link" },
+            { "type": "null" }
+          ]
+        },
+        "prev": {
+          "description": "The previous page of data",
+          "oneOf": [
+            { "$ref": "#/definitions/link" },
+            { "type": "null" }
+          ]
+        },
+        "next": {
+          "description": "The next page of data",
+          "oneOf": [
+            { "$ref": "#/definitions/link" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+
+    "jsonapi": {
+      "description": "An object describing the server's implementation",
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "error": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "A unique identifier for this particular occurrence of the problem.",
+          "type": "string"
+        },
+        "links": {
+          "$ref": "#/definitions/links"
+        },
+        "status": {
+          "description": "The HTTP status code applicable to this problem, expressed as a string value.",
+          "type": "string"
+        },
+        "code": {
+          "description": "An application-specific error code, expressed as a string value.",
+          "type": "string"
+        },
+        "title": {
+          "description": "A short, human-readable summary of the problem. It **SHOULD NOT** change from occurrence to occurrence of the problem, except for purposes of localization.",
+          "type": "string"
+        },
+        "detail": {
+          "description": "A human-readable explanation specific to this occurrence of the problem.",
+          "type": "string"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "pointer": {
+              "description": "A JSON Pointer [RFC6901] to the associated entity in the request document [e.g. \"/data\" for a primary data object, or \"/data/attributes/title\" for a specific attribute].",
+              "type": "string"
+            },
+            "parameter": {
+              "description": "A string indicating which query parameter caused the error.",
+              "type": "string"
+            }
+          }
+        },
+        "meta": {
+          "$ref": "#/definitions/meta"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
+#+end_src
+** References
+- https://jsonapi.org/
+  - http://jsonapi.org/schema
+* TODO JSON Schema
+** References
+- https://json-schema.org
+  - https://json-schema.org/draft/2020-12/json-schema-core.html
+* TODO Mime types
+** 
+** The application/json Media Type for JavaScript Object Notation (JSON)
+*** References
+- https://datatracker.ietf.org/doc/html/rfc4627
+** References
+- https://datatracker.ietf.org/doc/html/rfc6838
+* TODO JWT
+* TODO Microformats
+** Prefixed Classnames
+
+- h-* :: root classnames specify that an element is a microformat,
+  e.g. <span class="h-card">
+- p-* :: specifies an element as a plain-text property, e.g. <span
+  class="p-name">My Name</span>
+- u-* :: parses an element as a URL, e.g. <a class="u-url"
+  href="/"></a>
+- dt-* :: parses an element as a date/time, e.g. <time
+  class="dt-published" datetime="2013-05-02 12:00:00" />
+- e-* :: parses an element’s whole inner HTML, e.g. <div
+  class="e-content">
+
+** Formats
+*** h-adr
+h-adr is a simple, open format for publishing structured locations
+such as addresses, physical and/or postal.
+
+**** Properties
+- p-street-address :: house/apartment number, floor, street name
+- p-extended-address :: additional street details
+- p-post-office-box :: post office mailbox
+- p-locality :: city/town/village
+- p-region :: state/county/province
+- p-postal-code :: postal code, e.g. ZIP in the US
+- p-country-name :: should be full name of country, country code ok
+- p-label :: a mailing label, plain text, perhaps with preformatting
+- p-geo :: (or u-geo with a RFC 5870 geo: URL), optionally embedded h-geo
+- p-latitude :: decimal latitude
+- p-longitude :: decimal longitude
+- p-altitude :: decimal altitude - new in vCard4 (RFC6350)
+
+All properties are optional.
+
+- p-name :: there is no "p-name" property in h-adr. If your address
+  has an explicit name, it's likely a venue, and you should use h-card
+  instead.
+
+**** References
+- http://microformats.org/wiki/h-adr
+*** h-card
+h-card is a simple, open format for publishing people and
+organisations on the web. h-card is often used on home pages and
+individual blog posts.
+
+**** Properties
+- p-name :: The full/formatted name of the person or organization
+- p-honorific-prefix :: e.g. Mrs., Mr. or Dr.
+- p-given-name :: given (often first) name
+- p-additional-name :: other (e.g. middle) name
+- p-family-name :: family (often last) name
+- p-sort-string :: string to sort by
+- p-honorific-suffix :: e.g. Ph.D, Esq.
+- p-nickname :: nickname/alias/handle
+- u-email :: email address
+- u-logo :: a logo representing the person or organization (e.g. a face icon)
+- u-photo :: a photo of the person or organization
+- u-url :: home page or other URL representing the person or organization
+- u-uid :: universally unique identifier, preferably canonical URL
+- p-category :: category/tag
+- p-adr :: postal address, optionally embed an h-adr
+  - Main article: h-adr
+- p-post-office-box :: post office box description if any
+- p-extended-address :: apartment/suite/room name/number if any
+- p-street-address :: street number + name
+- p-locality :: city/town/village
+- p-region :: state/county/province
+- p-postal-code :: postal code, e.g. US ZIP
+- p-country-name :: country name
+- p-label
+- p-geo or u-geo, optionally embed an h-geo
+  - Main article: h-geo
+- p-latitude :: decimal latitude
+- p-longitude :: decimal longitude
+- p-altitude :: decimal altitude
+- p-tel :: telephone number
+- p-note :: additional notes
+- dt-bday :: birth date
+- u-key :: cryptographic public key e.g. SSH or GPG
+- p-org :: affiliated organization, optionally embed an h-card
+- p-job-title :: job title, previously 'title' in hCard 1.0, disambiguated.
+- p-role :: description of role
+- u-impp :: per RFC4770, new in vCard4 (RFC 6350)
+- p-sex :: biological sex, new in vCard4 (RFC 6350)
+- p-gender-identity :: gender identity, new in vCard4 (RFC 6350)
+- dt-anniversary
+
+**** References
+- http://microformats.org/wiki/h-card
+*** h-entry
+h-entry is a simple, open format for episodic or datestamped content
+on the web.
+**** Properties
+- p-name :: entry name/title
+- p-summary :: short entry summary
+- e-content :: full content of the entry
+- dt-published :: when the entry was published
+- dt-updated :: when the entry was updated
+- p-author :: who wrote the entry, optionally embedded h-card(s)
+- p-category :: entry categories/tags
+- u-url :: entry permalink URL
+- u-uid :: universally unique identifier, typically canonical entry
+  URL
+- p-location :: location the entry was posted from, optionally embed
+  h-card, h-adr, or h-geo
+- u-syndication :: URL(s) of syndicated copies of this post. The
+  property equivalent of rel-syndication (example)
+- u-in-reply-to :: the URL which the h-entry is considered reply to
+  (i.e. doesn’t make sense without context, could show up in comment
+  thread), optionally an embedded h-cite (reply-context) (example)
+- p-rsvp :: (enum, use <data> element or Value Class Pattern) "yes", "no", "maybe", "interested". Case-insensitive values, normalized to lowercase. Examples:
+  - ... <data class="p-rsvp" value="YES">is going</data> to ..., or
+  - ... <data class="p-rsvp" value="Maybe">might go</data> to ...
+  - ... <data class="p-rsvp" value="no">unable to go</data> to ...
+  - ... <data class="p-rsvp" value="iNtEreSTed">am interested/tracking/watching</data> ...
+- u-like-of :: the URL which the h-entry is considered a “like”
+  (favorite, star) of. Optionally an embedded h-cite
+- u-repost-of :: the URL which the h-entry is considered a “repost”
+  of. Optionally an embedded h-cite.
+
+**** References
+- http://microformats.org/wiki/h-entry
+*** h-event
+h-event is a simple, open format for events on the web. h-event is
+often used with both event listings and individual event pages.
+**** Properties
+- p-name :: event name (or title)
+- p-summary :: short summary of the event
+- dt-start :: datetime the event starts
+- dt-end :: datetime the event ends
+- dt-duration :: duration of the event
+- p-description :: more detailed description of the event
+  - WARNING: Proposed to be replaced by e-content (re-used from h-entry)
+  - See and follow-up: https://github.com/microformats/h-event/issues/3
+- u-url :: permalink for the event
+- p-category :: event category(ies)/tag(s)
+- p-location :: where the event takes place, optionally embedded h-card, h-adr, or h-geo
+**** References
+- http://microformats.org/wiki/h-event
+*** h-feed
+h-feed is a simple, open format for publishing a stream or feed of
+h-entry posts, like complete posts on a home page or archive pages, or
+summaries or other brief lists of posts.
+
+**** Properties
+- p-name :: name of the feed
+- p-author :: author of the feed, optionally embed an h-card
+  - Main article: h-card
+- u-url :: URL of the feed
+- u-photo :: representative photo / icon for the feed
+
+children:
+
+- nested h-entry objects representing the items of the feed
+
+**** References
+- http://microformats.org/wiki/h-feed
+*** TODO h-geo
+*** TODO h-item
+*** TODO h-listing draft
+*** h-product
+h-product is a simple, open format for publishing product data on the
+web.
+
+**** Properties
+- p-name :: name of the product
+- u-photo :: photo of the product
+- p-brand :: manufacturer, can also be embedded h-card
+  - Main article: h-card
+- p-category :: freeform categories or tags applied to the item by the
+  reviewer
+- e-description
+- u-url :: URL of the product
+- u-identifier :: includes type (e.g. mpn, upc, isbn, issn, sn, vin,
+  sku etc.) and value.
+- p-review :: a review of the product, optionally embedded h-review
+  - Main article: h-review
+- p-price :: retail price of the product
+**** References
+- http://microformats.org/wiki/h-product
+*** TODO h-recipe
+*** TODO h-resume
+*** TODO h-review
+*** TODO h-review-aggregate
+
+** References
+- http://microformats.org
+  - http://microformats.org/wiki/Main_Page
+- https://developer.mozilla.org/en-US/docs/Web/HTML/microformats
+- http://microformats.org/wiki/xfn
+  - http://gmpg.org/xfn/and/#idconsolidation
+  - 
+* TODO Dublin Core Metadata
+** References
+- https://www.dublincore.org/specifications/dublin-core/
+* TODO HTML
+** References
+- [[https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*]]
+* TODO ARIA
+** Roles
+Roles are categorized as follows:
+
+- Abstract Roles
+- Widget Roles
+- Document Structure Roles
+- Landmark Roles
+- Live Region Roles
+- Window Roles
+
+*** Abstract Roles
+
+The following roles are used to support the WAI-ARIA role taxonomy for
+the purpose of defining general role concepts.
+
+Abstract roles are used for the ontology. Authors MUST NOT use
+abstract roles in content.
+
+- command
+- composite
+- input
+- landmark
+- range
+- roletype
+- section
+- sectionhead
+- select
+- structure
+- widget
+- window
+
+*** Widget Roles
+
+The following roles act as standalone user interface widgets or as
+part of larger, composite widgets.
+
+- button
+- checkbox
+- gridcell
+- link
+- menuitem
+- menuitemcheckbox
+- menuitemradio
+- option
+- progressbar
+- radio
+- scrollbar
+- searchbox
+- separator (when focusable)
+- slider
+- spinbutton
+- switch
+- tab
+- tabpanel
+- textbox
+- treeitem
+
+The following roles act as composite user interface widgets. These
+roles typically act as containers that manage other, contained
+widgets.
+
+- combobox
+- grid
+- listbox
+- menu
+- menubar
+- radiogroup
+- tablist
+- tree
+- treegrid
+
+*** Document Structure Roles
+
+The following roles describe structures that organize content in a
+page. Document structures are not usually interactive.
+
+- application
+- article
+- cell
+- columnheader
+- definition
+- directory
+- document
+- feed
+- figure
+- group
+- heading
+- img
+- list
+- listitem
+- math
+- none
+- note
+- presentation
+- row
+- rowgroup
+- rowheader
+- separator (when not focusable)
+- table
+- term
+- toolbar
+- tooltip
+
+*** Landmark Roles
+
+The following roles are regions of the page intended as navigational
+landmarks. All of these roles inherit from the landmark base type and
+all are imported from the Role Attribute [role-attribute]. The roles
+are included here in order to make them clearly part of the WAI-ARIA
+Role taxonomy.
+
+- banner
+- complementary
+- contentinfo
+- form
+- main
+- navigation
+- region
+- search
+
+*** Live Region Roles
+
+The following roles are live regions and may be modified by live
+region attributes.
+
+- alert
+- log
+- marquee
+- status
+- timer
+
+*** Window Roles
+
+The following roles act as windows within the browser or application.
+
+- alertdialog
+- dialog
+
+** Properties
+*** Global States and Properties
+- aria-atomic
+- aria-busy (state)
+- aria-controls
+- aria-current (state)
+- aria-describedby
+- aria-details
+- aria-disabled (state)
+- aria-dropeffect
+- aria-errormessage
+- aria-flowto
+- aria-grabbed (state)
+- aria-haspopup
+- aria-hidden (state)
+- aria-invalid (state)
+- aria-keyshortcuts
+- aria-label
+- aria-labelledby
+- aria-live
+- aria-owns
+- aria-relevant
+- aria-roledescription
+
+*** Widget Attributes
+
+This section contains attributes specific to common user interface
+elements found on GUI systems or in rich internet applications which
+receive user input and process user actions. These attributes are used
+to support the widget roles.
+
+- aria-autocomplete
+- aria-checked
+- aria-disabled
+- aria-errormessage
+- aria-expanded
+- aria-haspopup
+- aria-hidden
+- aria-invalid
+- aria-label
+- aria-level
+- aria-modal
+- aria-multiline
+- aria-multiselectable
+- aria-orientation
+- aria-placeholder
+- aria-pressed
+- aria-readonly
+- aria-required
+- aria-selected
+- aria-sort
+- aria-valuemax
+- aria-valuemin
+- aria-valuenow
+- aria-valuetext
+
+Widget attributes might be mapped by a user agent to platform
+accessibility API state, for access by assistive technologies, or they
+might be accessed directly from the DOM. User agents MUST provide a
+way for assistive technologies to be notified when states change,
+either through DOM attribute change events or platform accessibility
+API events.
+
+*** Live Region Attributes
+
+This section contains attributes specific to live regions in rich
+internet applications. These attributes may be applied to any
+element. The purpose of these attributes is to indicate that content
+changes may occur without the element having focus, and to provide
+assistive technologies with information on how to process those
+content updates. Some roles specify a default value for the aria-live
+attribute specific to that role. An example of a live region is a
+ticker section that lists updating stock quotes.
+
+- aria-atomic
+- aria-busy
+- aria-live
+- aria-relevant
+
+*** Drag-and-Drop Attributes
+
+This section lists attributes which indicate information about
+drag-and-drop interface elements, such as draggable elements and their
+drop targets. Drop target information will be rendered visually by the
+author and provided to assistive technologies through an alternate
+modality.
+
+- aria-dropeffect
+- aria-grabbed
+
+*** Relationship Attributes
+
+This section lists attributes that indicate relationships or
+associations between elements which cannot be readily determined from
+the document structure.
+
+- aria-activedescendant
+- aria-colcount
+- aria-colindex
+- aria-colspan
+- aria-controls
+- aria-describedby
+- aria-details
+- aria-errormessage
+- aria-flowto
+- aria-labelledby
+- aria-owns
+- aria-posinset
+- aria-rowcount
+- aria-rowindex
+- aria-rowspan
+- aria-setsize
+
+** References
+- https://www.w3.org/TR/wai-aria-1.1/
+* TODO Business standards
+** References
+- https://www.oasis-open.org/standards/
+* TODO Languages and Countries
+** Countries
+** References
+- https://en.wikipedia.org/wiki/ISO_3166-1
+* TODO Dates, Times, Durations, Ranges
+** References
+- https://en.wikipedia.org/wiki/ISO_8601
+- https://www.iso.org/iso-8601-date-and-time-format.html
+- 
+* TODO iCalendar
+** References
+- https://datatracker.ietf.org/doc/html/rfc5545
+* TODO OpenID
+** References
+- https://openid.net/specs/openid-authentication-2_0.html
+* TODO Unicode
+** References
+- https://home.unicode.org/
+* TODO Unicode Common Locale Data Repository (CLDR)
+** Types
+Core Data: 	Alphabetic Information | Main Exemplars | Punctuation Exemplars | Index Exemplars | Numbering Systems
+Locale Display Names: 	Locale Name Patterns | Languages (A-D) | Languages (E-J) | Languages (K-N) | Languages (O-S) | Languages (T-Z) | Scripts | Geographic Regions | Territories (North America) | Territories (South America) | Territories (Africa) | Territories (Europe) | Territories (Asia) | Territories (Oceania) | Locale Variants | Keys
+Date & Time: 	Fields | Gregorian | Generic | Buddhist | Chinese | Coptic | Dangi | Ethiopic | Ethiopic-Amete-Alem | Hebrew | Indian | Islamic | Japanese | Persian | Minguo
+Timezones: 	Timezone Display Patterns | North America | South America | Africa | Europe | Russia | Western Asia | Central Asia | Eastern Asia | Southern Asia | Southeast Asia | Australasia | Antarctica | Oceania | Unknown Region | Overrides
+Numbers: 	Symbols | Number Formatting Patterns | Compact Decimal Formatting
+Currencies: 	North America (C) | South America (C) | Northern/Western Europe | Southern/Eastern Europe | Northern Africa | Western Africa | Middle Africa | Eastern Africa | Southern Africa | Western Asia (C) | Central Asia (C) | Eastern Asia (C) | Southern Asia (C) | Southeast Asia (C) | Oceania (C) | Unknown Region (C)
+Units: 	Measurement Systems | Duration | Graphics | Length | Area | Volume | Speed and Acceleration | Mass and Weight | Energy and Power | Electrical and Frequency | Weather | Digital | Coordinates | Other Units | Compound Units
+Characters: 	Category | Smileys & Emotion | People & Body | Animals & Nature | Food & Drink | Travel & Places | Activities | Objects | Symbols2 | Flags | Component | Typography
+Miscellaneous: 	Displaying Lists | Minimal Pairs
+
+** References
+- https://cldr.unicode.org/
+  - https://unicode-org.github.io/cldr-staging/charts/41/by_type/
+* TODO Postal standards
+** References
+- https://pe.usps.com/cpim/ftp/pubs/Pub28/pub28.pdf
+* TODO Phone standards
+* TODO Currencies
+* TODO Schemas
+** References
+- https://schema.org/
+* TODO Fast Healthcare Interoperability Resources (FHIR)
+FHIR is a standard for health care data exchange, published by HL7®
+
+Health Level Seven International (HL7)
+** References
+- https://www.hl7.org/fhir/
+* TODO OpenAPI
+** References
+- https://spec.openapis.org/oas/latest.html
+- https://swagger.io/resources/open-api/
+* TODO OASIS Standards
+** Test Assertions Model
+*** Version 1.0
+**** 1.1.1. Data Model Formal Definition Terminology
+
+The means of formally defining the model in this specification
+involves the use of terms “class”, “attribute”, “datatype” and
+“association”. These are terms familiar in an object oriented paradigm
+but should not be strictly interpreted as object oriented terms. The
+terms are used as a means of formally defining the data structures in
+the model and do not specify or imply how that data is to be accessed
+or used. The use of the object oriented terminology should not be
+taken to mean that the implementation is to be object oriented.
+
+- Class :: The term “class” is used when the structure so modeled is a
+  complex grouping of more than one entity (either “attributes” or
+  “associations” or both).
+- Datatype :: The term “datatype” is primarily used of a simple,
+  primitive type such as a string or integer.
+- Attribute :: The term “attribute” is used to specify an entity that
+  is an instance of a primitive or simple datatype such as a string or
+  an integer.
+- Association :: The term “association” is used of an entity which is
+  an instance of a class (i.e. its structure is defined by a class)
+  and which appears as an element inside another class.
+
+**** 1.1.2. Domain terminology
+
+This section provides definitions of terms that are related but not
+central to the notion of test assertion. These definitions represent a
+common understanding among practitioners but do not pretend to be here
+authoritative.
+
+- Conformance :: The fulfillment of specified requirements by a
+  product, document, process, or service.
+- Conformance Clause :: A statement in a specification that lists all
+  the criteria that must be satisfied by an implementation (data
+  artifact or processor) in order to conform to the specification. The
+  clause refers to a set of normative statements and other parts of
+  the specification for details.
+- Implementation :: A product, document, process, or service that is
+  the realization of a specification or part of a specification.
+- Normative Statement, Normative Requirement :: A statement made in
+  the body of a specification that defines prescriptive requirements
+  on a conformance target.
+- Test Case :: A set of a test tools, software or files (data,
+  programs, scripts, or instructions for manual operations) that
+  verifies the adherence of a test assertion target to one or more
+  normative statements in the specification. Typically a test case is
+  derived from one or more test assertions. Appendix A proposes a more
+  precise definition of the meaning of deriving a test case from a
+  test assertion.  Each test case typically includes: (1) a
+  description of the test purpose (what is being tested - the
+  conditions / requirements / capabilities which are to be addressed
+  by a particular test), (2) the pass/fail criteria, (3) traceability
+  information to the verified normative statements, either as a
+  reference to a test assertion, or as a direct reference to the
+  normative statement. They are normally grouped in a test suite.
+- Test Metadata :: Metadata that is included in test cases to
+  facilitate automation and other processing.
+
+**** 3.1.1 Core Test Assertion Parts
+The following are defined as the "core" parts of a test assertion:
+
+- Identifier :: A unique identifier for the test assertion.  It is
+  recommended that the identifier be made universally unique.[1]
+- Normative Sources :: These refer to the precise specification
+  requirements or normative statements that the test assertion
+  addresses.
+- Target :: A test assertion target is the implementation or part of
+  an implementation that is the main object of the test assertion, and
+  of its Normative Sources. It categorizes an implementation or a part
+  of an implementation of the referred specification.
+- Predicate :: A predicate asserts, in the form of an expression, the
+  feature (a behavior or a property) described in the specification
+  statement(s) referred by the Normative Sources. If the predicate is
+  an expression which evaluates to “true” over a Target instance, this
+  means that the test assertion target exhibits this feature. “False”
+  means the target does not exhibit this feature.
+
+**** 3.1.2                 Optional Test Assertion Parts
+The following are defined as the "optional" parts of a test assertion:
+
+- Prescription Level :: The prescription level is a keyword that
+  indicates how imperative it is that the Normative Statement referred
+  to in the Normative Source, be met. The test assertion defines a
+  normative statement which may be mandatory (MUST / REQUIRED /
+  SHALL), permitted (MAY / CAN) or preferred (SHOULD /
+  RECOMMENDED). This property can be termed the test assertion’s
+  prescription level.
+  
+  NOTE: in the case of the normative source including keywords 'MUST
+  NOT' or 'shall not' the prescription level 'mandatory' is used and
+  the 'NOT' included in the predicate. Similarly, a statement with NOT
+  RECOMMENDED or SHOULD NOT belongs to the 'preferred' level. There
+  are differences between various conventions of normative language
+  [ISO/IEC Directives] [RFC 2119] and the above terms may be extended
+  with more specialized terms for a particular convention and its
+  distinct shades of meaning.
+- Prerequisite :: A test assertion Prerequisite is a logical
+  expression (similar to a Predicate) which further qualifies the
+  Target for undergoing the core test (expressed by the Predicate)
+  that addresses the Normative Statement. It may include references to
+  the outcome of other test assertions. If the Prerequisite evaluates
+  to "false" then the Target instance is not qualified for evaluation
+  by the Predicate.
+- Tag :: Tags represent properties or 'keywords' that qualify a test
+  assertion. Tags may be given values. Tags provide a means to
+  categorize the test assertions. They enable the grouping of the test
+  assertions, for example based on the type of test they assume or
+  based on some property of their Target .
+- Variable :: Variables are convenient for storing values, reuse and
+  shared use, within or across test assertions.  Another use of a
+  variable is as parameter or attribute employed by the writer of a
+  test assertion to refer to a value that is not known at the time the
+  test assertion is written, but which will be determined at some
+  later stage, possibly as late as the middle of running a set of
+  tests.
+- Description :: An informal definition of the role of the test
+  assertion, with some optional details on some of its parts. This
+  description shall not alter the general meaning of the test
+  assertion and its parts as described in this model. This description
+  may be used to annotate the test assertion with any information
+  useful to its understanding. It does not need to be an exhaustive
+  description of it.
+
+**** References
+- http://docs.oasis-open.org/tag/model/v1.0/os/testassertionsmodel-1.0-os.html
+** OData JSON Format
+*** Version 4.0
+**** References
+- http://docs.oasis-open.org/odata/odata-json-format/v4.0/odata-json-format-v4.0.html
+** Specification for JSON Abstract Data Notation (JADN)
+*** Version 1.0
+
+**** 3 JADN Types
+
+An information modeling language's types are defined in terms of the characteristics they provide to applications. JADN's base types are:
+
+#+caption: Table 3-1. JADN Base Types
+
+- Type :: Definition
+- Primitive	
+  - Binary :: A sequence of octets. Length is the number of octets.
+  - Boolean :: An element with one of two values: true or false.
+  - Integer :: A positive or negative whole number.
+  - Number :: A real number.
+  - String :: A sequence of characters, each of which has a Unicode codepoint. Length is the number of characters.
+- Enumeration	
+  - Enumerated :: A vocabulary of items where each item has an id and a string value
+- Specialization	
+  - Choice :: A discriminated union: one type selected from a set of named or labeled types.
+- Structured	
+  - Array  ::An ordered list of labeled fields with positionally-defined semantics. Each field has a position, label, and type.
+  - ArrayOf(vtype) :: A collection of fields with the same semantics. Each field has type vtype. Ordering and uniqueness are specified by a collection option.
+  - Map :: An unordered map from a set of specified keys to values with semantics bound to each key. Each key has an id and name or label, and is mapped to a value type.
+  - MapOf(ktype, vtype) :: An unordered map from a set of keys of the same type to values with the same semantics. Each key has key type ktype, and is mapped to value type vtype.
+  - Record :: An ordered map from a list of keys with positions to values with positionally-defined semantics. Each key has a position and name, and is mapped to a value type. Represents a row in a spreadsheet or database table.
+-----
+- An application that uses JADN types MUST exhibit the behavior specified in Table 3-1. Applications MAY use any programming language data types or mechanisms that exhibit the required behavior.
+- An instance of a Map, MapOf, or Record type MUST NOT have more than one occurrence of each key.
+- An instance of a Map, MapOf, or Record type MUST NOT have a key of the null type.
+- An instance of a Map, MapOf, or Record type with a key mapped to a null value MUST compare as equal to an otherwise identical instance without that key.
+- The length of an Array, ArrayOf or Record instance MUST not include null values after the last non-null value.
+- Two Array, ArrayOf or Record instances that differ only in the number of trailing nulls MUST compare as equal.
+
+As described in Table 3-1, JADN structured types define if their
+members are Ordered and/or Unique. They also distinguish between
+homogeneous collections where all members have the same type and
+heterogeneous collections where each member has a specified type. For
+homogeneous collections JADN uses the single "ArrayOf" type with a
+set, unique or unordered option (Section 3.2.1) rather than defining
+separate names for each collection type.
+
+| Ordered | Unique | Traditional Name | JADN Same Type     | JADN Specified Type |
+|---------+--------+------------------+--------------------+---------------------|
+| false   | true   | Set              | ArrayOf+set, MapOf | Map                 |
+| true    | false  | Sequence         | ArrayOf            | Array               |
+| true    | true   | OrderedSet       | ArrayOf+unique     | Record              |
+| false   | false  | Bag              | ArrayOf+unordered  | none                |
+
+Accessing an element of a collection whose values are neither ordered
+nor unique returns an arbitrarily-chosen element. Elements of other
+collections are deterministically accessed by position, value, or for
+the Record type either position or value.
+
+**** References
+- https://docs.oasis-open.org/openc2/jadn/v1.0/jadn-v1.0.html
+** OData Common Schema Definition Language (CSDL) JSON 
+*** Representation Version 4.01
+
+**** References
+- https://docs.oasis-open.org/odata/odata-csdl-json/v4.01/odata-csdl-json-v4.01.html
+** OData JSON Format
+*** Version 4.01
+**** References
+- https://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html
+** Business Document Naming and Design Rules 
+*** Version 1.0
+**** References
+- http://docs.oasis-open.org/ubl/Business-Document-NDR/v1.0/Business-Document-NDR-v1.0.html
+** Classification of Everyday Living
+*** Version 1.0
+**** 
+**** References
+- https://docs.oasis-open.org/coel/COEL/v1.0/COEL-v1.0.html
+
+** Darwin Information Typing Architecture (DITA) 
+
+*** Version 1.3
+
+**** 
+
+**** References
+
+- http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html
+
+** ebXML Business Process Specification Schema Technical Specification
+
+*** v2.0.4
+**** References
+- http://docs.oasis-open.org/ebxml-bp/2.0.4/ebxmlbp-v2.0.4-Spec-os-en.html/ebxmlbp-v2.0.4-Spec-os-en.htm
+** Election Markup Language (EML)
+*** Version 5.0
+**** 
+**** References
+- http://docs.oasis-open.org/election/eml/v5.0/EML-Process-Data-Requirements-v5.0.html
+** eXtensible Access Control Markup Language (XACML)
+*** Version 3.0
+**** 5 Syntax (normative, with the exception of the schema fragments)
+- 5.1 Element <PolicySet>
+- 5.2 Element <Description>
+- 5.3 Element <PolicyIssuer>
+- 5.4 Element <PolicySetDefaults>
+- 5.5 Element <XPathVersion>
+- 5.6 Element <Target>
+- 5.7 Element <AnyOf>
+- 5.8 Element <AllOf>
+- 5.9 Element <Match>
+- 5.10 Element <PolicySetIdReference>
+- 5.11 Element <PolicyIdReference>
+- 5.12 Simple type VersionType
+- 5.13 Simple type VersionMatchType
+- 5.14 Element <Policy>
+- 5.15 Element <PolicyDefaults>
+- 5.16 Element <CombinerParameters>
+- 5.17 Element <CombinerParameter>
+- 5.18 Element <RuleCombinerParameters>
+- 5.19 Element <PolicyCombinerParameters>
+- 5.20 Element <PolicySetCombinerParameters>
+- 5.21 Element <Rule>
+- 5.22 Simple type EffectType
+- 5.23 Element <VariableDefinition>
+- 5.24 Element <VariableReference>
+- 5.25 Element <Expression>
+- 5.26 Element <Condition>
+- 5.27 Element <Apply>
+- 5.28 Element <Function>
+- 5.29 Element <AttributeDesignator>
+- 5.30 Element <AttributeSelector>
+- 5.31 Element <AttributeValue>
+- 5.32 Element <Obligations>
+- 5.33 Element <AssociatedAdvice>
+- 5.34 Element <Obligation>
+- 5.35 Element <Advice>
+- 5.36 Element <AttributeAssignment>
+- 5.37 Element <ObligationExpressions>
+- 5.38 Element <AdviceExpressions>
+- 5.39 Element <ObligationExpression>
+- 5.40 Element <AdviceExpression>
+- 5.41 Element <AttributeAssignmentExpression>
+- 5.42 Element <Request>
+- 5.43 Element <RequestDefaults>
+- 5.44 Element <Attributes>
+- 5.45 Element <Content>
+- 5.46 Element <Attribute>
+- 5.47 Element <Response>
+- 5.48 Element <Result>
+- 5.49 Element <PolicyIdentifierList>
+- 5.50 Element <MultiRequests>
+- 5.51 Element <RequestReference>
+- 5.52 Element <AttributesReference>
+- 5.53 Element <Decision>
+- 5.54 Element <Status>
+- 5.55 Element <StatusCode>
+- 5.56 Element <StatusMessage>
+- 5.57 Element <StatusDetail>
+- 5.58 Element <MissingAttributeDetail>
+
+**** References
+- https://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html
+
+** Identity Metasystem Interoperability
+
+*** Version 1.0
+
+**** References
+- http://docs.oasis-open.org/imi/identity/v1.0/identity.html
+
+** OData Extension for Data Aggregation
+
+*** Version 4.0
+
+**** References
+
+- http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/odata-data-aggregation-ext-v4.0.html
+
+** Open Command and Control (OpenC2) Language Specification
+
+*** Version 1.0
+
+**** References
+
+- https://docs.oasis-open.org/openc2/oc2ls/v1.0/oc2ls-v1.0.html
+
+** OSLC Core
+
+OASIS Open Services for Lifecycle Collaboration
+
+*** Version 3.0
+
+**** References
+
+- 
+
+** Test Assertions Part 2 - Test Assertion Markup Language 
+
+*** Version 1.0
+
+**** References
+- http://docs.oasis-open.org/tag/taml/v1.0/testassertionmarkuplanguage-1.0.html
+
+** Transformational Government Framework
+
+*** Version 2.0
+
+**** Abstract:
+The Transformational Government Framework (TGF) is a practical “how
+to” standard for the design and implementation of an effective program
+of technology-enabled change at national, state or local government
+level. It describes a managed process of ICT-enabled change within the
+public sector and in its relationships with the private and voluntary
+sectors, which puts the needs of citizens and businesses at the heart
+of that process and which achieves significant and transformational
+impacts on the efficiency and effectiveness of government.
+
+The TGF provides a tried and tested way forward utilizing the best
+parts of existing e-Government programs and avoiding large new
+investments. Its formalization as a Pattern Language enables it to be
+encapsulated in more formal, tractable, and machine-processable forms,
+thus making it easy to integrate into desk-top tools and management
+software aiding testing and assurance of compliance and conformance.
+
+This Work Product constitutes the initial core set of patterns that
+form the TGF Standard. This set may be revised and/or extended from
+time to time as appropriate. It replaces and supersedes both the TGF
+Primer Version 1.0 and the TGF Pattern Languages Core Patterns Version
+1.0.
+
+**** References
+- http://docs.oasis-open.org/tgf/TGF/v2.0/TGF-v2.0.html
+
+** Universal Business Language 
+
+*** Version 2.3
+
+**** References
+- https://docs.oasis-open.org/ubl/UBL-2.3.html
+- https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl#tools
+
+** Universal Description Discovery & Integration (UDDI)
+
+*** Version 3.0.2
+
+**** References
+- http://uddi.org/pubs/uddi-v3.0.1-20031014.htm
+
+** Unstructured Information Management Architecture (UIMA)
+
+*** Version 1.0
+
+**** References
+- http://docs.oasis-open.org/uima/v1.0/uima-v1.0.html
+
+** Web Services Federation Language (WS-Federation)
+
+*** Version 1.2
+
+**** Abstract:
+This specification defines mechanisms to allow different security
+realms to federate, such that authorized access to resources managed
+in one realm can be provided to security principals whose identities
+and attributes are managed in other realms.  This includes mechanisms
+for brokering of identity, attribute, authentication and authorization
+assertions between realms, and privacy of federated claims.
+
+By using the XML, SOAP and WSDL extensibility models, the WS-*
+specifications are designed to be composed with each other to provide
+a rich Web services environment. WS-Federation by itself does not
+provide a complete security solution for Web services.  WS-Federation
+is a building block that is used in conjunction with other Web
+service, transport, and application-specific protocols to accommodate
+a wide variety of security models.
+
+**** References
+- http://docs.oasis-open.org/wsfed/federation/v1.2/ws-federation.html
+
+** Web Services Business Process Execution Language
+
+*** Version 2.0
+
+**** Abstract:
+This document defines a language for specifying business process
+behavior based on Web Services. This language is called Web Services
+Business Process Execution Language (abbreviated to WS-BPEL in the
+rest of this document). Processes in WS-BPEL export and import
+functionality by using Web Service interfaces exclusively.
+
+Business processes can be described in two ways. Executable business
+processes model actual behavior of a participant in a business
+interaction. Abstract business processes are partially specified
+processes that are not intended to be executed. An Abstract Process
+may hide some of the required concrete operational details. Abstract
+Processes serve a descriptive role, with more than one possible use
+case, including observable behavior and process template. WS-BPEL is
+meant to be used to model the behavior of both Executable and Abstract
+Processes.
+
+WS-BPEL provides a language for the specification of Executable and
+Abstract business processes. By doing so, it extends the Web Services
+interaction model and enables it to support business
+transactions. WS-BPEL defines an interoperable integration model that
+should facilitate the expansion of automated process integration in
+both the intra-corporate and the business-to-business spaces.
+
+**** References
+- http://docs.oasis-open.org/wsbpel/2.0/wsbpel-v2.0.html
+
+** Web Services Human Task (WS-HumanTask) Specification
+
+*** Version 1.1
+
+**** Abstract:
+
+The concept of human tasks is used to specify work which has to be
+accomplished by people. Typically, human tasks are considered to be
+part of business processes. However, they can also be used to design
+human interactions which are invoked as services, whether as part of a
+process or otherwise.
+
+This specification introduces the definition of human tasks, including
+their properties, behavior and a set of operations used to manipulate
+human tasks. A coordination protocol is introduced in order to control
+autonomy and life cycle of service-enabled human tasks in an
+interoperable manner.
+
+**** References
+- https://docs.oasis-open.org/bpel4people/ws-humantask-1.1-spec-cs-01.html
+- http://docs.oasis-open.org/bpel4people/ws-humantask-1.1.html
+
+** User Interface Markup Language (UIML) 
+
+*** Version 4.0
+
+**** Abstract:
+The design objective of the User Interface Markup Language (UIML) is
+to provide a vendor-neutral, canonical representation of any user
+interface (UI) suitable for mapping to existing languages. UIML
+provides a highly device-independent method to describe a user
+interface.  UIML factors any user interface description into six
+orthogonal pieces, answering six questions:
+
+What are the parts comprising the UI?
+
+What is the presentation (look/feel/sound) used for the parts?
+
+What is the content (e.g., text, images, sounds) used in the UI?
+
+What is the behavior of the UI (e.g., when someone clicks or says
+something)?
+
+What is the mapping of the parts to UI controls in some toolkit (e.g.,
+Java Swing classes or HTML tags)?
+
+What is the API of the business logic that the UI is connected to?
+
+UIML is a meta-language, which is augmented by a vocabulary of user
+interface parts, properties, and events defined outside this
+specification.  In this way, UIML is independent of user interface
+metaphors (e.g., "graphical user interface", "dialogs").
+
+UIML version 4 is a refinement of the previous versions of UIML, which
+were developed starting in 1997.
+
+It is the intent that this specification can be freely implemented by
+anyone.
+
+**** References
+- https://docs.oasis-open.org/uiml/v4.0/cs01/uiml-4.0-cs01.html
+
+** UOML (Unstructured Operation Markup Language) Part 1
+
+*** Version 1.0
+
+**** Abstract:
+This document defines a markup language for unstructured document
+operation, including the definitions of abstract document model and
+document operating instructions to the abstract document model.
+
+**** References
+- http://docs.oasis-open.org/uoml-x/v1.0/uoml-part1-v1.0.html
+
+
+** References
+- https://www.oasis-open.org/standards/
+* TODO URIs
+** Schemes
+*** References
+- https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
+- https://www.w3.org/wiki/UriSchemes
+- https://en.wikipedia.org/wiki/List_of_URI_schemes
+** URLs
+** URNs
+** Templates
+*** References
+- https://datatracker.ietf.org/doc/html/rfc6570 URI Template
+- https://github.com/uri-templates/uritemplate-test
+** Tag URIs
+*** References
+- https://taguri.org
+- http://www.faqs.org/rfcs/rfc4151.html
+** References
+- https://datatracker.ietf.org/doc/html/rfc3986 Uniform Resource Identifier (URI): Generic Syntax
+- https://datatracker.ietf.org/doc/html/rfc6570
+- https://en.wikipedia.org/wiki/List_of_URI_schemes
+- https://www.w3.org/wiki/UriSchemes
+- https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
+- 
+* TODO DNS
+** References
+- https://en.wikipedia.org/wiki/Reverse_domain_name_notation
+- 
+* COMMENT org settings
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.5.5)
+#+cite_export:
+#+startup: overview
