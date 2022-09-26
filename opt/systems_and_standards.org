@@ -4,6 +4,9 @@
 #+email: wobh@wobh.org
 
 * TODO Filesystem Hierarchy Standard
+
+** References
+- https://refspecs.linuxfoundation.org/fhs.shtml
 * TODO XDG Basedir
 ** Folders
 - ~${XDG_DATA_HOME:-{HOME}/.local/share}~ :: to which user-specific
@@ -1280,6 +1283,7 @@ the Record type either position or value.
 *** Version 4.01
 **** References
 - https://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html
+
 ** Business Document Naming and Design Rules 
 *** Version 1.0
 **** References
