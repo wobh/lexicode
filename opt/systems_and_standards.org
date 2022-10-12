@@ -1,4 +1,4 @@
-#+title: systems_and_standards
+#+title: Systems and Standards
 #+date: <2022-09-25 Sun>
 #+author: William Clifford
 #+email: wobh@wobh.org
