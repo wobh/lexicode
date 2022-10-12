@@ -1629,6 +1629,11 @@ document operating instructions to the abstract document model.
 ** References
 - https://en.wikipedia.org/wiki/Reverse_domain_name_notation
 - 
+* TODO General Purpose Datatypes
+
+** References
+- ISO/IEC 11404
+  - http://standards.iso.org/ittf/PubliclyAvailableStandards/c039479_ISO_IEC_11404_2007(E).zip 
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+options: author:t broken-links:nil c:nil creator:nil
