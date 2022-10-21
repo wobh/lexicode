@@ -81,7 +81,7 @@ methods:
   - TRACE :: Perform a message loop-back test along the path to the
     target resource.
 - RFC 5789
-  - PATCH :: Perform a modification of 
+  - PATCH :: Perform partial modifications of a resource.
 
 ** Responses
 
