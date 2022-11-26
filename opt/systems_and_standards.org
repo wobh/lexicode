@@ -112,6 +112,7 @@ useful at the web application later.
 - https://datatracker.ietf.org/doc/html/rfc7231/
 - https://datatracker.ietf.org/doc/html/rfc5789/
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+- https://httpwg.org/specs/rfc9110.html
 * TODO JSON Pointer
 ** References
 - https://datatracker.ietf.org/doc/html/rfc6901/
