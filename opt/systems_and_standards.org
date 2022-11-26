@@ -1632,6 +1632,164 @@ document operating instructions to the abstract document model.
 - 
 * TODO General Purpose Datatypes
 
+ISO/IEC 11404
+Information technology — General-Purpose Datatypes (GPD)
+
+** From the Table of Contents
+- 6 Fundamental notions
+  - 6.1 Datatype
+  - 6.2 Value space
+  - 6.3 Datatype properties
+    - 6.3.1 Equality
+    - 6.3.2 Order
+    - 6.3.3 Bound
+    - 6.3.4 Cardinality
+    - 6.3.5 Exact and approximate
+    - 6.3.6 Numeric
+  - 6.4 Primitive and non-primitive datatypes
+  - 6.5 Datatype generator
+  - 6.6 Characterizing operations
+  - 6.7 Datatype families
+  - 6.8 Aggregate datatypes
+    - 6.8.1 Homogeneity
+    - 6.8.2 Size
+    - 6.8.3 Uniqueness
+    - 6.8.4 Aggregate-imposed identifier uniqueness
+    - 6.8.5 Aggregate-imposed ordering
+    - 6.8.6 Access method
+    - 6.8.7 Recursive structure
+    - 6.8.8 Structured and unstructured
+    - 6.8.9 Mandatory and optional components
+  - 6.9 Provisions associated with datatypes
+
+- 8 Datatypes
+  - 8.1 Primitive datatypes
+    - 8.1.1 Boolean
+    - 8.1.3 Enumerated
+    - 8.1.2 State
+    - 8.1.4 Character
+    - 8.1.5 Ordinal
+    - 8.1.6 Date-and-Time
+    - 8.1.7 Integer
+    - 8.1.8 Rational
+    - 8.1.9 Scaled
+    - 8.1.10 Real
+    - 8.1.11 Complex
+    - 8.1.12 Void
+  - 8.2 Subtypes and extended types
+    - 8.2.1 Range
+    - 8.2.2 Selecting
+    - 8.2.3 Excluding
+    - 8.2.4 Size
+    - 8.2.5 Explicit subtypes
+    - 8.2.6 Extended
+  - 8.3 Generated datatypes
+    - 8.3.1 Choice
+    - 8.3.2 Pointer
+    - 8.3.3 Procedure
+  - 8.4 Aggregate Datatypes
+    - 8.4.1 Record
+    - 8.4.2 Class
+    - 8.4.3 Set
+    - 8.4.4 Bag
+    - 8.4.5 Sequence
+    - 8.4.6 Array
+    - 8.4.7 Table
+  - 8.5 Defined datatypes
+  - 8.6 Provisions
+    - 8.6.1 General parameters for provisions
+    - 8.6.2 Aggregate-specific features
+    - 8.6.3 Aggregate-component-identifier uniqueness
+    - 8.6.4 Usage-specific features
+
+- 10 Defined datatypes and generators
+  - 10.1 Defined datatypes
+    - 10.1.1 Natural number
+    - 10.1.2 Modulo
+    - 10.1.3 Bit
+    - 10.1.4 Bit string
+    - 10.1.5 Character string
+    - 10.1.6 Time interval
+    - 10.1.7 Octet
+    - 10.1.8 Octet string
+    - 10.1.9 Private
+    - 10.1.10 Object identifier
+  - 10.2 Defined generators
+    - 10.2.1 Stack
+    - 10.2.2 Tree
+    - 10.2.3 Optional
+
+- 11 Mappings
+  - 11.1 Outward Mappings
+  - 11.2 Inward Mappings
+  - 11.3 Reverse Inward Mapping
+  - 11.4 Support of Datatypes
+    - 11.4.1 Support of equality
+    - 11.4.2 Support of order
+    - 11.4.3 Support of bounds
+    - 11.4.4 Support of cardinality
+    - 11.4.5 Support for the exact or approximate property
+    - 11.4.6 Support for the numeric property
+    - 11.4.7 Support for the mandatory components
+
+** Grammar
+
+#+begin_example
+value-expression = independent-value       |
+                   dependent-value         |
+                   formal-parametric-value ;
+
+independent-value = explicit-value  |
+                    value-reference ;
+
+
+explicit-value = boolean-literal        |
+                 state-literal          |
+                 enumerated-literal     |
+                 character-literal      |
+                 ordinal-literal        |
+                 time-literal           |
+                 integer-literal        |
+                 rational-literal       |
+                 scaled-literal         |
+                 real-literal           |
+                 complex-literal        |
+                 void-literal           |
+                 extended-literal       |
+                 pointer-literal        |
+                 procedure-reference    |
+                 string-literal         |
+                 bitstring-literal      |
+                 objectidentifier-value |
+                 choice-value           |
+                 record-value           |
+                 class-value            |
+                 set-value              |
+                 sequence-value         |
+                 bag-value              |
+                 array-value            |
+                 table-value            ;
+
+value-reference = value-identifier ;
+
+procedure-reference = procedure-identifier ;
+#+end_example
+
+#+begin_example
+primitive-type = boolean-type    |
+                 state-type      |
+                 enumerated-type |
+                 character-type  |
+                 ordinal-type    |
+                 time-type       |
+                 integer-type    |
+                 rational-type   |
+                 scaled-type     |
+                 real-type       |
+                 complex-type    |
+                 void-type       ;
+#+end_example
+
 ** References
 - ISO/IEC 11404
   - http://standards.iso.org/ittf/PubliclyAvailableStandards/c039479_ISO_IEC_11404_2007(E).zip 
