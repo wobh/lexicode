@@ -52,7 +52,7 @@ Synonyms of verbs by size
 | use | work      | apply       |               | evaluation,execution        | act     |
 | vow |           |             | expect        | promise                     |         |
 | wax | grow      |             |               | increase                    | add,eke |
-| hit | kick      | punch       | strike        |                             |         |
+| hit | kick      | punch       | strike,attack | attack                      |         |
 | wed | join      | marry,agree | cleave        | interleave,contract,connect |         |
 | bet |           | guess       | gamble        | suppose                     |         |
 | nip | bite      | pinch       |               | truncate a small amount     |         |
@@ -61,82 +61,82 @@ Synonyms of verbs by size
 | vex |           | anger       |               | provoke,irritate,aggravate  |         |
 * from 4
 
-| 4    | 5     | 6      | 7       | concept            | syns      | ants       |
-|------+-------+--------+---------+--------------------+-----------+------------|
-| make | build | create |         |                    | cast      |            |
-| read | parse | access |         |                    | (copy?)   |            |
-| edit | alter | change |         | alteration         |           |            |
-| help |       | assist |         |                    |           |            |
-| wipe | erase |        |         |                    | clear     |            |
-| mark |       |        |         |                    |           |            |
-| hold |       |        |         |                    | keep,stow |            |
-| stow | store |        |         |                    |           |            |
-| bear |       |        |         |                    |           |            |
-| fold |       |        |         |                    |           |            |
-| seek |       | search |         |                    | find      |            |
-| find |       | locate |         |                    |           |            |
-| move |       |        |         |                    |           |            |
-| send |       |        |         |                    |           |            |
-| bind |       |        |         |                    |           |            |
-| gain |       |        |         |                    |           |            |
-| lose |       |        |         |                    |           |            |
-| give |       |        |         |                    |           |            |
-| take | fetch |        |         |                    |           |            |
-| turn |       |        |         |                    | spin      | still,stay |
-| deem | think |        |         | acceptance         | doom      |            |
-| doom | judge |        |         | acceptance         | deem      |            |
-| plan |       |        |         |                    |           |            |
-| sort | order |        |         |                    |           |            |
-| sift | sieve | filter |         |                    |           |            |
-| swap | trade |        |         | exchange           |           |            |
-| rate | score |        | measure |                    | rank      |            |
-| jump |       |        |         |                    |           |            |
-| copy |       |        |         |                    |           |            |
-| fork | split | divide |         | division           |           |            |
-| cast | throw |        |         |                    | make      |            |
-| push |       |        |         |                    |           | pull       |
-| pull |       |        |         |                    | yank,grab | push       |
-| open |       |        |         |                    |           | shut       |
-| shut |       |        |         |                    |           | open       |
-| mend |       | repair |         |                    | heal      |            |
-| heal |       | repair |         |                    | mend      |            |
-| lead |       |        |         |                    |           |            |
-| pump |       | stroke | breathe |                    |           |            |
-| bend |       |        |         |                    |           |            |
-| meet |       |        |         |                    | join      |            |
-| join |       |        |         |                    | meet      |            |
-| pass |       |        |         |                    |           |            |
-| wean |       |        |         |                    |           |            |
-| fail |       |        |         |                    |           |            |
-| wane |       | wither |         | reduction,diminish |           |            |
-| kill |       |        |         |                    |           |            |
-| yank |       |        |         |                    |           |            |
-| grab |       |        |         |                    |           |            |
-| save |       |        |         |                    |           |            |
-| trim |       |        |         |                    |           |            |
-| toss | throw |        |         |                    |           |            |
-| tear |       |        |         | destruction        | fork      | mend       |
-| draw |       |        |         |                    |           |            |
-| vary | alter | differ |         |                    |           |            |
-| look |       |        |         |                    |           |            |
-| loop |       |        |         |                    |           |            |
-| shun |       |        |         | rejection          | deny      | take       |
-| deny |       |        |         | rejection          | shun      | take       |
-| pack |       |        |         |                    |           |            |
-| ship |       |        |         |                    | send      |            |
-| lure | tempt |        |         |                    |           |            |
-| wait |       | remain |         |                    | bide,stay |            |
-| tend |       |        |         |                    |           |            |
-| pose |       |        | arrange |                    |           |            |
-| know |       |        |         |                    |           |            |
-| walk |       |        |         |                    |           |            |
-| step |       |        |         |                    |           |            |
-| skip |       |        |         |                    |           |            |
-| bide |       |        |         |                    |           |            |
-| drop |       |        |         |                    |           |            |
-| emit |       |        |         |                    |           |            |
-| chop |       |        |         |                    |           |            |
-| swat | swipe | strike |         |                    |           |            |
+| 4    | 5     | 6      | 7       | concept                 | syns      | ants       |
+|------+-------+--------+---------+-------------------------+-----------+------------|
+| make | build | create |         |                         | cast      |            |
+| read | parse | access |         |                         | (copy?)   |            |
+| edit | alter | change |         | alteration              | update    |            |
+| wipe | erase | delete | destroy | destroy                 | clear     |            |
+| help |       | assist |         |                         |           |            |
+| mark |       |        |         |                         |           |            |
+| hold |       |        |         |                         | keep,stow |            |
+| stow | store |        |         |                         |           |            |
+| bear |       |        |         |                         |           |            |
+| fold |       |        |         |                         |           |            |
+| seek |       | search |         |                         | find      |            |
+| find |       | locate |         |                         |           |            |
+| move |       |        |         |                         |           |            |
+| send |       |        |         |                         |           |            |
+| bind |       |        |         |                         |           |            |
+| gain |       |        |         |                         |           |            |
+| lose |       |        |         |                         |           |            |
+| give |       |        |         |                         |           |            |
+| take | fetch |        |         |                         |           |            |
+| turn |       |        |         |                         | spin      | still,stay |
+| deem | think |        |         | acceptance              | doom      |            |
+| doom | judge |        |         | acceptance              | deem      |            |
+| plan |       |        |         |                         |           |            |
+| sort | order |        |         |                         |           |            |
+| sift | sieve | filter |         |                         |           |            |
+| swap | trade |        |         | exchange                |           |            |
+| rate | score |        | measure |                         | rank      |            |
+| jump |       |        |         |                         |           |            |
+| copy | clone |        |         | duplication,replication | dupe      |            |
+| fork | split | divide |         | division                |           |            |
+| cast | throw |        |         |                         | make      |            |
+| push |       |        |         |                         |           | pull       |
+| pull |       |        |         |                         | yank,grab | push       |
+| open |       |        |         |                         |           | shut       |
+| shut |       |        |         |                         |           | open       |
+| mend |       | repair |         |                         | heal      |            |
+| heal |       | repair |         |                         | mend      |            |
+| lead |       |        |         |                         |           |            |
+| pump |       | stroke | breathe |                         |           |            |
+| bend |       |        |         |                         |           |            |
+| meet |       |        |         |                         | join      |            |
+| join |       |        |         |                         | meet      |            |
+| pass |       |        |         |                         |           |            |
+| wean |       |        |         |                         |           |            |
+| fail |       |        |         |                         |           |            |
+| wane |       | wither |         | reduction,diminish      |           |            |
+| kill |       |        |         |                         |           |            |
+| yank |       |        |         |                         |           |            |
+| grab |       |        |         |                         |           |            |
+| save |       |        |         |                         |           |            |
+| trim |       |        |         |                         |           |            |
+| toss | throw |        |         |                         |           |            |
+| tear |       |        |         | destruction             | fork      | mend       |
+| draw |       |        |         |                         |           |            |
+| vary | alter | differ |         |                         |           |            |
+| look |       |        |         |                         |           |            |
+| loop |       |        |         |                         |           |            |
+| shun |       |        |         | rejection               | deny      | take       |
+| deny |       |        |         | rejection               | shun      | take       |
+| pack |       |        |         |                         |           |            |
+| ship |       |        |         |                         | send      |            |
+| lure | tempt |        |         |                         |           |            |
+| wait |       | remain |         |                         | bide,stay |            |
+| tend |       |        |         |                         |           |            |
+| pose |       |        | arrange |                         |           |            |
+| know |       |        |         |                         |           |            |
+| walk |       |        |         |                         |           |            |
+| step |       |        |         |                         |           |            |
+| skip |       |        |         |                         |           |            |
+| bide |       |        |         |                         |           |            |
+| drop |       |        |         |                         |           |            |
+| emit |       |        |         |                         |           |            |
+| chop |       |        |         |                         |           |            |
+| swat | swipe | strike |         |                         |           |            |
 * from 5
 | 5           | 6             |
 |-------------+---------------|
