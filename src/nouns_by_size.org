@@ -3,6 +3,7 @@
 #+author: William Clifford
 #+email: wobh@yahoo.com
 #+description: Synonyms of nouns by size
+#+keywords: nouns, synonyms
 
 * lists
 ** 3
@@ -451,11 +452,13 @@ wind
 
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
-#+options: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
-#+options: e:t email:nil f:t inline:t num:nil p:nil pri:nil stat:t
-#+options: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+creator: Emacs 24.3.1 (Org mode 8.2.9)
-#+exclude_tags: noexport
-#+keywords: nouns, synonyms
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
 #+language: en
 #+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6.1)
+#+cite_export:
+#+startup: overview

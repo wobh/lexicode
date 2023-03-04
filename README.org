@@ -2,6 +2,8 @@
 #+date: <2014-10-19 Sun>
 #+author: William Clifford
 #+email: will@wobh.org
+#+description: README for Lexicode: A Programmer's Thesaurus
+#+keywords:
 
 * Introduction
 
@@ -25,13 +27,14 @@ Org-mode files, which I generate a webpage from.
 - https://www.merriam-webster.com
 
 * COMMENT org settings
-#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment date:t
-#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
-#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+CREATOR: Emacs 24.3.1 (Org mode 8.2.9)
-#+DESCRIPTION: README for Lexicode: A Programmer's Thesaurus
-#+EXCLUDE_TAGS: noexport
-#+KEYWORDS:
-#+LANGUAGE: en
-#+SELECT_TAGS: export
+#+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6.1)
+#+cite_export:
+#+startup: overview

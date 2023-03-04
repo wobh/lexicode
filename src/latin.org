@@ -3,6 +3,7 @@
 #+email: wobh@yahoo.com
 #+date: 2014-11-03 Mon
 #+description: Collection of common latin roots and stems used in English
+#+keywords:
 
 * Introduction
 
@@ -117,13 +118,14 @@ from the wikipedia page
 
 - http://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
 * COMMENT org settings
-#+keywords:
-#+language:  en
-#+options:   H:6 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+options:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+infojs_opt: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-#+export_select_tags: export
-#+export_exclude_tags: noexport
-#+link_up:   
-#+link_home: 
-#+xslt:
+#+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6.1)
+#+cite_export:
+#+startup: overview

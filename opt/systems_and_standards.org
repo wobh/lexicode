@@ -2,6 +2,8 @@
 #+date: <2022-09-25 Sun>
 #+author: William Clifford
 #+email: wobh@wobh.org
+#+description: Overviews of different systems and standards
+#+keywords:
 
 * TODO Filesystem Hierarchy Standard
 
@@ -1794,7 +1796,7 @@ primitive-type = boolean-type    |
 - ISO/IEC 11404
   - http://standards.iso.org/ittf/PubliclyAvailableStandards/c039479_ISO_IEC_11404_2007(E).zip 
 * COMMENT org settings
-#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
 #+options: author:t broken-links:nil c:nil creator:nil
 #+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
 #+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
@@ -1802,6 +1804,6 @@ primitive-type = boolean-type    |
 #+language: en
 #+select_tags: export
 #+exclude_tags: noexport
-#+creator: Emacs 28.2 (Org mode 9.5.5)
+#+creator: Emacs 28.2 (Org mode 9.6.1)
 #+cite_export:
 #+startup: overview

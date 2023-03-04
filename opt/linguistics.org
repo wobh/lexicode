@@ -3,6 +3,7 @@
 #+author: William Clifford
 #+email: wobh@yahoo.com
 #+description: collection of linguistic concepts WIP
+#+keywords:
 
 * Semantic Roles
 A semantic role is the underlying relationship that a participant has
@@ -342,12 +343,16 @@ A grammatical category is a set of syntactic features that
 * References
 - http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/contents.htm
 - http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsCase.htm
-* COMMENT org options
+
+* COMMENT org settings
+#+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
 #+language: en
 #+select_tags: export
 #+exclude_tags: noexport
-#+creator: Emacs 24.5.1 (Org mode 8.3.1)
-#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+options: author:t c:nil creator:nil d:(not "LOGBOOK") date:t e:t
-#+options: email:nil f:t inline:t num:t p:nil pri:nil prop:nil stat:t
-#+options: tags:t tasks:t tex:t timestamp:t title:t toc:t todo:t |:t
+#+creator: Emacs 28.2 (Org mode 9.6.1)
+#+cite_export:
+#+startup: overview

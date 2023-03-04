@@ -2,6 +2,8 @@
 #+date: <2019-08-24 Sat>
 #+author: William Clifford
 #+email: wobh@yahoo.com
+#+description: Synonyms of verbs by size
+#+keywords: verbs, synonyms
 
 * 2
 
@@ -69,13 +71,14 @@
 - includes (ing)
 
 * COMMENT org settings
-#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+options: author:t c:nil creator:comment date:t
-#+options: e:t email:nil f:t inline:t num:t p:nil pri:nil stat:t
-#+options: tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
-#+creator: Emacs 24.3.1 (Org mode 8.2.9)
-#+description: Synonyms of verbs by size
-#+exclude_tags: noexport
-#+keywords: verbs, synonyms
+#+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
 #+language: en
 #+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 28.2 (Org mode 9.6.1)
+#+cite_export:
+#+startup: overview
