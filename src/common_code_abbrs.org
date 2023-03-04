@@ -329,6 +329,30 @@ A basic rails app:
   - temp
   - vendor
 
+** Bundler
+
+- new_gem
+  - Gemfile
+  - lib/
+    - new_gem.rb
+    - new_gem/
+      - version.rb
+  - sig/
+    - new_gem.rbs
+  - new_gem.gemspec
+  - Rakefile
+  - README.md
+  - bin/
+    - console
+    - setup
+  - .gitignore
+  - test/
+    - test_helper.rb
+    - test_new_gem.rb
+  - LICENSE.txt
+  - CODE_OF_CONDUCT.md
+  - CHANGELOG.md
+
 ** Clojure Leiningen
 *** commands
 - new :: name [, template]
@@ -447,6 +471,7 @@ A basic rails app:
 
 *** References
 - https://cliutils.gitlab.io/modern-cmake/chapters/basics/structure.html
+
 * Code abbreviations
 
 Most programming language abstract way storage and retrieval of data
