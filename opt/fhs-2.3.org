@@ -13,12 +13,12 @@ Edited by
 - Daniel Quinlan
 - Christopher Yeoh
 
-- Copyright © 1994-2004 Daniel Quinlan
-- Copyright © 2001-2004 Paul 'Rusty' Russell
-- Copyright © 2003-2004 Christopher Yeoh
+- Copyright Â© 1994-2004 Daniel Quinlan
+- Copyright Â© 2001-2004 Paul 'Rusty' Russell
+- Copyright Â© 2003-2004 Christopher Yeoh
 
 This standard consists of a set of requirements and guidelines for file and
-directory placement under UNIX-like operating systems. The guidelines are
+directory plqacement under UNIX-like operating systems. The guidelines are
 intended to support interoperability of applications, system administration
 tools, development tools, and scripts as well as greater uniformity of
 documentation for these systems.
@@ -1450,8 +1450,7 @@ the corresponding subsystem is installed:
 |-------+----------------------------------|
 | words | List of English words (optional) |
 
-Sites that require both American and British spelling may link words to ­/usr/
-share/dict/american-english or ­/usr/share/dict/british-english.
+Sites that require both American and British spelling may link words to /usr/share/dict/american-english or /usr/share/dict/british-english.
 
 Word lists for other languages may be added using the English name for that
 language, e.g., /usr/share/dict/french, /usr/share/dict/danish, etc. These
@@ -1553,13 +1552,13 @@ the two-letter codes used for the country codes in email addresses.) It must be
 two characters wide and specified with uppercase letters only. [33]
 
 The <character-set> field must represent the standard describing the character
-set. If the ­<character-set> field is just a numeric specification, the number
+set. If the <character-set> field is just a numeric specification, the number
 represents the number of the international standard describing the character
 set. It is recommended that this be a numeric representation if possible (ISO
 standards, especially), not include additional punctuation symbols, and that
 any letters be in lowercase.
 
-A parameter specifying a <version> of the profile may be placed after the ­
+A parameter specifying a <version> of the profile may be placed after the 
 <character-set> field, delimited by a comma. This may be used to discriminate
 between different cultural needs; for instance, dictionary order versus a more
 systems-oriented collating order. This standard recommends not using the
@@ -1572,7 +1571,7 @@ pages (the man<section> directories) directly in /usr/share/man. (That is the
 traditional circumstance and arrangement, in fact.)
 
 Countries for which there is a well-accepted standard character code set may
-omit the ­<character-set> field, but it is strongly recommended that it be
+omit the <character-set> field, but it is strongly recommended that it be
 included, especially for countries with several competing standards.
 
 Various examples:
