@@ -55,19 +55,20 @@ This will not be exhaustive.
 |--------+-----------------------+--------------------+-----------------------------------------------------------------------------------------|
 | -cap   | to hold, take         | -cip, -capt, -cept | capture, capable, caption, concept, except, forcept, intercept, incipient, recipient    |
 | -fer   | to bear, to carry     |                    |                                                                                         |
-| -dict  |                       |                    |                                                                                         |
-| -duce  |                       |                    |                                                                                         |
+| -dict  | to show, to speak     |                    | edict, indicate, contradict, dedicate, abdicate, condition, dictum                      |
+| -duce  | to lead               | -duct              | adduce, reduce, induce, produce, seduce, introduce, deduce, conduce, subduce, transduce |
 | -mit   | to send               | -miss              | missile, transmit,                                                                      |
-| -ordin |                       |                    |                                                                                         |
-| -bine  |                       |                    |                                                                                         |
-| -spec  |                       |                    |                                                                                         |
-| -surd  |                       |                    |                                                                                         |
-| -ject  |                       |                    |                                                                                         |
+| -ordin | to fit in             |                    | ordinate, coordinate, ordain, order                                                     |
+| -bine  | two                   |                    | combine, binary                                                                         |
+| -spec  | to observe,           |                    | respect, inspect, aspect, expect, prospect, spectacle                                   |
+| -surd  | dull, deaf, mute      |                    | absurd                                                                                  |
+| -ject  | to throw, cast        |                    | abject, deject, eject, inject, interject, object, project, reject, subject, adjacent    |
 | -crea  | to make               |                    | create, creature, recreate, procreate                                                   |
 | -cur   | to care for           |                    | cure, curate, curious, accurate, secure, sinecure[fn:10]                                |
 | -curr  | run, course           | -curs              | concur, corridor, courier, current, cursor, cursive, discourse, incur, recur, succor(?) |
 | -curv  | bent                  |                    | curve, curvature,                                                                       |
 | -lino  | daub, besmear, anoint |                    | delete                                                                                  |
+| -ser   | to line up            |                    | insert, assert, assort, consort, desert, exert                                          |
 
 [fn:10] a cushy job with little work but great pay: "sine cura"
 "without care"
