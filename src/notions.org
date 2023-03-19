@@ -381,6 +381,24 @@ Sometimes "things" may be considers "groups" of "properties"
   - references
 - model
   - property
+
+* Testing
+** concepts
+- phenomenon :: happenings, events
+- observation :: a record of phenomena
+- hypothesis :: proposal, supposition, conjecture about relations
+                between phenomena
+- prediction :: expectation, outlook, forecast
+- experiment :: test, prove, probe, poke, prod
+- procedure :: process, steps in verifying or falsifying hypothesis
+- subject :: what is expected to change as a result of the process
+  - dependent or response variable
+- control :: a non-tested comparable, or constant, invariant
+  - independent or explanatory variable
+- result :: outcome, actual
+- reproducible :: recurring, replicable, non-coincedental
+- theory :: reproducible results
+
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
 #+options: author:t broken-links:nil c:nil creator:nil
