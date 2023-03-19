@@ -18,49 +18,54 @@ Synonyms of verbs by size
 
 * from 3
 
-| 3   | 4         | 5           | 6             | concept                     | syns    |
-|-----+-----------+-------------+---------------+-----------------------------+---------|
-| act | exec      | apply       |               | evaluation,execution        | run     |
-| add | grow      | amend       | append,extend | addition,extension          | eke,wax |
-| ask |           |             |               | request,require             | beg     |
-| bid | give      | offer       | tender        | attempt,propose             | try     |
-| cut | chop      | carve       | cleave        | reduction,truncation        | div     |
-| def | defn      |             | define        | definition                  | let     |
-| div | divd      | split       | divide        | division,reduction          | cut     |
-| don | wear      |             |               | decoration,amendment        | fit     |
-| dub | name      |             |               | association                 |         |
-| err | fail      | flunk       |               | rejection                   |         |
-| eke | grow      |             |               | append                      | add,wax |
-| fit | mold,form | adapt,shape | sculpt        | configuration               |         |
-| fix | mend,keep |             | fasten,repair | constantization             |         |
-| get | take,grab | fetch       |               | retrieve,                   |         |
-| hap |           | occur       | happen        | events                      |         |
-| ken | know      | learn       | reckon        | association                 |         |
-| let |           | allow       |               | definition                  | def     |
-| new | make      | build       | create        | creation,composition        |         |
-| nim | take      | steal       | thieve        | reduction,removal           |         |
-| nix | deny      |             | refuse        | rejection                   |         |
-| ply | fold      |             | reduce        | reduction,abstraction       |         |
-| pop | take      |             | remove        | release,truncation          |         |
-| put | stow,hold | alter,amend | change,insert | mutation,amendment          | set     |
-| rid | drop      | spurn,purge | reject        | rejection,removal           |         |
-| run | exec,work |             |               | execution                   | act     |
-| say | tell,show | speak,print |               | presentation,display        |         |
-| see | look,seek | watch       | notice,search | observation                 |         |
-| set |           |             | define        | definition,amendment        | put     |
-| tap | meet      | touch,drain |               | reduction,connection        | use     |
-| tie | bind      |             | append        | association,concatatenation |         |
-| try | test      | prove       |               | attempt                     | bid     |
-| use | work      | apply       |               | evaluation,execution        | act     |
-| vow |           |             | expect        | promise                     |         |
-| wax | grow      |             |               | increase                    | add,eke |
-| hit | kick      | punch       | strike,attack | attack                      |         |
-| wed | join      | marry,agree | cleave        | interleave,contract,connect |         |
-| bet |           | guess       | gamble        | suppose                     |         |
-| nip | bite      | pinch       |               | truncate a small amount     |         |
-| beg |           | plead       | grovel        | request,require             | ask     |
-| vie |           |             |               | contend,contest,dispute     |         |
-| vex |           | anger       |               | provoke,irritate,aggravate  |         |
+| 3   | 4    | 5     | 6      | concept                     | syns                            |
+|-----+------+-------+--------+-----------------------------+---------------------------------|
+| act | exec | apply |        | evaluation,execution        | run                             |
+| use | work | apply |        | evaluation,execution        | act                             |
+| add | grow | amend | append | addition,extension          | eke,wax,extend                  |
+| ask |      |       |        | request,require             | beg                             |
+| bid | give | offer | tender | attempt,propose             | try                             |
+| cut | chop | carve | cleave | reduction,truncation        | div                             |
+| def | defn |       | define | definition                  | let                             |
+| div | divd | split | divide | division,reduction          | cut                             |
+| don | wear |       |        | decoration,amendment        | fit                             |
+| dub | name |       |        | association                 |                                 |
+| err | fail | flunk |        | rejection                   |                                 |
+| eke | grow |       |        | append                      | add,wax                         |
+| ebb | wane |       |        | decrease,reduce             |                                 |
+| fit | mold | adapt | sculpt | configuration               | form,shape                      |
+| fix | mend |       | fasten | constantization             | keep,repair                     |
+| get | take | fetch |        | retrieve,                   | grab                            |
+| hap |      | occur | happen | events                      |                                 |
+| ken | know | learn | reckon | association                 |                                 |
+| let |      | allow |        | definition                  | def                             |
+| new | make | build | create | creation,composition        |                                 |
+| nim | take | steal | thieve | reduction,removal           |                                 |
+| nix | deny |       | refuse | rejection                   |                                 |
+| ply | fold |       | reduce | reduction,abstraction       |                                 |
+| pop | pull |       | remove | release,truncation          | take                            |
+| put | push | alter | change | mutation,amendment          | set,keep,stow,hold,amend,insert |
+| rid | drop | spurn | reject | rejection,removal           | purge,refuse                    |
+| run | work |       |        | execution                   | act,exec                        |
+| say | tell | speak |        | presentation,display        | mark,show,write,print,render    |
+| see | seek | watch | search | observation                 | look,notice                     |
+| set |      |       | define | definition,amendment        | put                             |
+| tap | meet | touch |        | reduction,connection        | use,drain                       |
+| tie | bind |       | append | association,concatatenation | link                            |
+| try | test | prove |        | attempt                     | bid                             |
+| vow |      |       | expect | promise                     |                                 |
+| wax | grow |       |        | increase                    | add,eke                         |
+| hit | kick | punch | strike | attack                      | attack                          |
+| wed | join | marry | cleave | interleave,contract,connect | agree                           |
+| bet |      | guess | gamble | suppose                     |                                 |
+| nip | bite | pinch |        | truncate a small amount     |                                 |
+| beg |      | plead | grovel | request,require             | ask                             |
+| vie |      |       |        | contend,contest,dispute     |                                 |
+| vex |      | anger |        | provoke,irritate,aggravate  |                                 |
+| dup | copy | clone |        | duplication,replication     | dupe                            |
+| ref |      | refer |        | reference,indicate          |                                 |
+| map | pair |       |        | association                 |                                 |
+
 * from 4
 
 | 4    | 5     | 6      | 7       | concept                 | syns      | ants       |
@@ -139,7 +144,9 @@ Synonyms of verbs by size
 | emit |       |        |         |                         |           |            |
 | chop |       |        |         |                         |           |            |
 | swat | swipe | strike |         |                         |           |            |
+
 * from 5
+
 | 5           | 6             |
 |-------------+---------------|
 | build       | create        |
@@ -203,6 +210,8 @@ Synonyms of verbs by size
 | plead       | grovel        |
 | argue       |               |
 | shear       |               |
+| reply       | answer        |
+
 ** Dualities
 - throw-catch
 - binge-purge
@@ -304,6 +313,7 @@ Synonyms of verbs by size
 - collect-scatter
 - arrange-derange
 - destroy-restore
+
 * from 8
 - comprise :: consist whole of part (whole comprises parts)
 - depurate :: cleanse whole of part (disprise?)
@@ -313,6 +323,8 @@ Synonyms of verbs by size
 - withdraw
 - dispatch
 - register
+- organize
+- relegate
 * lists
 ** 2
 - do
@@ -343,12 +355,14 @@ Synonyms of verbs by size
 - vow :: to promise
 - dub :: to name
 - eke :: to add
+- ebb :: to wane, reduce
 - don :: to put on (ant. doff)
 - wax :: to grow (ant. wane)
 - nim :: to take, steal
 - hap :: to occur, happen
 - ken :: to know
 - ply :: to fold
+
 *** abbrevs
 - enq :: enqueue
 - deq :: dequeue
@@ -368,9 +382,10 @@ Synonyms of verbs by size
 - seek :: to search
 - find :: to discover
 - deem :: to think, judge, (doom)
+- avow :: to state forcefully, aver, declare, assert, affirm
 - swap :: to exchange, trade
 - rate :: to judge, score, order, rank
-
+- cite :: to mention, refer, adduce (to lead to)
 - bind :: to tie, fix
 - send :: to convey, encharge with message
 - move :: to displace
@@ -514,7 +529,7 @@ In their base case, these seem more useful for todo lists:
 - shut (shutdown, shutup, shutout)
 - put (putdown, putup, putout)
 - fit (retrofit, refit, outfit)
-- cast (forecast, recast, broadcast, miscast)
+- cast (forecast, recast, broadcast, miscast, outcast)
 - quit
 - cost
 - read (readout)
