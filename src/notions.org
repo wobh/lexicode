@@ -24,12 +24,14 @@
 | build     | builder     | building                |                   |
 | assemble  | assembler   | assembly, semblance     | disassemble       |
 | gather    | gatherer    | gathering               | scatter           |
+| generate  | generator   | generation              | degenerate        |
 
 ** constructure
 
 - form
 - mold
 - shape
+- beget
 - sculpt
 
 ** destructure
@@ -207,6 +209,9 @@ target
 
 * Turning
 
+- spin
+- grid
+
 - affine
 - scalar
 - vector
@@ -366,7 +371,7 @@ Type-referring prepositions
 - group
   - member
 
-Sometimes "things" may be considers "groups" of "properties"
+Sometimes "things" may be considered "groups" of "properties"
 
 - record
   - field
@@ -375,15 +380,21 @@ Sometimes "things" may be considers "groups" of "properties"
     - type
 - object
   - attribute
-  - relationship
+  - association
 - relation
-  - ?
   - references
+  - relationship
 - model
-  - property
+  - property, quality
+    - intrinsic
+    - mutable
+  - aggregate, quantity
+    - measurable
 
 * Testing
-** concepts
+
+** concepts from experimentation
+
 - phenomenon :: happenings, events
 - observation :: a record of phenomena
 - hypothesis :: proposal, supposition, conjecture about relations
@@ -398,6 +409,55 @@ Sometimes "things" may be considers "groups" of "properties"
 - result :: outcome, actual
 - reproducible :: recurring, replicable, non-coincedental
 - theory :: reproducible results
+
+** predicate and assertion conventions
+
+Given a predicate or assertion function there are naming conventions
+to indicate what kind of results to expect.
+
+| pass    | fail  | -- | -a | result type         |
+|---------+-------+----+----+---------------------|
+| subject | null  |    |    | generalized boolean |
+| subject | error | -! |    |                     |
+| true    | false | -? | -p | boolean (logic-2)   |
+
+** test spec terms (derived from experimentation terms)
+
+- expects expect should
+- control invariant
+- subject variant
+- outcome result actual
+
+* Hiding
+
+hide hidden
+show shown
+
+| hide    | show    |
+| remove  | restore |
+| conceal | reveal  |
+
+** Access
+
+* Sensing
+
+- look and see
+  - sight
+  - view scape
+  - espy
+- listen and hear
+  - sound
+  - audit
+- touch and feel
+  - texture
+  - temperature
+  - (more)
+- sniff and smell
+  - scent
+- lick and taste
+  - flavor
+
+- perceive and notice
 
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
