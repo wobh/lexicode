@@ -152,7 +152,9 @@ variable is designated by ei and is known as the "residual", "side
 effect", "error", "unexplained share", "residual variable", or
 "tolerance".
 #+END_QUOTE
+
 ** 5
+
 shown
 given
 event
@@ -160,6 +162,7 @@ prove
 false
 
 ** 6
+
 expect
 aspect
 result
@@ -167,8 +170,10 @@ theory
 factor
 passed
 failed
+actual
 
 ** 7
+
 subject, feature
 control
 outcome, measure, finding
@@ -178,6 +183,7 @@ propose
 observe, inspect
 
 ** 8
+
 function
 argument
 constant, given, invariant
@@ -243,7 +249,9 @@ examiner
   - source :: src, js, html, txt, csv, sql
   - styles :: style, css, sass, scss
 *** 
-* nouns
+
+* Grammar concepts
+** Nouns
 
 | concept            | 3-letter    | 4-letter        | 5-letter    |
 |--------------------+-------------+-----------------+-------------|
@@ -323,7 +331,7 @@ examiner
 |                    |             | view            | scape       |
 |                    |             |                 | scope       |
   
-*** adjectives
+*** Adjectives
 
 | word/concept     | 5-letter | 4-letter | 3-letter |
 |------------------+----------+----------+----------|
@@ -339,7 +347,22 @@ examiner
 | shape            | shape    | form     |          |
 | alternate        | other    |          | alt      |
 |                  |          |          |          |
-*** prepositions
+*** Pronouns, non-personal
+
+|           | query    | this | that  | some      | no      | every      |
+|-----------+----------+------+-------+-----------+---------+------------|
+| adjective | which    | this | that  | some      | no      | every      |
+| person    | who      | this | that  | someone   | no one  | everyone   |
+| thing     | what     | this | that  | something | nothing | everything |
+| place     | where    | here | there | somewhere | nowhere | everywhere |
+| time      | when     | now  | then  | sometime  | never   | always     |
+| way       | how      |      | thus  | somehow   |         |            |
+| reason    | why      |      |       |           |         |            |
+
+**** References
+- https://www.zompist.com/kitgram.html
+
+*** Prepositions
 
 | word/concept | 3-letter | 4-letter | 5-letter |
 |--------------+----------+----------+----------|
@@ -351,7 +374,7 @@ examiner
 |              |          |          |          |
 |              |          |          |          |
 
-** verbs
+** Verbs
 
 | word/concept         | 3-letter    | 4-letter   |             |
 |----------------------+-------------+------------+-------------|
@@ -404,10 +427,7 @@ examiner
 |                      | try         | test       |             |
 | present/display      |             | show       |             |
 
-
-
-*** adverbs
-| 
+*** Adverbs
 
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
