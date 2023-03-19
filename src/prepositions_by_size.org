@@ -2,19 +2,20 @@
 #+date: <2019-08-24 Sat>
 #+author: William Clifford
 #+email: wobh@yahoo.com
-#+description: Synonyms of verbs by size
-#+keywords: verbs, synonyms
+#+description: prepositions by size
+#+keywords: prepositions, synonyms
 
 * 2
 
 - at
 - by
 - in
-- on
 - of
-- re(garding)
+- on
 - to
 - up
+
+- re(garding)
 
 * 3
 
@@ -22,6 +23,7 @@
 - but
 - off
 - out
+- per
 
 * 4
 
@@ -32,6 +34,9 @@
 - over
 - upon
 - with
+- from
+- onto
+- past
 
 * 5
 
@@ -39,6 +44,8 @@
 - above
 - along
 - after
+- among
+- below
 - since
 - until
 - under
@@ -49,16 +56,21 @@
 - around
 - before
 - behind
+- beside
 - beyond
 - during
 - except
+- inside
+- toward
 - within
 
 * 7 and up
 
 - against
+- beneath
 - between
 - despite (?)
+- outside
 - through
 - towards
 - without
@@ -69,6 +81,12 @@
 - concerns (ing)
 - excludes (ing)
 - includes (ing)
+
+- because of
+- instead of
+- close to
+- on top of
+- out of
 
 * COMMENT org settings
 #+options: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline
